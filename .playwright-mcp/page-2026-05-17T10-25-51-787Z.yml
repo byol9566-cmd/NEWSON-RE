@@ -1,0 +1,447 @@
+- generic [active] [ref=e1]:
+  - link "본문 바로가기" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img [ref=e8]
+        - link "031-758-0215" [ref=e10] [cursor=pointer]:
+          - /url: tel:031-758-0215
+      - generic [ref=e11]: 평일 09:00 ~ 18:00
+    - generic [ref=e12]:
+      - link "홈" [ref=e13] [cursor=pointer]:
+        - /url: /
+      - link "온라인문의" [ref=e14] [cursor=pointer]:
+        - /url: /inquiry
+      - link "고객센터" [ref=e15] [cursor=pointer]:
+        - /url: /customer
+  - banner [ref=e16]:
+    - generic [ref=e17]:
+      - link "뉴스온 홈으로" [ref=e19] [cursor=pointer]:
+        - /url: /
+        - text: NEWS
+        - generic [ref=e21]: "ON"
+      - navigation "주요 메뉴" [ref=e22]:
+        - link "브랜드대상" [ref=e23] [cursor=pointer]:
+          - /url: /brand-award
+        - link "언론홍보 비용" [ref=e24] [cursor=pointer]:
+          - /url: /pricing
+        - link "사업분야" [ref=e25] [cursor=pointer]:
+          - /url: /business
+        - link "Clients" [ref=e26] [cursor=pointer]:
+          - /url: /clients
+        - link "온라인문의" [ref=e27] [cursor=pointer]:
+          - /url: /inquiry
+        - link "고객센터" [ref=e28] [cursor=pointer]:
+          - /url: /customer
+      - link "무료 견적 받기" [ref=e29] [cursor=pointer]:
+        - /url: /inquiry
+        - img [ref=e30]
+        - text: 무료 견적
+  - dialog "모바일 메뉴":
+    - generic:
+      - generic:
+        - generic: NEWSON
+        - button "메뉴 닫기": ✕
+      - navigation:
+        - link "홈":
+          - /url: /
+        - link "브랜드대상":
+          - /url: /brand-award
+        - link "언론홍보 비용":
+          - /url: /pricing
+        - link "사업분야":
+          - /url: /business
+        - link "Clients":
+          - /url: /clients
+        - link "온라인문의":
+          - /url: /inquiry
+        - link "고객센터":
+          - /url: /customer
+      - generic:
+        - generic: 전화 상담
+        - generic: 031-758-0215
+        - generic: 평일 09:00 ~ 18:00
+        - link "온라인 견적 신청 →":
+          - /url: /inquiry
+  - main [ref=e33]:
+    - region "메인 히어로" [ref=e34]:
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e39]: VOL.01 · PRESS NETWORK
+            - heading "당신의 이야기를, 200개 언론사에 한 번에." [level=1] [ref=e40]:
+              - text: 당신의 이야기를,
+              - text: 200개 언론사에
+              - text: 한 번에.
+            - paragraph [ref=e41]: 보도자료 기획부터 언론사 송출, 네이버 블로그 게재까지 — 모든 언론홍보를 원스톱으로 처리합니다.
+            - generic [ref=e42]:
+              - link "무료 견적 받기" [ref=e43] [cursor=pointer]:
+                - /url: /inquiry
+                - img [ref=e44]
+                - text: 무료 견적 받기
+              - link "비용 안내 보기" [ref=e47] [cursor=pointer]:
+                - /url: /pricing
+          - generic [ref=e48]:
+            - generic [ref=e49]: 01/03
+            - progressbar [ref=e50]
+            - generic [ref=e52]:
+              - button "이전 슬라이드" [ref=e53] [cursor=pointer]:
+                - img [ref=e54]
+              - button "다음 슬라이드" [ref=e56] [cursor=pointer]:
+                - img [ref=e57]
+        - generic [ref=e59]:
+          - generic [ref=e65]: N°01
+          - generic [ref=e68]:
+            - generic [ref=e69]: PRESS CONFERENCE · DAILY BRIEFING
+            - generic [ref=e70]: Coverage across 200+ Korean media outlets
+    - region "주요 실적" [ref=e71]:
+      - generic [ref=e73]:
+        - generic [ref=e74]:
+          - generic [ref=e75]: 누적 보도자료
+          - generic [ref=e76]: 0+
+          - generic [ref=e77]: 건 배포 완료
+        - generic [ref=e78]:
+          - generic [ref=e79]: 제휴 언론사
+          - generic [ref=e80]: 0+
+          - generic [ref=e81]: 개 매체 네트워크
+        - generic [ref=e82]:
+          - generic [ref=e83]: 누적 고객사
+          - generic [ref=e84]: 0+
+          - generic [ref=e85]: 개 브랜드와 함께
+        - generic [ref=e86]:
+          - generic [ref=e87]: 재계약률
+          - generic [ref=e88]: 0%
+          - generic [ref=e89]: 높은 만족도
+    - region "원스톱 서비스" [ref=e90]:
+      - generic [ref=e92]:
+        - generic [ref=e93]: ONE-STOP
+        - heading "언론홍보 · 보도자료 배포 · 네이버 블로그 한 번에 해결합니다" [level=2] [ref=e94]:
+          - text: 언론홍보 · 보도자료 배포 · 네이버 블로그
+          - text: 한 번에 해결합니다
+        - paragraph [ref=e95]:
+          - text: 뉴스온은 국내 유일하게 언론 기사 송출과 네이버 블로그 게재를 동시에 진행합니다.
+          - text: 포털 뉴스 노출과 블로그 검색 유입을 동시에 극대화하여 브랜드 신뢰도를 빠르게 높입니다.
+        - generic [ref=e96]:
+          - generic [ref=e97]:
+            - img [ref=e99]
+            - generic [ref=e102]: 보도자료 기획·대필
+            - generic [ref=e103]: 전문 카피라이터가 브랜드 특성에 맞는 보도자료를 작성합니다
+          - generic [ref=e104]: →
+          - generic [ref=e105]:
+            - img [ref=e107]
+            - generic [ref=e110]: 200개 언론사 배포
+            - generic [ref=e111]: 메이저 언론사부터 전문지까지 맞춤 매체에 동시 송출합니다
+          - generic [ref=e112]: →
+          - generic [ref=e113]:
+            - img [ref=e115]:
+              - generic [ref=e119]: "N"
+            - generic [ref=e120]: 네이버 블로그 게재
+            - generic [ref=e121]: 언론 기사와 동시에 네이버 블로그에 게재해 검색 노출을 극대화합니다
+          - generic [ref=e122]: →
+          - generic [ref=e123]:
+            - img [ref=e125]
+            - generic [ref=e129]: 포털 노출 확인
+            - generic [ref=e130]: 네이버·다음·구글 노출 결과를 리포트로 전달해 드립니다
+        - link "원스톱 서비스 문의하기" [ref=e131] [cursor=pointer]:
+          - /url: /inquiry
+    - region "서비스 소개" [ref=e132]:
+      - generic [ref=e133]:
+        - generic [ref=e134]:
+          - generic [ref=e135]:
+            - generic [ref=e136]: OUR SERVICES
+            - heading "언론홍보의 모든 것" [level=2] [ref=e137]
+            - paragraph [ref=e138]: 보도자료 기획부터 포털 노출, 네이버 블로그 게재까지 — 뉴스온 하나로 해결하세요.
+          - link "비용 안내 →" [ref=e139] [cursor=pointer]:
+            - /url: /pricing
+        - generic [ref=e140]:
+          - generic [ref=e141]:
+            - generic [ref=e142]:
+              - generic [ref=e143]: "01"
+              - generic [ref=e144]: CORE
+            - img [ref=e146]
+            - heading "보도자료 배포" [level=3] [ref=e150]
+            - paragraph [ref=e151]: 200개 이상 제휴 언론사에 동시 송출. 메이저 종합지부터 업종별 전문지까지 맞춤 매체를 선택하실 수 있습니다.
+            - link "자세히 보기" [ref=e152] [cursor=pointer]:
+              - /url: /pressrelease
+              - text: 자세히 보기
+              - img [ref=e153]
+          - generic [ref=e155]:
+            - generic [ref=e156]:
+              - generic [ref=e157]: "02"
+              - generic [ref=e158]: DIGITAL
+            - img [ref=e160]:
+              - generic [ref=e164]: "N"
+            - heading "네이버 블로그 게재" [level=3] [ref=e165]
+            - paragraph [ref=e166]: 언론 기사 배포와 동시에 네이버 블로그에 콘텐츠를 게재합니다. 뉴스 검색과 블로그 검색을 동시에 잡는 원스톱 솔루션.
+            - link "자세히 보기" [ref=e167] [cursor=pointer]:
+              - /url: /business
+              - text: 자세히 보기
+              - img [ref=e168]
+          - generic [ref=e170]:
+            - generic [ref=e171]:
+              - generic [ref=e172]: "03"
+              - generic [ref=e173]: EDITORIAL
+            - img [ref=e175]
+            - heading "기사형 광고" [level=3] [ref=e179]
+            - paragraph [ref=e180]: 광고가 아닌 기사로 인식되는 고신뢰 콘텐츠. 경제·IT·생활 등 카테고리에 맞는 기사형 광고로 브랜드 인지도를 높입니다.
+            - link "자세히 보기" [ref=e181] [cursor=pointer]:
+              - /url: /pricing
+              - text: 자세히 보기
+              - img [ref=e182]
+          - generic [ref=e184]:
+            - generic [ref=e185]:
+              - generic [ref=e186]: "04"
+              - generic [ref=e187]: CRISIS
+            - img [ref=e189]
+            - heading "위기관리·기사 정정" [level=3] [ref=e192]
+            - paragraph [ref=e193]: 부정적 기사 발생 시 긍정 보도자료로 검색 순위를 밀어내 악성 기사 확산을 방지합니다. 브랜드 이미지를 신속하게 복원합니다.
+            - link "자세히 보기" [ref=e194] [cursor=pointer]:
+              - /url: /business
+              - text: 자세히 보기
+              - img [ref=e195]
+          - generic [ref=e197]:
+            - generic [ref=e198]:
+              - generic [ref=e199]: "05"
+              - generic [ref=e200]: INTERVIEW
+            - img [ref=e202]
+            - heading "인터뷰·기획기사" [level=3] [ref=e205]
+            - paragraph [ref=e206]: 대표 인터뷰, 상품 스토리텔링, 기획 기사로 브랜드의 진정성을 전달합니다. 전문 카피라이터가 기사를 직접 작성합니다.
+            - link "자세히 보기" [ref=e207] [cursor=pointer]:
+              - /url: /business
+              - text: 자세히 보기
+              - img [ref=e208]
+          - generic [ref=e210]:
+            - generic [ref=e211]:
+              - generic [ref=e212]: "06"
+              - generic [ref=e213]: SEARCH
+            - img [ref=e215]
+            - heading "포털 노출 최적화" [level=3] [ref=e219]
+            - paragraph [ref=e220]: 네이버·다음·구글 뉴스 노출을 위한 핵심 키워드 설정과 SEO 최적화 기사를 제공합니다. 검색 유입 극대화.
+            - link "자세히 보기" [ref=e221] [cursor=pointer]:
+              - /url: /pricing
+              - text: 자세히 보기
+              - img [ref=e222]
+    - region "언론홍보를 선택해야 하는 이유" [ref=e224]:
+      - text: TRUST
+      - generic [ref=e226]:
+        - generic [ref=e227]:
+          - generic [ref=e231]:
+            - generic [ref=e232]: FEATURE
+            - generic [ref=e233]: Nº01
+          - blockquote [ref=e234]:
+            - img [ref=e235]
+            - paragraph [ref=e237]: 신문기사는 여전히 가장 신뢰받는 광고 형태입니다. 디지털 시대에도 정통 저널리즘의 권위는 변하지 않습니다.
+            - text: AC NIELSEN · 광고 신뢰도 조사
+        - generic [ref=e238]:
+          - generic [ref=e239]: WHY PRESS RELEASE
+          - heading "가장 신뢰도 높은 광고는 신문기사 광고입니다" [level=2] [ref=e240]:
+            - text: 가장 신뢰도 높은 광고는
+            - text: 신문기사 광고입니다
+          - paragraph [ref=e241]: 소비자가 가장 신뢰하는 광고 매체는 무엇일까요? AC닐슨 조사 결과, 신문기사 광고가 TV·인터넷·SNS를 모두 제치고 1위를 차지했습니다.
+          - generic [ref=e242]:
+            - generic [ref=e243]:
+              - generic [ref=e244]:
+                - generic [ref=e245]: 신문기사
+                - generic [ref=e246]: 69%
+              - generic [ref=e249]: 한국인이 가장 신뢰하는 광고 형태 1위
+            - generic [ref=e250]:
+              - generic [ref=e251]:
+                - generic [ref=e252]: TV광고
+                - generic [ref=e253]: 59%
+              - generic [ref=e256]:
+                - text: 신문기사 광고 대비
+                - strong [ref=e257]: 10%p 낮은 신뢰도
+          - generic [ref=e258]:
+            - generic [ref=e259]:
+              - img [ref=e261]
+              - generic [ref=e264]:
+                - heading "지속적인 홍보 효과" [level=4] [ref=e265]
+                - paragraph [ref=e266]: 한번 게재된 기사는 검색에 영구 노출되어 시간이 지나도 효과가 유지됩니다.
+            - generic [ref=e267]:
+              - img [ref=e269]
+              - generic [ref=e275]:
+                - heading "2차 확산 마케팅" [level=4] [ref=e276]
+                - paragraph [ref=e277]: 블로그·SNS 자연 바이럴이 발생해 추가 비용 없이 홍보 효과가 확산됩니다.
+    - region "주요 클라이언트" [ref=e278]:
+      - generic [ref=e280]:
+        - generic [ref=e281]: OUR CLIENTS
+        - heading "1,500+ 브랜드가 뉴스온과 함께합니다" [level=2] [ref=e282]
+      - generic [ref=e284]:
+        - generic [ref=e285]: 미소빌딩연구소
+        - generic [ref=e287]: 마켓비
+        - generic [ref=e289]: 린나이코리아
+        - generic [ref=e291]: 티엘비코리아
+        - generic [ref=e293]: 서울약사신협
+        - generic [ref=e295]: 고운세상피부과
+        - generic [ref=e297]: 명지혼혜병원
+        - generic [ref=e299]: 이름코리아
+        - generic [ref=e301]: 동서제약웰빙
+        - generic [ref=e303]: 미소빌딩연구소
+        - generic [ref=e305]: 마켓비
+        - generic [ref=e307]: 린나이코리아
+        - generic [ref=e309]: 티엘비코리아
+        - generic [ref=e311]: 서울약사신협
+        - generic [ref=e313]: 고운세상피부과
+        - generic [ref=e315]: 명지혼혜병원
+        - generic [ref=e317]: 이름코리아
+        - generic [ref=e319]: 동서제약웰빙
+      - generic [ref=e322]:
+        - generic [ref=e323]: 현대백화점
+        - generic [ref=e325]: 롯데면세점
+        - generic [ref=e327]: GS리테일
+        - generic [ref=e329]: CJ푸드빌
+        - generic [ref=e331]: 빙그레
+        - generic [ref=e333]: 한국맥도날드
+        - generic [ref=e335]: 오뚜기
+        - generic [ref=e337]: 풀무원
+        - generic [ref=e339]: 매일유업
+        - generic [ref=e341]: 현대백화점
+        - generic [ref=e343]: 롯데면세점
+        - generic [ref=e345]: GS리테일
+        - generic [ref=e347]: CJ푸드빌
+        - generic [ref=e349]: 빙그레
+        - generic [ref=e351]: 한국맥도날드
+        - generic [ref=e353]: 오뚜기
+        - generic [ref=e355]: 풀무원
+        - generic [ref=e357]: 매일유업
+      - link "전체 클라이언트 보기 →" [ref=e361] [cursor=pointer]:
+        - /url: /clients
+    - region "진행 프로세스" [ref=e362]:
+      - generic [ref=e363]:
+        - generic [ref=e365]:
+          - generic [ref=e366]: PROCESS
+          - heading "5단계로 완성되는 언론홍보" [level=2] [ref=e367]
+        - generic [ref=e368]:
+          - generic [ref=e369]:
+            - generic [ref=e370]: "01"
+            - img [ref=e372]
+            - heading "상담 및 신청" [level=3] [ref=e377]
+            - paragraph [ref=e378]: 전담 AE가 브랜드 니즈에 맞는 최적의 언론홍보 전략을 컨설팅합니다
+          - generic [ref=e379]: →
+          - generic [ref=e380]:
+            - generic [ref=e381]: "02"
+            - img [ref=e383]
+            - heading "보도자료 준비" [level=3] [ref=e387]
+            - paragraph [ref=e388]: 초안 작성·검토, 핵심 키워드 확인, 이미지 준비 (대필 서비스 이용 가능)
+          - generic [ref=e389]: →
+          - generic [ref=e390]:
+            - generic [ref=e391]: "03"
+            - img [ref=e393]
+            - heading "언론사 송출" [level=3] [ref=e396]
+            - paragraph [ref=e397]: 선정 언론사에 기사 송출. 예약 송출 및 주말·공휴일 즉시 송출 가능
+          - generic [ref=e398]: →
+          - generic [ref=e399]:
+            - generic [ref=e400]: "04"
+            - img [ref=e402]
+            - heading "포털 + 블로그 노출" [level=3] [ref=e405]
+            - paragraph [ref=e406]: 네이버·다음·구글 뉴스 영역 노출 + 네이버 블로그 동시 게재
+          - generic [ref=e407]: →
+          - generic [ref=e408]:
+            - generic [ref=e409]: "05"
+            - img [ref=e411]
+            - heading "결과 보고" [level=3] [ref=e415]
+            - paragraph [ref=e416]: 송출 완료 후 노출 결과 리포트를 상세하게 전달해 드립니다
+    - region "견적 신청" [ref=e417]:
+      - generic [ref=e419]:
+        - generic [ref=e420]:
+          - generic [ref=e421]: GET STARTED
+          - heading "지금 무료로 견적 받아보세요" [level=2] [ref=e422]:
+            - text: 지금 무료로
+            - text: 견적 받아보세요
+          - generic [ref=e423]:
+            - generic [ref=e424]:
+              - img [ref=e425]
+              - generic [ref=e428]:
+                - strong [ref=e429]: 평균 2시간 내 답변
+                - text: 평일 09:00 ~ 18:00
+            - generic [ref=e430]:
+              - img [ref=e431]
+              - generic [ref=e433]:
+                - strong [ref=e434]: 031-758-0215
+                - text: 전화 상담도 가능합니다
+            - generic [ref=e435]:
+              - img [ref=e436]
+              - generic [ref=e439]:
+                - strong [ref=e440]: 언론홍보·블로그 원스톱
+                - text: 한 번의 문의로 모두 해결
+        - generic [ref=e442]:
+          - generic [ref=e443]:
+            - generic [ref=e444]:
+              - generic [ref=e445]: 성명 *
+              - textbox "성명" [ref=e446]:
+                - /placeholder: 홍길동
+            - generic [ref=e447]:
+              - generic [ref=e448]: 연락처 *
+              - textbox "연락처" [ref=e449]:
+                - /placeholder: 010-0000-0000
+          - generic [ref=e450]:
+            - generic [ref=e451]: 관심 서비스
+            - combobox "관심 서비스" [ref=e452]:
+              - option "서비스를 선택하세요" [selected]
+              - option "보도자료 배포"
+              - option "네이버 블로그 게재"
+              - option "언론홍보+블로그 원스톱"
+              - option "기사형 광고"
+              - option "위기관리·기사 정정"
+              - option "인터뷰·기획기사"
+          - button "견적 요청하기" [ref=e453] [cursor=pointer]:
+            - img [ref=e454]
+            - text: 견적 요청하기
+  - contentinfo [ref=e457]:
+    - generic [ref=e458]:
+      - generic [ref=e459]:
+        - generic [ref=e460]:
+          - generic [ref=e461]:
+            - text: NEWS
+            - generic [ref=e463]: "ON"
+          - paragraph [ref=e464]: 언론홍보·보도자료 배포·네이버 블로그 게재를 한 번에 처리하는 언론홍보 전문 대행사입니다.
+          - generic [ref=e465]:
+            - paragraph [ref=e466]:
+              - strong [ref=e467]: 뉴스온 (NEWSON)
+            - paragraph [ref=e468]: "사업자등록번호 : 116-86-43178 | 대표 : 김영기"
+            - paragraph [ref=e469]: 서울특별시 금천구 가산디지털2로 98, 2동 1306호
+        - generic [ref=e470]:
+          - heading "서비스" [level=4] [ref=e471]
+          - list [ref=e472]:
+            - listitem [ref=e473]:
+              - link "보도자료 배포" [ref=e474] [cursor=pointer]:
+                - /url: /pressrelease
+            - listitem [ref=e475]:
+              - link "네이버 블로그 게재" [ref=e476] [cursor=pointer]:
+                - /url: /business
+            - listitem [ref=e477]:
+              - link "언론홍보 비용" [ref=e478] [cursor=pointer]:
+                - /url: /pricing
+            - listitem [ref=e479]:
+              - link "브랜드대상" [ref=e480] [cursor=pointer]:
+                - /url: /brand-award
+            - listitem [ref=e481]:
+              - link "클라이언트" [ref=e482] [cursor=pointer]:
+                - /url: /clients
+        - generic [ref=e483]:
+          - heading "연락처" [level=4] [ref=e484]
+          - generic [ref=e485]:
+            - img [ref=e486]
+            - generic [ref=e488]:
+              - link "031-758-0215" [ref=e489] [cursor=pointer]:
+                - /url: tel:031-758-0215
+              - text: 평일 09:00 ~ 18:00
+          - generic [ref=e490]:
+            - img [ref=e491]
+            - link "newsmarketing@daum.net" [ref=e494] [cursor=pointer]:
+              - /url: mailto:newsmarketing@daum.net
+          - link "온라인 문의하기" [ref=e495] [cursor=pointer]:
+            - /url: /inquiry
+      - generic [ref=e496]:
+        - generic [ref=e497]: Copyright © 2024 뉴스온 (NEWSON). All Rights Reserved.
+        - generic [ref=e498]:
+          - link "이용약관" [ref=e499] [cursor=pointer]:
+            - /url: "#"
+          - link "개인정보처리방침" [ref=e500] [cursor=pointer]:
+            - /url: "#"
+          - link "오시는 길" [ref=e501] [cursor=pointer]:
+            - /url: /location
+  - button "Open Next.js Dev Tools" [ref=e507] [cursor=pointer]:
+    - img [ref=e508]
+  - alert [ref=e511]

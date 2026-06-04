@@ -1,0 +1,195 @@
+- generic [active] [ref=e1]:
+  - link "본문 바로가기" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img [ref=e8]
+        - link "031-758-0215" [ref=e10] [cursor=pointer]:
+          - /url: tel:031-758-0215
+      - generic [ref=e11]: 평일 09:00 ~ 18:00
+    - generic [ref=e12]:
+      - link "홈" [ref=e13] [cursor=pointer]:
+        - /url: /
+      - link "온라인문의" [ref=e14] [cursor=pointer]:
+        - /url: /inquiry
+      - link "고객센터" [ref=e15] [cursor=pointer]:
+        - /url: /customer
+  - banner [ref=e16]:
+    - generic [ref=e17]:
+      - link "뉴스온 홈으로" [ref=e19] [cursor=pointer]:
+        - /url: /
+        - text: NEWS
+        - generic [ref=e21]: "ON"
+      - navigation "주요 메뉴" [ref=e22]:
+        - link "브랜드대상" [ref=e23] [cursor=pointer]:
+          - /url: /brand-award
+        - link "언론홍보 비용" [ref=e24] [cursor=pointer]:
+          - /url: /pricing
+        - link "사업분야" [ref=e25] [cursor=pointer]:
+          - /url: /business
+        - link "Clients" [ref=e26] [cursor=pointer]:
+          - /url: /clients
+        - link "온라인문의" [ref=e27] [cursor=pointer]:
+          - /url: /inquiry
+        - link "고객센터" [ref=e28] [cursor=pointer]:
+          - /url: /customer
+      - link "무료 견적 받기" [ref=e29] [cursor=pointer]:
+        - /url: /inquiry
+        - img [ref=e30]
+        - text: 무료 견적
+  - dialog "모바일 메뉴":
+    - generic:
+      - generic:
+        - generic: NEWSON
+        - button "메뉴 닫기": ✕
+      - navigation:
+        - link "홈":
+          - /url: /
+        - link "브랜드대상":
+          - /url: /brand-award
+        - link "언론홍보 비용":
+          - /url: /pricing
+        - link "사업분야":
+          - /url: /business
+        - link "Clients":
+          - /url: /clients
+        - link "온라인문의":
+          - /url: /inquiry
+        - link "고객센터":
+          - /url: /customer
+      - generic:
+        - generic: 전화 상담
+        - generic: 031-758-0215
+        - generic: 평일 09:00 ~ 18:00
+        - link "온라인 견적 신청 →":
+          - /url: /inquiry
+  - main [ref=e33]:
+    - generic [ref=e36]:
+      - generic [ref=e37]:
+        - generic [ref=e38]: CONTACT
+        - heading "오시는 길" [level=1] [ref=e39]
+        - paragraph [ref=e40]: 서울특별시 금천구 가산디지털2로 98, 2동 1306호
+      - navigation "경로" [ref=e41]:
+        - link "HOME" [ref=e42] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e43]: /
+        - generic [ref=e44]: LOCATION
+    - generic [ref=e46]:
+      - complementary [ref=e47]:
+        - generic [ref=e48]:
+          - generic [ref=e49]: 회사소개
+          - link "브랜드대상 →" [ref=e50] [cursor=pointer]:
+            - /url: /brand-award
+            - text: 브랜드대상
+            - generic [ref=e51]: →
+          - link "오시는 길 →" [ref=e52] [cursor=pointer]:
+            - /url: /location
+            - text: 오시는 길
+            - generic [ref=e53]: →
+        - generic [ref=e54]:
+          - generic [ref=e55]: CONTACT
+          - generic [ref=e56]: 031-758-0215
+          - generic [ref=e57]:
+            - text: 운영시간
+            - text: 평일 09:00 ~ 18:00
+            - text: 토·일·공휴일 휴무
+          - link "온라인 문의하기" [ref=e58] [cursor=pointer]:
+            - /url: /inquiry
+      - generic [ref=e60]:
+        - heading "뉴스온 본사 오시는 길" [level=2] [ref=e61]
+        - paragraph [ref=e62]: 지하철 1·7호선 가산디지털단지역 5번 출구에서 도보 5분 거리입니다. 엘리베이터 이용 후 13층으로 올라와 주세요.
+        - iframe [ref=e64]:
+          - generic [ref=f1e6]:
+            - region "지도" [ref=f1e7]
+            - iframe [ref=f1e13]:
+              
+        - heading "주소 및 연락처" [level=3] [ref=e65]
+        - generic [ref=e66]:
+          - generic [ref=e67]: 주소
+          - generic [ref=e68]: 서울특별시 금천구 가산디지털2로 98, 2동 1306호
+        - generic [ref=e69]:
+          - generic [ref=e70]: 대표번호
+          - link "031-758-0215" [ref=e72] [cursor=pointer]:
+            - /url: tel:031-758-0215
+        - generic [ref=e73]:
+          - generic [ref=e74]: 이메일
+          - link "newsmarketing@daum.net" [ref=e76] [cursor=pointer]:
+            - /url: mailto:newsmarketing@daum.net
+        - generic [ref=e77]:
+          - generic [ref=e78]: 운영시간
+          - generic [ref=e79]: 평일 09:00 ~ 18:00 토·일·공휴일 휴무
+        - heading "교통 안내" [level=3] [ref=e80]
+        - generic [ref=e81]:
+          - generic [ref=e82]:
+            - generic [ref=e83]: 지하철
+            - generic [ref=e84]:
+              - strong [ref=e85]: 1·7호선 가산디지털단지역
+              - text: 5번 출구 도보 5분
+          - generic [ref=e86]:
+            - generic [ref=e87]: 버스
+            - generic [ref=e88]:
+              - strong [ref=e89]: 가산디지털단지역 정류장
+              - text: 500, 504, 5616, 5618, 6515
+          - generic [ref=e90]:
+            - generic [ref=e91]: 주차
+            - generic [ref=e92]:
+              - strong [ref=e93]: 건물 내 주차장 이용
+              - text: 시간당 2,000원 (방문 시 할인)
+  - contentinfo [ref=e94]:
+    - generic [ref=e95]:
+      - generic [ref=e96]:
+        - generic [ref=e97]:
+          - generic [ref=e98]:
+            - text: NEWS
+            - generic [ref=e100]: "ON"
+          - paragraph [ref=e101]: 언론홍보·보도자료 배포·네이버 블로그 게재를 한 번에 처리하는 언론홍보 전문 대행사입니다.
+          - generic [ref=e102]:
+            - paragraph [ref=e103]:
+              - strong [ref=e104]: 뉴스온 (NEWSON)
+            - paragraph [ref=e105]: "사업자등록번호 : 116-86-43178 | 대표 : 김영기"
+            - paragraph [ref=e106]: 서울특별시 금천구 가산디지털2로 98, 2동 1306호
+        - generic [ref=e107]:
+          - heading "서비스" [level=4] [ref=e108]
+          - list [ref=e109]:
+            - listitem [ref=e110]:
+              - link "보도자료 배포" [ref=e111] [cursor=pointer]:
+                - /url: /pressrelease
+            - listitem [ref=e112]:
+              - link "네이버 블로그 게재" [ref=e113] [cursor=pointer]:
+                - /url: /business
+            - listitem [ref=e114]:
+              - link "언론홍보 비용" [ref=e115] [cursor=pointer]:
+                - /url: /pricing
+            - listitem [ref=e116]:
+              - link "브랜드대상" [ref=e117] [cursor=pointer]:
+                - /url: /brand-award
+            - listitem [ref=e118]:
+              - link "클라이언트" [ref=e119] [cursor=pointer]:
+                - /url: /clients
+        - generic [ref=e120]:
+          - heading "연락처" [level=4] [ref=e121]
+          - generic [ref=e122]:
+            - img [ref=e123]
+            - generic [ref=e125]:
+              - link "031-758-0215" [ref=e126] [cursor=pointer]:
+                - /url: tel:031-758-0215
+              - text: 평일 09:00 ~ 18:00
+          - generic [ref=e127]:
+            - img [ref=e128]
+            - link "newsmarketing@daum.net" [ref=e131] [cursor=pointer]:
+              - /url: mailto:newsmarketing@daum.net
+          - link "온라인 문의하기" [ref=e132] [cursor=pointer]:
+            - /url: /inquiry
+      - generic [ref=e133]:
+        - generic [ref=e134]: Copyright © 2024 뉴스온 (NEWSON). All Rights Reserved.
+        - generic [ref=e135]:
+          - link "이용약관" [ref=e136] [cursor=pointer]:
+            - /url: "#"
+          - link "개인정보처리방침" [ref=e137] [cursor=pointer]:
+            - /url: "#"
+          - link "오시는 길" [ref=e138] [cursor=pointer]:
+            - /url: /location
+  - button "Open Next.js Dev Tools" [ref=e144] [cursor=pointer]:
+    - img [ref=e145]
+  - alert [ref=e148]

@@ -1,0 +1,62 @@
+export default function Footer() {
+  return (
+    <footer id="footer" role="contentinfo">
+      <div className="container">
+        <div className="footer-top">
+          <div className="footer-col-brand">
+            <div className="footer-brand">
+              <span className="logo-mark" aria-hidden="true" />NEWS<span className="logo-dot">ON</span>
+            </div>
+            <p className="footer-tagline">언론홍보·보도자료 배포·네이버 블로그 게재를 한 번에 처리하는 언론홍보 전문 대행사입니다.</p>
+            <div className="footer-meta">
+              <p><strong>뉴스온 (NEWSON)</strong></p>
+              <p>사업자등록번호 : 116-86-43178 | 대표 : 김영기</p>
+              <p>서울특별시 금천구 가산디지털2로 98, 2동 1306호</p>
+            </div>
+          </div>
+
+          <div className="footer-col">
+            <h4>서비스</h4>
+            <ul>
+              <li><a href="/pressrelease">보도자료 배포</a></li>
+              <li><a href="/business">네이버 블로그 게재</a></li>
+              <li><a href="/pricing">언론홍보 비용</a></li>
+              <li><a href="/brand-award">브랜드대상</a></li>
+              <li><a href="/clients">클라이언트</a></li>
+            </ul>
+          </div>
+
+          <div className="footer-col footer-contact">
+            <h4>연락처</h4>
+            <div className="fc-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+              </svg>
+              <div>
+                <a href="tel:031-758-0215" className="fc-phone">031-758-0215</a><br />
+                평일 09:00 ~ 18:00
+              </div>
+            </div>
+            <div className="fc-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <a href="mailto:newsmarketing@daum.net">newsmarketing@daum.net</a>
+            </div>
+            <a href="/inquiry" className="btn btn-primary" style={{ marginTop: '16px', fontSize: '13px', padding: '10px 18px' }}>온라인 문의하기</a>
+          </div>
+        </div>
+
+        <div className="footer-bottom">
+          <span>Copyright &copy; 2024 뉴스온 (NEWSON). All Rights Reserved.</span>
+          <div className="fb-links">
+            <a href="#">이용약관</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="/location">오시는 길</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  )
+}

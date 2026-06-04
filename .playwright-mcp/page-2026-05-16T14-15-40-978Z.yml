@@ -1,0 +1,176 @@
+- generic [active] [ref=e1]:
+  - link "본문 바로가기" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - navigation "유틸리티 메뉴" [ref=e5]:
+    - list [ref=e6]:
+      - listitem [ref=e7]:
+        - link "홈" [ref=e8] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=e9]:
+        - link "로그인" [ref=e10] [cursor=pointer]:
+          - /url: "#"
+      - listitem [ref=e11]:
+        - link "회원가입" [ref=e12] [cursor=pointer]:
+          - /url: "#"
+      - listitem [ref=e13]:
+        - button "즐겨찾기 추가" [ref=e14] [cursor=pointer]: 즐겨찾기
+  - banner [ref=e15]:
+    - generic [ref=e16]:
+      - link "뉴스온 홈" [ref=e17] [cursor=pointer]:
+        - /url: /
+        - img "NEWSON 뉴스온" [ref=e18]
+      - navigation "글로벌 메뉴" [ref=e19]:
+        - link "브랜드대상" [ref=e20] [cursor=pointer]:
+          - /url: /about/brand-award
+          - text: 브랜드대상
+        - link "언론홍보 비용" [ref=e21] [cursor=pointer]:
+          - /url: /promotion/press-release
+          - text: 언론홍보 비용
+        - link "Clients" [ref=e22] [cursor=pointer]:
+          - /url: /clients
+          - text: Clients
+        - link "온라인문의" [ref=e23] [cursor=pointer]:
+          - /url: /inquiry
+          - text: 온라인문의
+        - link "고객센터" [ref=e24] [cursor=pointer]:
+          - /url: /customer
+          - text: 고객센터
+      - link "상담 신청" [ref=e26] [cursor=pointer]:
+        - /url: /inquiry
+  - dialog "모바일 메뉴" [ref=e27]:
+    - button "메뉴 닫기" [ref=e28]:
+      - img [ref=e29]
+    - list [ref=e31]:
+      - listitem [ref=e32]:
+        - link "브랜드대상" [ref=e33] [cursor=pointer]:
+          - /url: /about/brand-award
+      - listitem [ref=e34]:
+        - link "언론홍보 비용" [ref=e35] [cursor=pointer]:
+          - /url: /promotion/press-release
+      - listitem [ref=e36]:
+        - link "Clients" [ref=e37] [cursor=pointer]:
+          - /url: /clients
+      - listitem [ref=e38]:
+        - link "온라인문의" [ref=e39] [cursor=pointer]:
+          - /url: /inquiry
+      - listitem [ref=e40]:
+        - link "고객센터" [ref=e41] [cursor=pointer]:
+          - /url: /customer
+    - link "무료 상담 신청" [ref=e43] [cursor=pointer]:
+      - /url: /inquiry
+  - main [ref=e44]:
+    - region "메인 배너" [ref=e45]:
+      - generic [ref=e53]:
+        - heading "보도자료 배포, 뉴스온이 대신합니다" [level=2] [ref=e54]
+        - paragraph [ref=e55]: 908개 매체, 2,000명 기자 네트워크
+        - generic [ref=e56]:
+          - link "서비스 알아보기" [ref=e57] [cursor=pointer]:
+            - /url: /promotion/press-release
+          - link "무료 상담 신청" [ref=e58] [cursor=pointer]:
+            - /url: /inquiry
+      - button "이전 슬라이드" [ref=e59]:
+        - img [ref=e60]
+      - button "다음 슬라이드" [ref=e62]:
+        - img [ref=e63]
+      - tablist "슬라이드 선택" [ref=e65]:
+        - tab "슬라이드 1" [selected] [ref=e66]
+        - tab "슬라이드 2" [ref=e67]
+        - tab "슬라이드 3" [ref=e68]
+    - generic [ref=e71]:
+      - generic [ref=e72]:
+        - paragraph [ref=e73]: 0개+
+        - paragraph [ref=e74]: 제휴 매체 수
+        - paragraph [ref=e75]: 전국 신문·방송·온라인 매체
+      - generic [ref=e76]:
+        - paragraph [ref=e77]: 0명+
+        - paragraph [ref=e78]: 등록 기자 수
+        - paragraph [ref=e79]: 각 분야 담당 기자 DB
+      - generic [ref=e80]:
+        - paragraph [ref=e81]: 0년+
+        - paragraph [ref=e82]: 서비스 운영
+        - paragraph [ref=e83]: 언론홍보 전문 경력
+    - generic [ref=e86]:
+      - article [ref=e87]:
+        - generic [ref=e89]:
+          - img [ref=e91]
+          - generic [ref=e93]:
+            - heading "공지사항" [level=3] [ref=e94]
+            - paragraph [ref=e95]: 뉴스온의 새로운 소식과 서비스 업데이트를 확인하세요.
+          - link "공지사항 — 공지사항 보기" [ref=e96] [cursor=pointer]:
+            - /url: /customer
+            - text: 공지사항 보기
+      - article [ref=e97]:
+        - generic [ref=e99]:
+          - img [ref=e101]
+          - generic [ref=e103]:
+            - heading "온라인 문의" [level=3] [ref=e104]
+            - paragraph [ref=e105]: 서비스 이용 전 궁금한 점을 온라인으로 문의하세요.
+          - link "온라인 문의 — 문의하기" [ref=e106] [cursor=pointer]:
+            - /url: /inquiry
+            - text: 문의하기
+      - article [ref=e107]:
+        - generic [ref=e109]:
+          - img [ref=e111]
+          - generic [ref=e113]:
+            - heading "사업 안내" [level=3] [ref=e114]
+            - paragraph [ref=e115]: 뉴스온의 보도자료 배포 서비스와 이용 방법을 알아보세요.
+          - link "사업 안내 — 서비스 보기" [ref=e116] [cursor=pointer]:
+            - /url: /promotion/press-release
+            - text: 서비스 보기
+      - article [ref=e117]:
+        - generic [ref=e119]:
+          - img [ref=e121]
+          - generic [ref=e124]:
+            - heading "찾아오시는 길" [level=3] [ref=e125]
+            - paragraph [ref=e126]: 서울 종로구 뉴스온 사무실로 방문해 주세요.
+          - link "찾아오시는 길 — 오시는 길" [ref=e127] [cursor=pointer]:
+            - /url: /about/location
+            - text: 오시는 길
+  - contentinfo [ref=e128]:
+    - generic [ref=e129]:
+      - generic [ref=e130]:
+        - img "NEWSON 뉴스온" [ref=e131]
+        - paragraph [ref=e132]:
+          - text: 언론홍보 전문 플랫폼
+          - text: 뉴스온과 함께 브랜드를 알리세요.
+      - generic [ref=e133]:
+        - heading "서비스" [level=3] [ref=e134]
+        - list [ref=e135]:
+          - listitem [ref=e136]:
+            - link "보도자료 배포" [ref=e137] [cursor=pointer]:
+              - /url: /promotion/press-release
+          - listitem [ref=e138]:
+            - link "언론홍보 비용" [ref=e139] [cursor=pointer]:
+              - /url: /promotion/pricing
+          - listitem [ref=e140]:
+            - link "이용방법" [ref=e141] [cursor=pointer]:
+              - /url: /promotion/business
+          - listitem [ref=e142]:
+            - link "온라인문의" [ref=e143] [cursor=pointer]:
+              - /url: /inquiry
+      - generic [ref=e144]:
+        - heading "회사" [level=3] [ref=e145]
+        - list [ref=e146]:
+          - listitem [ref=e147]:
+            - link "브랜드대상" [ref=e148] [cursor=pointer]:
+              - /url: /about/brand-award
+          - listitem [ref=e149]:
+            - link "Clients" [ref=e150] [cursor=pointer]:
+              - /url: /clients
+          - listitem [ref=e151]:
+            - link "고객센터" [ref=e152] [cursor=pointer]:
+              - /url: /customer
+          - listitem [ref=e153]:
+            - link "찾아오시는길" [ref=e154] [cursor=pointer]:
+              - /url: /about/location
+      - generic [ref=e155]:
+        - heading "연락처" [level=3] [ref=e156]
+        - paragraph [ref=e157]: 02-6959-4788
+        - paragraph [ref=e158]:
+          - text: 평일 09:00 ~ 18:00
+          - text: (점심 12:00 ~ 13:00)
+        - link "온라인 문의하기" [ref=e159] [cursor=pointer]:
+          - /url: /inquiry
+    - generic [ref=e160]:
+      - paragraph [ref=e161]: "상호: ㈜뉴스온 | 대표: 홍길동 | 사업자등록번호: 000-00-00000"
+      - paragraph [ref=e162]: © 2026 NEWSON. All rights reserved.

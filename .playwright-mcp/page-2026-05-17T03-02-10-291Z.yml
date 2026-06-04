@@ -1,0 +1,221 @@
+- generic [ref=e4]:
+  - navigation [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - link "Unsplash 홈" [ref=e8] [cursor=pointer]:
+          - /url: /ko
+          - img "Unsplash 홈" [ref=e9]
+        - link "사진" [ref=e11] [cursor=pointer]:
+          - /url: /ko
+          - img [ref=e12]
+        - link "일러스트" [ref=e14] [cursor=pointer]:
+          - /url: /ko/%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8
+          - img [ref=e15]
+      - generic [ref=e17]:
+        - button "탐색" [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+        - button "컬렉션" [ref=e21] [cursor=pointer]:
+          - img [ref=e22]
+        - button "다운로드 내역" [ref=e24] [cursor=pointer]:
+          - img [ref=e25]
+      - button "북마크" [ref=e28] [cursor=pointer]:
+        - img [ref=e29]
+    - generic [ref=e31]:
+      - link "로그인 / 가입" [ref=e32] [cursor=pointer]:
+        - /url: /ko/%EB%A1%9C%EA%B7%B8%EC%9D%B8?referrer=%2Fko%2Fs%2F%25EC%2582%25AC%25EC%25A7%2584%2Fnewsroom
+        - img [ref=e33]
+      - button "언어" [ref=e35] [cursor=pointer]:
+        - img [ref=e36]
+      - button "메뉴" [ref=e38] [cursor=pointer]:
+        - img [ref=e39]
+  - generic [ref=e41]:
+    - generic [ref=e42]:
+      - navigation [ref=e43]:
+        - search "사이트 전체에서 이미지 찾기" [ref=e45]:
+          - button "Unsplash 검색" [ref=e46] [cursor=pointer]:
+            - img [ref=e47]
+          - combobox [ref=e49]:
+            - searchbox "Unsplash 검색" [ref=e50]: newsroom
+            - listbox
+          - button "삭제" [ref=e51] [cursor=pointer]:
+            - img [ref=e52]
+          - button "시각적 검색" [ref=e56] [cursor=pointer]:
+            - img [ref=e57]
+        - generic [ref=e59]:
+          - link "Unsplash+ 구독" [ref=e60] [cursor=pointer]:
+            - /url: /ko/%ED%94%8C%EB%9F%AC%EC%8A%A4
+          - link "로그인" [ref=e61] [cursor=pointer]:
+            - /url: /ko/%EB%A1%9C%EA%B7%B8%EC%9D%B8?referrer=%2Fko%2Fs%2F%25EC%2582%25AC%25EC%25A7%2584%2Fnewsroom
+        - button "이미지 제출" [ref=e63] [cursor=pointer]
+      - generic [ref=e64]:
+        - generic [ref=e70]:
+          - list [ref=e71]:
+            - listitem [ref=e72]:
+              - link "사진 40":
+                - /url: /ko/s/%EC%82%AC%EC%A7%84/newsroom
+                - img
+                - text: 사진
+                - generic: "40"
+            - listitem [ref=e73]:
+              - link "일러스트 5" [ref=e74] [cursor=pointer]:
+                - /url: /ko/s/%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8/newsroom
+                - img [ref=e75]
+                - text: 일러스트
+                - generic [ref=e77]: "5"
+            - listitem [ref=e78]:
+              - button "더 보기" [ref=e79] [cursor=pointer]
+          - generic [ref=e82]:
+            - button "라이선스" [ref=e83] [cursor=pointer]:
+              - img [ref=e84]
+              - generic [ref=e86]: 라이선스
+              - img [ref=e87]
+            - button "방향" [ref=e89] [cursor=pointer]:
+              - img [ref=e90]
+              - generic [ref=e92]: 방향
+              - img [ref=e93]
+            - button "정렬 기준 관련성" [ref=e95] [cursor=pointer]:
+              - img [ref=e96]
+              - generic [ref=e98]: 정렬 기준 관련성
+              - img [ref=e99]
+        - generic [ref=e101]:
+          - heading "Newsroom" [level=1] [ref=e103]
+          - generic [ref=e107]:
+            - link "소식" [ref=e109] [cursor=pointer]:
+              - /url: /ko/s/%EC%82%AC%EC%A7%84/%EC%86%8C%EC%8B%9D
+            - link "뉴스룸" [ref=e111] [cursor=pointer]:
+              - /url: /ko/s/%EC%82%AC%EC%A7%84/%EB%89%B4%EC%8A%A4%EB%A3%B8
+            - link "신문" [ref=e113] [cursor=pointer]:
+              - /url: /ko/s/%EC%82%AC%EC%A7%84/%EC%8B%A0%EB%AC%B8
+            - link "뉴스 스튜디오" [ref=e115] [cursor=pointer]:
+              - /url: /ko/s/%EC%82%AC%EC%A7%84/%EB%89%B4%EC%8A%A4-%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4
+            - link "저널리스트" [ref=e117] [cursor=pointer]:
+              - /url: /ko/s/%EC%82%AC%EC%A7%84/%EC%A0%80%EB%84%90%EB%A6%AC%EC%8A%A4%ED%8A%B8
+            - link "미디어" [ref=e119] [cursor=pointer]:
+              - /url: /ko/s/%EC%82%AC%EC%A7%84/%EB%AF%B8%EB%94%94%EC%96%B4
+            - link "뉴스 속보" [ref=e121] [cursor=pointer]:
+              - /url: /ko/s/%EC%82%AC%EC%A7%84/%EB%89%B4%EC%8A%A4-%EC%86%8D%EB%B3%B4
+            - link "저널리즘" [ref=e123] [cursor=pointer]:
+              - /url: /ko/s/%EC%82%AC%EC%A7%84/%EC%A0%80%EB%84%90%EB%A6%AC%EC%A6%98
+            - link "기자" [ref=e125] [cursor=pointer]:
+              - /url: /ko/s/%EC%82%AC%EC%A7%84/%EA%B8%B0%EC%9E%90
+            - link "기자 회견" [ref=e127] [cursor=pointer]:
+              - /url: /ko/s/%EC%82%AC%EC%A7%84/%EA%B8%B0%EC%9E%90-%ED%9A%8C%EA%B2%AC
+            - link "누르다" [ref=e129] [cursor=pointer]:
+              - /url: /ko/s/%EC%82%AC%EC%A7%84/%EB%88%84%EB%A5%B4%EB%8B%A4
+            - link "마이크" [ref=e131] [cursor=pointer]:
+              - /url: /ko/s/%EC%82%AC%EC%A7%84/%EB%A7%88%EC%9D%B4%ED%81%AC
+        - generic [ref=e133]:
+          - generic [ref=e137]:
+            - generic [ref=e138]:
+              - figure [ref=e139]:
+                - link "신문 더미가 서로 겹쳐져 있습니다" [ref=e142]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EC%8B%A0%EB%AC%B8-%EB%8D%94%EB%AF%B8%EA%B0%80-%EC%84%9C%EB%A1%9C-%EA%B2%B9%EC%B3%90%EC%A0%B8-%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4-6khMCoTlLG4
+                  - img "신문 더미가 서로 겹쳐져 있습니다" [ref=e143]
+              - figure [ref=e144]:
+                - link "공항 로비에 앉아 있는 사람들" [ref=e147]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EA%B3%B5%ED%95%AD-%EB%A1%9C%EB%B9%84%EC%97%90-%EC%95%89%EC%95%84-%EC%9E%88%EB%8A%94-%EC%82%AC%EB%9E%8C%EB%93%A4-GlRvKMJSTyo
+                  - img "공항 로비에 앉아 있는 사람들" [ref=e148]
+              - figure [ref=e149]:
+                - link "나무 탁자 위에 한 줄로 늘어선 마이크" [ref=e152]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EB%82%98%EB%AC%B4-%ED%83%81%EC%9E%90-%EC%9C%84%EC%97%90-%ED%95%9C-%EC%A4%84%EB%A1%9C-%EB%8A%98%EC%96%B4%EC%84%A0-%EB%A7%88%EC%9D%B4%ED%81%AC-SGgvAWDoF3U
+                  - img "나무 탁자 위에 한 줄로 늘어선 마이크" [ref=e153]
+              - figure [ref=e154]:
+                - link "많은 책상과 컴퓨터로 가득 찬 사무실" [ref=e157]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EB%A7%8E%EC%9D%80-%EC%B1%85%EC%83%81%EA%B3%BC-%EC%BB%B4%ED%93%A8%ED%84%B0%EB%A1%9C-%EA%B0%80%EB%93%9D-%EC%B0%AC-%EC%82%AC%EB%AC%B4%EC%8B%A4-vqy5GGbmrV4
+                  - img "많은 책상과 컴퓨터로 가득 찬 사무실" [ref=e158]
+              - figure [ref=e159]:
+                - link "삼각대의 카메라" [ref=e162]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EC%82%BC%EA%B0%81%EB%8C%80%EC%9D%98-%EC%B9%B4%EB%A9%94%EB%9D%BC-Dmq8SiuiJ3U
+                  - img "삼각대의 카메라" [ref=e163]
+            - generic [ref=e164]:
+              - figure [ref=e165]:
+                - link "사람들 근처에 서서 카메라를 들고 있는 여자" [ref=e168]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EC%82%AC%EB%9E%8C%EB%93%A4-%EA%B7%BC%EC%B2%98%EC%97%90-%EC%84%9C%EC%84%9C-%EC%B9%B4%EB%A9%94%EB%9D%BC%EB%A5%BC-%EB%93%A4%EA%B3%A0-%EC%9E%88%EB%8A%94-%EC%97%AC%EC%9E%90-JEwNQerg3Hs
+                  - img "사람들 근처에 서서 카메라를 들고 있는 여자" [ref=e169]
+              - figure [ref=e170]:
+                - link "신문 용지가 있는 타자기의 클로즈업" [ref=e173]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EC%8B%A0%EB%AC%B8-%EC%9A%A9%EC%A7%80%EA%B0%80-%EC%9E%88%EB%8A%94-%ED%83%80%EC%9E%90%EA%B8%B0%EC%9D%98-%ED%81%B4%EB%A1%9C%EC%A6%88%EC%97%85-SMcjAxzG-Ws
+                  - img "신문 용지가 있는 타자기의 클로즈업" [ref=e174]
+              - figure [ref=e175]:
+                - link "의자에 앉아 남자와 여자의 그레이스케일 사진" [ref=e178]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EC%9D%98%EC%9E%90%EC%97%90-%EC%95%89%EC%95%84-%EB%82%A8%EC%9E%90%EC%99%80-%EC%97%AC%EC%9E%90%EC%9D%98-%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%8A%A4%EC%BC%80%EC%9D%BC-%EC%82%AC%EC%A7%84-YvNiIyGdMfs
+                  - img "의자에 앉아 남자와 여자의 그레이스케일 사진" [ref=e179]
+              - figure [ref=e180]:
+                - link "가구가 많은 흑백 방" [ref=e183]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EA%B0%80%EA%B5%AC%EA%B0%80-%EB%A7%8E%EC%9D%80-%ED%9D%91%EB%B0%B1-%EB%B0%A9-X_wPLL_JnY4
+                  - img "가구가 많은 흑백 방" [ref=e184]
+              - figure [ref=e185]:
+                - 'link "검사자에 대한 참고 사항: 다시 제출하십시오.***" [ref=e188]':
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EA%B2%80%EC%82%AC%EC%9E%90%EC%97%90-%EB%8C%80%ED%95%9C-%EC%B0%B8%EA%B3%A0-%EC%82%AC%ED%95%AD-%EB%8B%A4%EC%8B%9C-%EC%A0%9C%EC%B6%9C%ED%95%98%EC%8B%AD%EC%8B%9C%EC%98%A4-H3ZVdxBRIW0
+                  - 'img "검사자에 대한 참고 사항: 다시 제출하십시오.***" [ref=e189]'
+              - figure [ref=e190]:
+                - link "방에 있는 사람들의 흑백 사진" [ref=e193]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EB%B0%A9%EC%97%90-%EC%9E%88%EB%8A%94-%EC%82%AC%EB%9E%8C%EB%93%A4%EC%9D%98-%ED%9D%91%EB%B0%B1-%EC%82%AC%EC%A7%84-7Rhfob9avro
+                  - img "방에 있는 사람들의 흑백 사진" [ref=e194]
+              - figure [ref=e195]:
+                - link "갈색 나무 테이블 앞 의자에 앉아 있는 검은 재킷을 입은 남자" [ref=e198]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EA%B0%88%EC%83%89-%EB%82%98%EB%AC%B4-%ED%85%8C%EC%9D%B4%EB%B8%94-%EC%95%9E-%EC%9D%98%EC%9E%90%EC%97%90-%EC%95%89%EC%95%84-%EC%9E%88%EB%8A%94-%EA%B2%80%EC%9D%80-%EC%9E%AC%ED%82%B7%EC%9D%84-%EC%9E%85%EC%9D%80-%EB%82%A8%EC%9E%90-XJMO08IJHd8
+                  - img "갈색 나무 테이블 앞 의자에 앉아 있는 검은 재킷을 입은 남자" [ref=e199]
+              - figure [ref=e200]:
+                - link "검은색 배경 앞에 있는 세 개의 마이크와 카메라" [ref=e203]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EA%B2%80%EC%9D%80%EC%83%89-%EB%B0%B0%EA%B2%BD-%EC%95%9E%EC%97%90-%EC%9E%88%EB%8A%94-%EC%84%B8-%EA%B0%9C%EC%9D%98-%EB%A7%88%EC%9D%B4%ED%81%AC%EC%99%80-%EC%B9%B4%EB%A9%94%EB%9D%BC-SKY7BBZCm14
+                  - img "검은색 배경 앞에 있는 세 개의 마이크와 카메라" [ref=e204]
+            - generic [ref=e205]:
+              - contentinfo [ref=e210]:
+                - generic [ref=e216]: –– ––– ––– –– ––– – ––– ––– –––– – – –– ––– – – ––– –– –– –––– ––
+              - figure [ref=e218]:
+                - link "흰색과 파란색 사무실 롤링 의자" [ref=e221]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%ED%9D%B0%EC%83%89%EA%B3%BC-%ED%8C%8C%EB%9E%80%EC%83%89-%EC%82%AC%EB%AC%B4%EC%8B%A4-%EB%A1%A4%EB%A7%81-%EC%9D%98%EC%9E%90-r7V-18Zr_OY
+                  - img "흰색과 파란색 사무실 롤링 의자" [ref=e222]
+              - figure [ref=e223]:
+                - link "회의실에서 의자에 앉아 있는 사람들" [ref=e226]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%ED%9A%8C%EC%9D%98%EC%8B%A4%EC%97%90%EC%84%9C-%EC%9D%98%EC%9E%90%EC%97%90-%EC%95%89%EC%95%84-%EC%9E%88%EB%8A%94-%EC%82%AC%EB%9E%8C%EB%93%A4-JDUVM9_VaZE
+                  - img "회의실에서 의자에 앉아 있는 사람들" [ref=e227]
+              - figure [ref=e228]:
+                - link "TV 방송국의 방송 제어실에서 일하는 젊은 아름다운 여자" [ref=e231]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/tv-%EB%B0%A9%EC%86%A1%EA%B5%AD%EC%9D%98-%EB%B0%A9%EC%86%A1-%EC%A0%9C%EC%96%B4%EC%8B%A4%EC%97%90%EC%84%9C-%EC%9D%BC%ED%95%98%EB%8A%94-%EC%A0%8A%EC%9D%80-%EC%95%84%EB%A6%84%EB%8B%A4%EC%9A%B4-%EC%97%AC%EC%9E%90-LorHdkRoHvw
+                  - img "TV 방송국의 방송 제어실에서 일하는 젊은 아름다운 여자" [ref=e232]
+              - figure [ref=e233]:
+                - link "미국 국기와 백악관이 있는 연단" [ref=e236]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EB%AF%B8%EA%B5%AD-%EA%B5%AD%EA%B8%B0%EC%99%80-%EB%B0%B1%EC%95%85%EA%B4%80%EC%9D%B4-%EC%9E%88%EB%8A%94-%EC%97%B0%EB%8B%A8-xkq3mbthlh0
+                  - img "미국 국기와 백악관이 있는 연단" [ref=e237]
+          - generic [ref=e240]:
+            - heading "iStock에서 프리미엄 이미지 찾아보기 | 지금 바로 할인 요청하기" [level=2] [ref=e241]:
+              - text: iStock에서 프리미엄 이미지 찾아보기
+              - generic [ref=e242]: "| 지금 바로 할인 요청하기"
+            - generic [ref=e244]:
+              - link "뉴스 촬영 스튜디오" [ref=e245] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/news-filming-studio-gm2195645637-613716845?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fko%2Fs%2F%25EC%2582%25AC%25EC%25A7%2584%2Fnewsroom&utm_term=newsroom%3A%3A%3A%3A
+                - img "뉴스 촬영 스튜디오" [ref=e246]
+              - link "TV 카메라는 기자회견 중 연단에 초점을 맞췄다. 커뮤니케이션의 정확성, 미디어 존재감, 조직적인 공개 메시지 전달을 강조합니다." [ref=e247] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/tv-camera-focused-on-podium-during-press-briefing-highlights-communication-accuracy-gm2252669119-666110630?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fko%2Fs%2F%25EC%2582%25AC%25EC%25A7%2584%2Fnewsroom&utm_term=newsroom%3A%3A%3A%3A
+                - img "TV 카메라는 기자회견 중 연단에 초점을 맞췄다. 커뮤니케이션의 정확성, 미디어 존재감, 조직적인 공개 메시지 전달을 강조합니다." [ref=e248]
+              - link "뉴스 텔레비전 스튜디오" [ref=e249] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/news-television-studio-gm2195355264-613444881?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fko%2Fs%2F%25EC%2582%25AC%25EC%25A7%2584%2Fnewsroom&utm_term=newsroom%3A%3A%3A%3A
+                - img "뉴스 텔레비전 스튜디오" [ref=e250]
+              - link "추상, 선, 배경, -4K, 스톡 비디오, 4K, 스톡 비디오, 4K 스톡 비디오" [ref=e251] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/abstract-line-background-4k-stock-video-4k-stock-video-gm2228343901-644145633?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fko%2Fs%2F%25EC%2582%25AC%25EC%25A7%2584%2Fnewsroom&utm_term=newsroom%3A%3A%3A%3A
+                - img "추상, 선, 배경, -4K, 스톡 비디오, 4K, 스톡 비디오, 4K 스톡 비디오" [ref=e252]
+              - link "아침, 커피와 태블릿, 사무실과 함께 뉴스룸, 연구 또는 온라인 기사에 대한 창조적 인 여자. 디지털, 기자 및 비즈니스 스토리 교정, 프로젝트 또는 음주를 위해 긴장을 풀고 차분하게" [ref=e253] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/morning-coffee-and-woman-with-tablet-office-and-creative-for-article-in-newsroom-gm2202281069-619889808?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fko%2Fs%2F%25EC%2582%25AC%25EC%25A7%2584%2Fnewsroom&utm_term=newsroom%3A%3A%3A%3A
+                - img "아침, 커피와 태블릿, 사무실과 함께 뉴스룸, 연구 또는 온라인 기사에 대한 창조적 인 여자. 디지털, 기자 및 비즈니스 스토리 교정, 프로젝트 또는 음주를 위해 긴장을 풀고 차분하게" [ref=e254]
+              - link "런던의 거리 신문 더미는 매일 도시 언론의 리움을 보여줍니다." [ref=e255] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/street-newspaper-stacks-in-london-show-the-rhythm-of-daily-urban-press-gm2236748433-652019583?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fko%2Fs%2F%25EC%2582%25AC%25EC%25A7%2584%2Fnewsroom&utm_term=newsroom%3A%3A%3A%3A
+                - img "런던의 거리 신문 더미는 매일 도시 언론의 리움을 보여줍니다." [ref=e256]
+              - link "뉴스 리더 기자 실에서 촬영" [ref=e257] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/newsreader-filming-in-press-room-gm694041096-128234811?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fko%2Fs%2F%25EC%2582%25AC%25EC%25A7%2584%2Fnewsroom&utm_term=newsroom%3A%3A%3A%3A
+                - img "뉴스 리더 기자 실에서 촬영" [ref=e258]
+              - generic [ref=e259]:
+                - link "강연자로부터 공개적으로 말하는 정치인" [ref=e260] [cursor=pointer]:
+                  - /url: https://www.istockphoto.com/photo/politician-speaking-publicly-from-the-lectern-gm1400488393-454053221?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fko%2Fs%2F%25EC%2582%25AC%25EC%25A7%2584%2Fnewsroom&utm_term=newsroom%3A%3A%3A%3A
+                  - img "강연자로부터 공개적으로 말하는 정치인" [ref=e261]
+                - link "iStock에서 더 많은 자료 보기 ↗" [ref=e262] [cursor=pointer]:
+                  - /url: https://www.istockphoto.com/search/2/image?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fko%2Fs%2F%25EC%2582%25AC%25EC%25A7%2584%2Fnewsroom&utm_term=newsroom%3A%3A%3A%3A&phrase=newsroom&alloweduse=availableforalluses&excludenudity=true&sort=best&mediatype=photography
+          - button "더 로드" [ref=e266] [cursor=pointer]
+          - generic [ref=e267]:
+            - link [ref=e268] [cursor=pointer]:
+              - /url: /ko
+              - img [ref=e269]
+            - paragraph [ref=e271]: 멋진 것을 만들어 보세요
+    - generic:
+      - region "Notifications"

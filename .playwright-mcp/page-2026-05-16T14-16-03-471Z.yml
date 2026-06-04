@@ -1,0 +1,148 @@
+- generic [active] [ref=e1]:
+  - link "본문 바로가기" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "뉴스온 홈" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "NEWSON 뉴스온" [ref=e6]
+      - button "메뉴 열기" [ref=e8]
+  - dialog "모바일 메뉴" [ref=e12]:
+    - button "메뉴 닫기" [ref=e13]:
+      - img [ref=e14]
+    - list [ref=e16]:
+      - listitem [ref=e17]:
+        - link "브랜드대상" [ref=e18] [cursor=pointer]:
+          - /url: /about/brand-award
+      - listitem [ref=e19]:
+        - link "언론홍보 비용" [ref=e20] [cursor=pointer]:
+          - /url: /promotion/press-release
+      - listitem [ref=e21]:
+        - link "Clients" [ref=e22] [cursor=pointer]:
+          - /url: /clients
+      - listitem [ref=e23]:
+        - link "온라인문의" [ref=e24] [cursor=pointer]:
+          - /url: /inquiry
+      - listitem [ref=e25]:
+        - link "고객센터" [ref=e26] [cursor=pointer]:
+          - /url: /customer
+    - link "무료 상담 신청" [ref=e28] [cursor=pointer]:
+      - /url: /inquiry
+  - main [ref=e29]:
+    - region "메인 배너" [ref=e30]:
+      - generic [ref=e38]:
+        - heading "보도자료 배포, 뉴스온이 대신합니다" [level=2] [ref=e39]
+        - paragraph [ref=e40]: 908개 매체, 2,000명 기자 네트워크
+        - generic [ref=e41]:
+          - link "서비스 알아보기" [ref=e42] [cursor=pointer]:
+            - /url: /promotion/press-release
+          - link "무료 상담 신청" [ref=e43] [cursor=pointer]:
+            - /url: /inquiry
+      - button "이전 슬라이드" [ref=e44]:
+        - img [ref=e45]
+      - button "다음 슬라이드" [ref=e47]:
+        - img [ref=e48]
+      - tablist "슬라이드 선택" [ref=e50]:
+        - tab "슬라이드 1" [selected] [ref=e51]
+        - tab "슬라이드 2" [ref=e52]
+        - tab "슬라이드 3" [ref=e53]
+    - generic [ref=e56]:
+      - generic [ref=e57]:
+        - paragraph [ref=e58]: 0개+
+        - paragraph [ref=e59]: 제휴 매체 수
+        - paragraph [ref=e60]: 전국 신문·방송·온라인 매체
+      - generic [ref=e61]:
+        - paragraph [ref=e62]: 0명+
+        - paragraph [ref=e63]: 등록 기자 수
+        - paragraph [ref=e64]: 각 분야 담당 기자 DB
+      - generic [ref=e65]:
+        - paragraph [ref=e66]: 0년+
+        - paragraph [ref=e67]: 서비스 운영
+        - paragraph [ref=e68]: 언론홍보 전문 경력
+    - generic [ref=e71]:
+      - article [ref=e72]:
+        - generic [ref=e74]:
+          - img [ref=e76]
+          - generic [ref=e78]:
+            - heading "공지사항" [level=3] [ref=e79]
+            - paragraph [ref=e80]: 뉴스온의 새로운 소식과 서비스 업데이트를 확인하세요.
+          - link "공지사항 — 공지사항 보기" [ref=e81] [cursor=pointer]:
+            - /url: /customer
+            - text: 공지사항 보기
+      - article [ref=e82]:
+        - generic [ref=e84]:
+          - img [ref=e86]
+          - generic [ref=e88]:
+            - heading "온라인 문의" [level=3] [ref=e89]
+            - paragraph [ref=e90]: 서비스 이용 전 궁금한 점을 온라인으로 문의하세요.
+          - link "온라인 문의 — 문의하기" [ref=e91] [cursor=pointer]:
+            - /url: /inquiry
+            - text: 문의하기
+      - article [ref=e92]:
+        - generic [ref=e94]:
+          - img [ref=e96]
+          - generic [ref=e98]:
+            - heading "사업 안내" [level=3] [ref=e99]
+            - paragraph [ref=e100]: 뉴스온의 보도자료 배포 서비스와 이용 방법을 알아보세요.
+          - link "사업 안내 — 서비스 보기" [ref=e101] [cursor=pointer]:
+            - /url: /promotion/press-release
+            - text: 서비스 보기
+      - article [ref=e102]:
+        - generic [ref=e104]:
+          - img [ref=e106]
+          - generic [ref=e109]:
+            - heading "찾아오시는 길" [level=3] [ref=e110]
+            - paragraph [ref=e111]: 서울 종로구 뉴스온 사무실로 방문해 주세요.
+          - link "찾아오시는 길 — 오시는 길" [ref=e112] [cursor=pointer]:
+            - /url: /about/location
+            - text: 오시는 길
+  - contentinfo [ref=e113]:
+    - generic [ref=e114]:
+      - generic [ref=e115]:
+        - img "NEWSON 뉴스온" [ref=e116]
+        - paragraph [ref=e117]:
+          - text: 언론홍보 전문 플랫폼
+          - text: 뉴스온과 함께 브랜드를 알리세요.
+      - generic [ref=e118]:
+        - heading "서비스" [level=3] [ref=e119]
+        - list [ref=e120]:
+          - listitem [ref=e121]:
+            - link "보도자료 배포" [ref=e122] [cursor=pointer]:
+              - /url: /promotion/press-release
+          - listitem [ref=e123]:
+            - link "언론홍보 비용" [ref=e124] [cursor=pointer]:
+              - /url: /promotion/pricing
+          - listitem [ref=e125]:
+            - link "이용방법" [ref=e126] [cursor=pointer]:
+              - /url: /promotion/business
+          - listitem [ref=e127]:
+            - link "온라인문의" [ref=e128] [cursor=pointer]:
+              - /url: /inquiry
+      - generic [ref=e129]:
+        - heading "회사" [level=3] [ref=e130]
+        - list [ref=e131]:
+          - listitem [ref=e132]:
+            - link "브랜드대상" [ref=e133] [cursor=pointer]:
+              - /url: /about/brand-award
+          - listitem [ref=e134]:
+            - link "Clients" [ref=e135] [cursor=pointer]:
+              - /url: /clients
+          - listitem [ref=e136]:
+            - link "고객센터" [ref=e137] [cursor=pointer]:
+              - /url: /customer
+          - listitem [ref=e138]:
+            - link "찾아오시는길" [ref=e139] [cursor=pointer]:
+              - /url: /about/location
+      - generic [ref=e140]:
+        - heading "연락처" [level=3] [ref=e141]
+        - paragraph [ref=e142]: 02-6959-4788
+        - paragraph [ref=e143]:
+          - text: 평일 09:00 ~ 18:00
+          - text: (점심 12:00 ~ 13:00)
+        - link "온라인 문의하기" [ref=e144] [cursor=pointer]:
+          - /url: /inquiry
+    - generic [ref=e145]:
+      - paragraph [ref=e146]: "상호: ㈜뉴스온 | 대표: 홍길동 | 사업자등록번호: 000-00-00000"
+      - paragraph [ref=e147]: © 2026 NEWSON. All rights reserved.
+  - button "Open Next.js Dev Tools" [ref=e153] [cursor=pointer]:
+    - img [ref=e154]

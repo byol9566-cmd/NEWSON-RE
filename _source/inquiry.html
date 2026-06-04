@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>온라인문의 - 뉴스온</title>
+  <meta name="description" content="뉴스온 언론홍보 서비스 무료 견적 · 온라인 문의. 평균 2시간 내 답변.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700;800&family=Inter:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">본문 바로가기</a>
+<div class="masthead-line" aria-hidden="true"></div>
+
+<div id="top-bar">
+  <div class="container">
+    <div class="topbar-meta">
+      <span class="tm-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:031-758-0215" class="tm-phone">031-758-0215</a></span>
+      <span class="tm-item">평일 09:00 ~ 18:00</span>
+    </div>
+    <div class="topbar-links"><a href="index.html">홈</a><a href="inquiry.html">온라인문의</a><a href="customer.html">고객센터</a></div>
+  </div>
+</div>
+
+<header id="header">
+  <div class="container">
+    <div id="logo"><a href="index.html"><span class="logo-mark"></span>NEWS<span class="logo-dot">ON</span></a></div>
+    <nav id="nav">
+      <a href="brand-award.html">브랜드대상</a>
+      <a href="pricing.html">언론홍보 비용</a>
+      <a href="business.html">사업분야</a>
+      <a href="clients.html">Clients</a>
+      <a href="inquiry.html" class="active">온라인문의</a>
+      <a href="customer.html">고객센터</a>
+    </nav>
+    <a href="#inquiry-form" class="header-cta">견적 신청</a>
+    <button id="hamburger" onclick="toggleNav()" aria-label="메뉴"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div id="mobile-nav">
+  <div class="mn-header"><span class="mn-brand"><span class="logo-mark"></span>NEWSON</span><button id="close-nav" onclick="toggleNav()">&#x2715;</button></div>
+  <nav>
+    <a href="index.html">홈</a>
+    <a href="brand-award.html">브랜드대상</a>
+    <a href="pricing.html">언론홍보 비용</a>
+    <a href="business.html">사업분야</a>
+    <a href="clients.html">Clients</a>
+    <a href="inquiry.html" class="active">온라인문의</a>
+    <a href="customer.html">고객센터</a>
+  </nav>
+  <div class="mn-foot"><span>전화 상담</span><span class="mn-phone">031-758-0215</span><a href="inquiry.html">온라인 견적 신청 →</a></div>
+</div>
+
+<main id="main-content">
+
+<section id="page-header">
+  <div class="container">
+    <div class="page-header-inner">
+      <div>
+        <span class="eyebrow ph-eyebrow">CONTACT</span>
+        <h1>온라인 문의</h1>
+        <p class="ph-sub">평균 2시간 이내에 전담 AE가 답변 드립니다. 필요한 정보만 간단히 남겨주세요.</p>
+      </div>
+      <nav class="breadcrumb"><a href="index.html">HOME</a><span class="bc-sep">/</span><span class="bc-current">INQUIRY</span></nav>
+    </div>
+  </div>
+</section>
+
+<section id="sub-body">
+  <div class="container">
+    <aside id="sidebar">
+      <div class="sidebar-block">
+        <div class="sidebar-block-hd">문의하기</div>
+        <a class="sidebar-item active" href="inquiry.html">견적 신청 <span class="arrow">→</span></a>
+        <a class="sidebar-item" href="customer.html">자주 묻는 질문 <span class="arrow">→</span></a>
+      </div>
+      <div class="sidebar-consult">
+        <div class="sidebar-consult-hd">빠른 상담</div>
+        <span class="consult-phone">031-758-0215</span>
+        <div class="consult-hours"><span class="label">운영시간</span><br>평일 09:00 ~ 18:00<br>토·일·공휴일 휴무</div>
+        <a href="mailto:newsmarketing@daum.net" class="consult-btn">이메일로 문의</a>
+      </div>
+    </aside>
+
+    <div id="content-area">
+      <div class="content-inner">
+        <h2 class="content-h2">무료 견적 신청</h2>
+        <p class="content-lead">간단한 정보만 남겨주시면 전담 AE가 브랜드 상황에 맞춘 맞춤 견적을 전달드립니다. 모든 정보는 상담 목적으로만 사용되며 엄격히 관리됩니다.</p>
+
+        <form class="inquiry-form" id="inquiry-form" onsubmit="return handleInquirySubmit(event)">
+          <div class="if-row">
+            <div>
+              <label for="if-name">담당자 성함 <span class="required">*</span></label>
+              <input type="text" id="if-name" name="name" required placeholder="홍길동">
+            </div>
+            <div>
+              <label for="if-company">회사명 <span class="required">*</span></label>
+              <input type="text" id="if-company" name="company" required placeholder="(주)브랜드">
+            </div>
+          </div>
+          <div class="if-row">
+            <div>
+              <label for="if-tel">연락처 <span class="required">*</span></label>
+              <input type="tel" id="if-tel" name="tel" required placeholder="010-0000-0000">
+            </div>
+            <div>
+              <label for="if-email">이메일</label>
+              <input type="email" id="if-email" name="email" placeholder="contact@company.com">
+            </div>
+          </div>
+          <div>
+            <label for="if-service">문의 서비스 <span class="required">*</span></label>
+            <select id="if-service" name="service" required>
+              <option value="">선택하세요</option>
+              <option value="basic">BASIC — 스타트업 패키지 (80만원~)</option>
+              <option value="standard">STANDARD — 중견기업 패키지 (180만원~)</option>
+              <option value="premium">PREMIUM — 대기업 패키지 (350만원~)</option>
+              <option value="custom">맞춤 견적</option>
+              <option value="crisis">위기관리·정정 대응</option>
+              <option value="other">기타 문의</option>
+            </select>
+          </div>
+          <div>
+            <label for="if-message">상세 내용 <span class="required">*</span></label>
+            <textarea id="if-message" name="message" required placeholder="브랜드 소개, 홍보 목적, 원하는 일정 등을 간단히 작성해 주세요"></textarea>
+          </div>
+          <div class="if-agree">
+            <input type="checkbox" id="if-privacy" required>
+            <label for="if-privacy" style="font-family:inherit;letter-spacing:0;text-transform:none;font-weight:400;margin:0;">개인정보 수집 · 이용에 동의합니다 <span class="required">*</span></label>
+          </div>
+          <button type="submit">무료 견적 신청 →</button>
+        </form>
+
+        <div class="cta-box">
+          <div>
+            <strong>전화 상담을 원하시나요?</strong>
+            <p>평일 09:00 ~ 18:00 · 전담 AE가 바로 응대합니다</p>
+          </div>
+          <a href="tel:031-758-0215" class="btn btn-primary">031-758-0215</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer id="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand"><span class="logo-mark"></span>NEWS<span class="logo-dot">ON</span></div>
+        <p class="footer-tagline">언론홍보·보도자료 배포·네이버 블로그 게재를 한 번에 처리하는 언론홍보 전문 대행사입니다.</p>
+        <div class="footer-meta"><strong>(주)뉴스온</strong> · 대표 홍정우 · 사업자등록번호 123-45-67890<br>서울특별시 금천구 가산디지털2로 98, 2동 1306호</div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul><li><a href="business.html">보도자료 배포</a></li><li><a href="business.html">네이버 블로그</a></li><li><a href="business.html">기사형 광고</a></li><li><a href="pricing.html">비용 안내</a></li></ul>
+      </div>
+      <div class="footer-col footer-contact">
+        <h4>Contact</h4>
+        <div class="fc-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><span class="fc-phone">031-758-0215</span></div>
+        <div class="fc-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>newsmarketing@daum.net</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 NEWSON. All rights reserved.</span><div class="fb-links"><a href="#">개인정보처리방침</a><a href="#">이용약관</a></div></div>
+  </div>
+</footer>
+<script src="common.js"></script>
+<script>
+function handleInquirySubmit(e) {
+  e.preventDefault();
+  alert('문의가 접수되었습니다. 전담 AE가 2시간 내에 연락 드리겠습니다.');
+  e.target.reset();
+  return false;
+}
+</script>
+</body>
+</html>

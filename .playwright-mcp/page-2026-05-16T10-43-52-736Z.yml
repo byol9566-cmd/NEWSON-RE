@@ -1,0 +1,309 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e5]:
+          - generic [ref=e6]:
+            - generic [ref=e8] [cursor=pointer]:
+              - img [ref=e10]
+              - img [ref=e15]
+            - navigation [ref=e25]:
+              - list [ref=e26]:
+                - listitem [ref=e27]:
+                  - button "PR 솔루션" [ref=e29] [cursor=pointer]:
+                    - generic [ref=e30]: PR 솔루션
+                    - img [ref=e32]
+                - listitem [ref=e34]:
+                  - button "언론인" [ref=e36] [cursor=pointer]:
+                    - generic [ref=e37]: 언론인
+                    - img [ref=e39]
+                - listitem [ref=e41]:
+                  - button "미디어 소식" [ref=e43] [cursor=pointer]:
+                    - generic [ref=e44]: 미디어 소식
+                - listitem [ref=e45]:
+                  - button "인사이트" [ref=e47] [cursor=pointer]:
+                    - generic [ref=e48]: 인사이트
+                    - img [ref=e50]
+                - listitem [ref=e52]:
+                  - button "회사" [ref=e54] [cursor=pointer]:
+                    - generic [ref=e55]: 회사
+          - generic [ref=e57]:
+            - button "로그인" [ref=e59] [cursor=pointer]:
+              - generic [ref=e60]: 로그인
+            - button "지금 시작하기" [ref=e61] [cursor=pointer]:
+              - generic [ref=e62]: 지금 시작하기
+      - generic [ref=e66]:
+        - generic [ref=e68]:
+          - generic [ref=e69]:
+            - heading "흩어진 홍보 업무 미디어비로 해결하세요" [level=1] [ref=e71]:
+              - text: 흩어진 홍보 업무
+              - text: 미디어비로 해결하세요
+            - generic [ref=e73]:
+              - text: 기자 검색 · 보도자료 배포 · 뉴스 모니터링 · 성과 분석
+              - generic [ref=e74]: 매일 쓰던 도구들을 하나의 공간에 통합했습니다.
+            - generic [ref=e75]:
+              - button "지금 시작하기" [ref=e76] [cursor=pointer]:
+                - generic [ref=e77]: 지금 시작하기
+                - img [ref=e80]
+              - button "상담 신청하기" [ref=e82] [cursor=pointer]:
+                - generic [ref=e83]: 상담 신청하기
+                - img [ref=e86]
+          - generic [ref=e89]:
+            - img [ref=e91]
+            - img "기업 홍보 기능을 한눈에 보여주는 미디어비 인터페이스" [ref=e92]
+        - generic [ref=e94]:
+          - heading "국내 최대 미디어 데이터로 PR 경쟁력을 높이세요" [level=3] [ref=e95]
+          - list [ref=e97]:
+            - listitem [ref=e98]:
+              - generic [ref=e99]:
+                - generic [ref=e100]: 40,000+
+                - heading "등록 기자" [level=5] [ref=e101]
+            - listitem [ref=e102]:
+              - generic [ref=e103]:
+                - generic [ref=e104]: 6,000+
+                - heading "모니터링 매체" [level=5] [ref=e105]
+            - listitem [ref=e106]:
+              - generic [ref=e107]:
+                - generic [ref=e108]: 200,000+
+                - heading "일일 인덱싱 뉴스" [level=5] [ref=e109]
+            - listitem [ref=e110]:
+              - generic [ref=e111]:
+                - generic [ref=e112]: 900+
+                - heading "일일 기자 업데이트" [level=5] [ref=e113]
+        - generic [ref=e115]:
+          - heading "홍보의 모든 것, 미디어비 하나면 끝납니다" [level=3] [ref=e116]
+          - paragraph [ref=e117]:
+            - text: 흩어진 PR 업무, 이제 하나로 통합하세요.
+            - text: 기자 탐색부터 보도자료 배포, 실시간 모니터링, 성과 분석까지.
+            - text: 미디어비가 PR의 시작부터 끝까지 완벽하게 책임집니다.
+          - list [ref=e119]:
+            - listitem [ref=e120]:
+              - generic [ref=e122]:
+                - text: 미디어
+                - generic [ref=e123]: 데이터베이스
+            - listitem [ref=e124]:
+              - generic [ref=e126]:
+                - text: 뉴스
+                - generic [ref=e127]: 모니터링
+            - listitem [ref=e128]:
+              - generic [ref=e130]:
+                - text: 보도자료
+                - generic [ref=e131]: 배포
+            - listitem [ref=e132]:
+              - generic [ref=e134]:
+                - text: 팀 협업과
+                - generic [ref=e135]: 공유
+            - listitem [ref=e136]:
+              - generic [ref=e138]:
+                - text: AI
+                - generic [ref=e139]: 어시스턴트
+          - button "지금 시작하기" [ref=e141] [cursor=pointer]:
+            - generic [ref=e142]: 지금 시작하기
+            - img [ref=e145]
+        - generic [ref=e147]:
+          - heading "미디어비 주요 기능" [level=3] [ref=e149]
+          - list [ref=e150]:
+            - listitem [ref=e151]:
+              - generic [ref=e152]:
+                - generic [ref=e154]:
+                  - img [ref=e156]
+                  - img "미디어비 미디어 데이터베이스 기능 화면" [ref=e157]
+                - generic [ref=e158]:
+                  - heading "국내 최대 미디어 데이터베이스" [level=2] [ref=e159]
+                  - paragraph [ref=e160]: 국내 최대 기자·매체 미디어 데이터베이스로 딱 맞는 기자를 찾아 보도 성공률을 높이세요. 산업·지역·키워드·영향력 등 20여 개 필터와 매일 업데이트되는 최신 프로필로 정교한 미디어 리스트를 손쉽게 관리하세요.
+                  - link "자세히 알아보기" [ref=e162] [cursor=pointer]:
+                    - /url: /pr/database
+                    - generic [ref=e163]: 자세히 알아보기
+                    - img [ref=e166]
+            - listitem [ref=e168]:
+              - generic [ref=e169]:
+                - generic [ref=e171]:
+                  - img [ref=e173]
+                  - img "뉴스 모니터링과 분석 차트를 보여주는 화면" [ref=e174]
+                - generic [ref=e175]:
+                  - heading "실시간 뉴스 모니터링과 분석" [level=2] [ref=e176]
+                  - paragraph [ref=e177]: 포털보다 5배 이상 많은 매체의 뉴스를 실시간으로 추적하고, 기사의 긍정·부정 논조를 자동 분석해 브랜드 평판을 한눈에 파악하세요. 키워드 알리미로 중요 이슈를 즉시 감지하고, 원클릭 자동 보고서로 PR 전략 수립까지 빠르게 이어가세요.
+                  - link "자세히 알아보기" [ref=e179] [cursor=pointer]:
+                    - /url: /pr/monitoring
+                    - generic [ref=e180]: 자세히 알아보기
+                    - img [ref=e183]
+            - listitem [ref=e185]:
+              - generic [ref=e186]:
+                - generic [ref=e188]:
+                  - img [ref=e190]
+                  - img "보도자료 배포 결과 및 통계 화면" [ref=e191]
+                - generic [ref=e192]:
+                  - heading "정확한 배포, 확실한 성과" [level=2] [ref=e193]
+                  - paragraph [ref=e194]: 미디어 리스트로 보도자료를 정확히 전송하고, 회사 공식 도메인 메일로 신뢰도 높게 발송해 인용 보도를 자동으로 클리핑하세요. 실시간 오픈율 분석부터 뉴스와이어 배포까지, 하나의 플랫폼에서 PR 전 과정을 완성하세요.
+                  - link "자세히 알아보기" [ref=e196] [cursor=pointer]:
+                    - /url: /pr/distribution
+                    - generic [ref=e197]: 자세히 알아보기
+                    - img [ref=e200]
+            - listitem [ref=e202]:
+              - generic [ref=e203]:
+                - generic [ref=e205]:
+                  - img [ref=e207]
+                  - img "팀 활동 추적과 협업 보드를 보여주는 화면" [ref=e208]
+                - generic [ref=e209]:
+                  - heading "활동 추적과 팀 협업, 한곳에서" [level=2] [ref=e210]
+                  - paragraph [ref=e211]: PR 워크플로우를 한곳에서 관리하며 기자별 활동 이력, 이메일, 클립북까지 모든 작업을 팀원과 실시간으로 공유하세요. 태그·필터·그룹 기능으로 홍보 활동을 체계적으로 분류하고 전략적 의사 결정을 빠르게 내리세요.
+                  - link "자세히 알아보기" [ref=e213] [cursor=pointer]:
+                    - /url: /pr/activity
+                    - generic [ref=e214]: 자세히 알아보기
+                    - img [ref=e217]
+            - listitem [ref=e219]:
+              - generic [ref=e220]:
+                - generic [ref=e222]:
+                  - img [ref=e224]
+                  - img "AI 어시스턴트로 PR 콘텐츠를 작성하는 화면" [ref=e225]
+                - generic [ref=e226]:
+                  - heading "PR 실무에 최적화된 AI 도구" [level=2] [ref=e227]
+                  - paragraph [ref=e228]: 홍보·마케팅 실무에 최적화된 AI 어시스턴트로 보도자료·이메일·블로그·SNS까지 완성도 높은 초안을 즉시 생성하세요. 키워드만 입력하면 두 가지 버전을 바로 비교하고, 원하는 결과를 빠르게 완성할 수 있습니다.
+                  - link "자세히 알아보기" [ref=e230] [cursor=pointer]:
+                    - /url: /pr/ai-assistant
+                    - generic [ref=e231]: 자세히 알아보기
+                    - img [ref=e234]
+          - button "지금 시작하기" [ref=e237] [cursor=pointer]:
+            - generic [ref=e238]: 지금 시작하기
+            - img [ref=e241]
+        - generic [ref=e244]:
+          - heading "미디어비 PR 인텔리전스" [level=3] [ref=e245]
+          - list [ref=e247]:
+            - listitem [ref=e248]:
+              - generic [ref=e249]:
+                - heading "언론 정보 자동 업데이트" [level=4] [ref=e250]
+                - paragraph [ref=e251]: 기자·매체·뉴스 정보를 신뢰도 높은 최신 정보로 업데이트해 제공합니다.
+            - listitem [ref=e252]:
+              - generic [ref=e253]:
+                - heading "매체 영향력 수치화" [level=4] [ref=e254]
+                - paragraph [ref=e255]: 발행부수, 시청률, 웹 트래픽 등을 석해 기자와 매체 영향력을 수치로 알려드립니다.
+            - listitem [ref=e256]:
+              - generic [ref=e257]:
+                - heading "뉴스 키워드로 기자 찾기" [level=4] [ref=e258]
+                - paragraph [ref=e259]: 키워드 하나만 입력하면 관련 기사를 작성한 기자와 매체를 즉시 탐색할 수 있습니다.
+            - listitem [ref=e260]:
+              - generic [ref=e261]:
+                - heading "뉴스 감성 분석" [level=4] [ref=e262]
+                - paragraph [ref=e263]: 기사의 긍정·부정·중립 논조를 자동으로 분류하고 위기를 일찍 감지할 수 있습니다.
+          - button "지금 시작하기" [ref=e265] [cursor=pointer]:
+            - generic [ref=e266]: 지금 시작하기
+            - img [ref=e269]
+        - generic [ref=e272]:
+          - generic [ref=e273]:
+            - generic [ref=e275]: 그룹 기능
+            - heading "부서별, 고객사별 전용 공간을 그룹으로 분리하세요" [level=3] [ref=e276]
+            - paragraph [ref=e277]:
+              - text: 여러 팀이 함께 사용하는 환경에서도 정보 혼선 없이 각 그룹이 독립된 공간에서 안전하게 협업할 수 있습니다.
+              - text: 대행사는 고객사별 워크스페이스 분리로 더욱 체계적인 관리가 가능합니다.
+          - button "더 알아보기" [ref=e279] [cursor=pointer]:
+            - generic [ref=e280]: 더 알아보기
+            - img [ref=e283]
+        - generic [ref=e286]:
+          - heading "지금, PR을 바꿀 준비가 되셨나요?" [level=2] [ref=e288]
+          - generic [ref=e290]: 지금 바로 체험하고, 전문가와 함께 최적의 활용법을 찾아보세요.
+          - generic [ref=e291]:
+            - button "지금 시작하기" [ref=e292] [cursor=pointer]:
+              - generic [ref=e293]: 지금 시작하기
+              - img [ref=e296]
+            - button "상담 신청하기" [ref=e298] [cursor=pointer]:
+              - generic [ref=e299]: 상담 신청하기
+              - img [ref=e302]
+    - contentinfo [ref=e304]:
+      - generic [ref=e305]:
+        - generic [ref=e307]:
+          - definition [ref=e309]:
+            - link [ref=e311] [cursor=pointer]:
+              - /url: /
+              - img [ref=e313]
+            - generic [ref=e323]:
+              - text: 홍보 전문가를 위한
+              - generic [ref=e324]: 지능형 미디어 플랫폼
+            - generic [ref=e327]: 02-737-3601
+          - generic [ref=e328]:
+            - term [ref=e329]:
+              - link "PR 솔루션" [ref=e330]:
+                - /url: /pr/database
+            - definition [ref=e331]:
+              - link "미디어 데이터베이스" [ref=e332] [cursor=pointer]:
+                - /url: /pr/database
+            - definition [ref=e333]:
+              - link "모니터링과 분석" [ref=e334] [cursor=pointer]:
+                - /url: /pr/monitoring
+            - definition [ref=e335]:
+              - link "보도자료 배포" [ref=e336] [cursor=pointer]:
+                - /url: /pr/distribution
+            - definition [ref=e337]:
+              - link "활동과 협업" [ref=e338] [cursor=pointer]:
+                - /url: /pr/activity
+            - definition [ref=e339]:
+              - link "AI 어시스턴트" [ref=e340] [cursor=pointer]:
+                - /url: /pr/ai-assistant
+            - definition [ref=e341]:
+              - link "요금제" [ref=e342] [cursor=pointer]:
+                - /url: /pr/product
+          - generic [ref=e343]:
+            - term [ref=e344]:
+              - link "언론인" [ref=e345]:
+                - /url: /journalist/solution
+            - definition [ref=e346]:
+              - link "프로필 만들기" [ref=e347] [cursor=pointer]:
+                - /url: /journalist/join
+            - definition [ref=e348]:
+              - link "언론 솔루션" [ref=e349] [cursor=pointer]:
+                - /url: /journalist/solution
+            - definition [ref=e350]:
+              - link "언론인 로그인" [ref=e351] [cursor=pointer]:
+                - /url: /journalist/login
+          - generic [ref=e352]:
+            - term [ref=e353]:
+              - link "뉴스" [ref=e354]:
+                - /url: /media-news
+            - definition [ref=e355]:
+              - link "미디어 소식" [ref=e356] [cursor=pointer]:
+                - /url: /media-news
+            - definition [ref=e357]:
+              - link "PR 인사이트" [ref=e358] [cursor=pointer]:
+                - /url: /pr-insight
+            - definition [ref=e359]:
+              - link "블로그" [ref=e360] [cursor=pointer]:
+                - /url: /blog
+          - generic [ref=e361]:
+            - term [ref=e362]:
+              - link "연락" [ref=e363]:
+                - /url: "#none"
+            - definition [ref=e364]:
+              - generic [ref=e365] [cursor=pointer]: 데모 신청
+            - definition [ref=e366]:
+              - generic [ref=e367] [cursor=pointer]: 상담 신청
+            - definition [ref=e368]:
+              - generic [ref=e369] [cursor=pointer]: 문의
+            - definition [ref=e370]:
+              - generic [ref=e371] [cursor=pointer]: 회사 소개
+        - generic [ref=e372]:
+          - generic [ref=e373]:
+            - generic [ref=e375]:
+              - link "이용약관" [ref=e377] [cursor=pointer]:
+                - /url: /policy/terms
+              - link "서비스수준협약서" [ref=e379] [cursor=pointer]:
+                - /url: /policy/sla
+              - link "고객 개인정보처리방침" [ref=e381] [cursor=pointer]:
+                - /url: /policy/privacy
+              - link "언론인 개인정보처리방침" [ref=e383] [cursor=pointer]:
+                - /url: /policy/journalist_privacy
+            - generic [ref=e384]:
+              - button [ref=e385] [cursor=pointer]:
+                - img [ref=e388]
+              - button [ref=e390] [cursor=pointer]:
+                - img [ref=e393]
+              - button [ref=e395] [cursor=pointer]:
+                - img [ref=e398]
+              - button [ref=e400] [cursor=pointer]:
+                - img [ref=e403]
+              - button [ref=e405] [cursor=pointer]:
+                - img [ref=e408]
+          - generic [ref=e411]:
+            - generic [ref=e412]: 코리아뉴스와이어(주)
+            - generic [ref=e413]: 대표이사 신동호
+            - generic [ref=e414]: "사업자등록번호: 101-86-07713"
+            - generic [ref=e415]: Copyright © 2026
+  - alert [ref=e416]

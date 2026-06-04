@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>클라이언트 - 뉴스온</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div id="top-bar">
+    <div class="container">
+      <div class="topbar-links">
+        <a href="index.html">홈</a>
+        <a href="#">로그인</a>
+        <a href="#">회원가입</a>
+        <a href="#" id="bookmark-btn">즐겨찾기</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div id="logo">
+        <a href="index.html">
+          <img src="http://www.newson.co.kr/default/img/logo.gif" alt="뉴스온">
+        </a>
+      </div>
+      <nav id="nav">
+        <a href="brand-award.html">브랜드대상</a>
+        <a href="pricing.html">언론홍보 비용</a>
+        <a href="clients.html" class="active">Clients</a>
+        <a href="inquiry.html">온라인문의</a>
+        <a href="customer.html">고객센터</a>
+      </nav>
+      <button id="hamburger" aria-label="메뉴 열기" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div id="mobile-nav">
+    <button id="close-nav" onclick="toggleNav()" aria-label="메뉴 닫기">&#x2715;</button>
+    <a href="index.html">홈</a>
+    <a href="brand-award.html">브랜드대상</a>
+    <a href="pricing.html">언론홍보 비용</a>
+    <a href="clients.html" class="active">Clients</a>
+    <a href="inquiry.html">온라인문의</a>
+    <a href="customer.html">고객센터</a>
+  </div>
+
+  <!-- Sub Hero -->
+  <section id="sub-hero">
+    <div class="slides" id="sub-slides">
+      <div class="banner-slide active">
+        <img src="http://www.newson.co.kr/default/img/sub01.jpg" alt="">
+      </div>
+      <div class="banner-slide">
+        <img src="http://www.newson.co.kr/default/img/sub02.jpg" alt="">
+      </div>
+      <div class="banner-slide">
+        <img src="http://www.newson.co.kr/default/img/sub03.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- Sub Body -->
+  <section id="sub-body">
+    <div class="container">
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-block">
+          <div class="sidebar-block-hd">Clients</div>
+          <div class="sidebar-menu-items">
+            <a class="sidebar-item active" href="clients.html">
+              <span class="num">01</span> 클라이언트
+            </a>
+          </div>
+        </div>
+        <div class="sidebar-consult">
+          <div class="sidebar-consult-hd">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+            </svg>
+            상담안내
+          </div>
+          <div class="sidebar-consult-body">
+            <div class="consult-phone">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+              </svg>
+              031-758-0215
+            </div>
+            <div class="consult-hours">
+              <div class="label">운영시간</div>
+              평일 09:00 ~ 18:00<br>
+              토·일·공휴일 휴무
+            </div>
+            <div class="consult-email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+              </svg>
+              newsmarketing@daum.net
+            </div>
+            <a href="inquiry.html" class="consult-btn">온라인 문의</a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Content -->
+      <main id="content-area">
+        <div class="page-title-bar">
+          <div class="page-title-text">클라이언트</div>
+          <div class="breadcrumb">
+            <a href="index.html">홈</a> &gt; 클라이언트 &gt; <span>클라이언트</span>
+          </div>
+        </div>
+        <div class="content-inner">
+          <div class="clients-grid">
+            <div class="client-item">
+              <img src="http://www.newson.co.kr/bizdemo15557/component/board/board_8/u_image/57/1138938331_EBAFB8EC868CEBB98CEB94A9EC97B0EAB5ACEC868C.jpg" alt="미소빌딩연구소">
+              <p>미소빌딩연구소</p>
+            </div>
+            <div class="client-item">
+              <img src="http://www.newson.co.kr/bizdemo15557/component/board/board_8/u_image/56/695383139_EBA788ECBC93EBB984.jpg" alt="(주)마켓비">
+              <p>(주)마켓비</p>
+            </div>
+            <div class="client-item">
+              <img src="http://www.newson.co.kr/bizdemo15557/component/board/board_8/u_image/55/904269558_EBA6B0EB8298EC9DB4ECBD94EBA6ACEC9584.jpg" alt="린나이코리아">
+              <p>린나이코리아</p>
+            </div>
+            <div class="client-item">
+              <img src="http://www.newson.co.kr/bizdemo15557/component/board/board_8/u_image/54/1584581189_28ECA3BC29ED8BB0EC9798EBB984ECBD94EBA6ACEC9584.jpg" alt="(주)티엘비코리아">
+              <p>(주)티엘비코리아</p>
+            </div>
+            <div class="client-item">
+              <img src="http://www.newson.co.kr/bizdemo15557/component/board/board_8/u_image/53/1399571859_EC849CEC9AB8EC95BDEC82ACEC8BA0ED9891ED9891EB8F99ECA1B0ED95A9.jpg" alt="서울약사신협협동조합">
+              <p>서울약사신협협동조합</p>
+            </div>
+            <div class="client-item">
+              <img src="http://www.newson.co.kr/bizdemo15557/component/board/board_8/u_image/52/1823041758_EAB3A0EC9AB4EC84B8EC8381ED94BCEBB680EAB3BC.jpg" alt="고운세상피부과">
+              <p>고운세상피부과</p>
+            </div>
+            <div class="client-item">
+              <img src="http://www.newson.co.kr/bizdemo15557/component/board/board_8/u_image/51/1713287123_EBAA85ECA780ECB698ED989CEBB391EC9B90.jpg" alt="명지혼혜병원">
+              <p>명지혼혜병원</p>
+            </div>
+            <div class="client-item">
+              <img src="http://www.newson.co.kr/bizdemo15557/component/board/board_8/u_image/50/1205143321_28ECA3BC29EC9DB4EBA3B8ECBD94EBA6ACEC9584.jpg" alt="(주)이름코리아">
+              <p>(주)이름코리아</p>
+            </div>
+            <div class="client-item">
+              <img src="http://www.newson.co.kr/bizdemo15557/component/board/board_8/u_image/49/1588981062_28ECA3BC29EB8F99EC849CECA09CEC95BDEC9BB0EBB999.jpg" alt="(주)동서제약웰빙">
+              <p>(주)동서제약웰빙</p>
+            </div>
+          </div>
+
+          <div class="pagination">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+          </div>
+
+          <div class="search-bar">
+            <select><option>제목</option><option>내용</option></select>
+            <input type="text" placeholder="검색어를 입력하세요">
+            <button>검색</button>
+          </div>
+        </div>
+      </main>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">뉴스온 (NEWSON)</div>
+        <div class="footer-links">
+          <a href="#">이용약관</a>
+          <a href="#">개인정보처리방침</a>
+          <a href="inquiry.html">온라인문의</a>
+          <a href="customer.html">고객센터</a>
+        </div>
+        <p>서울특별시 금천구 가산디지털2로 98, 2동 1306호 | 사업자등록번호 : 116-86-43178 | 대표 : 김영기</p>
+        <p class="footer-copy">Copyright &copy; 2024 뉴스온 All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="common.js"></script>
+  <script>
+    let cur = 0;
+    const sl = document.querySelectorAll('#sub-slides .banner-slide');
+    setInterval(() => {
+      sl[cur].classList.remove('active');
+      cur = (cur + 1) % sl.length;
+      sl[cur].classList.add('active');
+    }, 4100);
+  </script>
+</body>
+</html>

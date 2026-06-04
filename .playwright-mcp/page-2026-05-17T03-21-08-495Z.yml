@@ -1,0 +1,164 @@
+- generic [active] [ref=e1]:
+  - link "본문 바로가기" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "뉴스온 홈으로" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - text: NEWS
+        - generic [ref=e9]: "ON"
+      - button "메뉴 열기" [ref=e10] [cursor=pointer]
+  - dialog "모바일 메뉴":
+    - generic:
+      - generic:
+        - generic: NEWSON
+        - button "메뉴 닫기": ✕
+      - navigation:
+        - link "홈":
+          - /url: /
+        - link "브랜드대상":
+          - /url: /brand-award
+        - link "언론홍보 비용":
+          - /url: /pricing
+        - link "사업분야":
+          - /url: /business
+        - link "Clients":
+          - /url: /clients
+        - link "온라인문의":
+          - /url: /inquiry
+        - link "고객센터":
+          - /url: /customer
+      - generic:
+        - generic: 전화 상담
+        - generic: 031-758-0215
+        - generic: 평일 09:00 ~ 18:00
+        - link "온라인 견적 신청 →":
+          - /url: /inquiry
+  - main [ref=e14]:
+    - generic [ref=e18]:
+      - generic [ref=e19]: CONTACT
+      - heading "온라인 문의" [level=1] [ref=e20]
+      - paragraph [ref=e21]: 평균 2시간 이내에 전담 AE가 답변 드립니다. 필요한 정보만 간단히 남겨주세요.
+    - generic [ref=e23]:
+      - complementary [ref=e24]:
+        - generic [ref=e25]:
+          - generic [ref=e26]: 문의하기
+          - link "견적 신청 →" [ref=e27] [cursor=pointer]:
+            - /url: /inquiry
+            - text: 견적 신청
+            - generic [ref=e28]: →
+          - link "자주 묻는 질문 →" [ref=e29] [cursor=pointer]:
+            - /url: /customer
+            - text: 자주 묻는 질문
+            - generic [ref=e30]: →
+        - generic [ref=e31]:
+          - generic [ref=e32]: 빠른 상담
+          - generic [ref=e33]: 031-758-0215
+          - generic [ref=e34]:
+            - text: 운영시간
+            - text: 평일 09:00 ~ 18:00
+            - text: 토·일·공휴일 휴무
+          - link "이메일로 문의" [ref=e35] [cursor=pointer]:
+            - /url: mailto:newsmarketing@daum.net
+      - generic [ref=e37]:
+        - heading "무료 견적 신청" [level=2] [ref=e38]
+        - paragraph [ref=e39]: 간단한 정보만 남겨주시면 전담 AE가 브랜드 상황에 맞춘 맞춤 견적을 전달드립니다. 모든 정보는 상담 목적으로만 사용되며 엄격히 관리됩니다.
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - generic [ref=e42]:
+              - generic [ref=e43]: 담당자 성함 *
+              - textbox "담당자 성함 *" [ref=e44]:
+                - /placeholder: 홍길동
+            - generic [ref=e45]:
+              - generic [ref=e46]: 회사명 *
+              - textbox "회사명 *" [ref=e47]:
+                - /placeholder: (주)브랜드
+          - generic [ref=e48]:
+            - generic [ref=e49]:
+              - generic [ref=e50]: 연락처 *
+              - textbox "연락처 *" [ref=e51]:
+                - /placeholder: 010-0000-0000
+            - generic [ref=e52]:
+              - generic [ref=e53]: 이메일
+              - textbox "이메일" [ref=e54]:
+                - /placeholder: contact@company.com
+          - generic [ref=e55]:
+            - generic [ref=e56]: 문의 서비스 *
+            - combobox "문의 서비스 *" [ref=e57]:
+              - option "선택하세요" [selected]
+              - option "BASIC — 스타트업 패키지 (80만원~)"
+              - option "STANDARD — 중견기업 패키지 (180만원~)"
+              - option "PREMIUM — 대기업 패키지 (350만원~)"
+              - option "맞춤 견적"
+              - option "위기관리·정정 대응"
+              - option "기타 문의"
+          - generic [ref=e58]:
+            - generic [ref=e59]: 상세 내용 *
+            - textbox "상세 내용 *" [ref=e60]:
+              - /placeholder: 브랜드 소개, 홍보 목적, 원하는 일정 등을 간단히 작성해 주세요
+          - generic [ref=e61]:
+            - checkbox "개인정보 수집 · 이용에 동의합니다 *" [ref=e62]
+            - generic [ref=e63]: 개인정보 수집 · 이용에 동의합니다 *
+          - button "무료 견적 신청 →" [ref=e64] [cursor=pointer]
+        - generic [ref=e65]:
+          - generic [ref=e66]:
+            - strong [ref=e67]: 전화 상담을 원하시나요?
+            - paragraph [ref=e68]: 평일 09:00 ~ 18:00 · 전담 AE가 바로 응대합니다
+          - link "031-758-0215" [ref=e69] [cursor=pointer]:
+            - /url: tel:031-758-0215
+  - contentinfo [ref=e70]:
+    - generic [ref=e71]:
+      - generic [ref=e72]:
+        - generic [ref=e73]:
+          - generic [ref=e74]:
+            - text: NEWS
+            - generic [ref=e76]: "ON"
+          - paragraph [ref=e77]: 언론홍보·보도자료 배포·네이버 블로그 게재를 한 번에 처리하는 언론홍보 전문 대행사입니다.
+          - generic [ref=e78]:
+            - paragraph [ref=e79]:
+              - strong [ref=e80]: 뉴스온 (NEWSON)
+            - paragraph [ref=e81]: "사업자등록번호 : 116-86-43178 | 대표 : 김영기"
+            - paragraph [ref=e82]: 서울특별시 금천구 가산디지털2로 98, 2동 1306호
+        - generic [ref=e83]:
+          - heading "서비스" [level=4] [ref=e84]
+          - list [ref=e85]:
+            - listitem [ref=e86]:
+              - link "보도자료 배포" [ref=e87] [cursor=pointer]:
+                - /url: /pressrelease
+            - listitem [ref=e88]:
+              - link "네이버 블로그 게재" [ref=e89] [cursor=pointer]:
+                - /url: /business
+            - listitem [ref=e90]:
+              - link "언론홍보 비용" [ref=e91] [cursor=pointer]:
+                - /url: /pricing
+            - listitem [ref=e92]:
+              - link "브랜드대상" [ref=e93] [cursor=pointer]:
+                - /url: /brand-award
+            - listitem [ref=e94]:
+              - link "클라이언트" [ref=e95] [cursor=pointer]:
+                - /url: /clients
+        - generic [ref=e96]:
+          - heading "연락처" [level=4] [ref=e97]
+          - generic [ref=e98]:
+            - img [ref=e99]
+            - generic [ref=e101]:
+              - link "031-758-0215" [ref=e102] [cursor=pointer]:
+                - /url: tel:031-758-0215
+              - text: 평일 09:00 ~ 18:00
+          - generic [ref=e103]:
+            - img [ref=e104]
+            - link "newsmarketing@daum.net" [ref=e107] [cursor=pointer]:
+              - /url: mailto:newsmarketing@daum.net
+          - link "온라인 문의하기" [ref=e108] [cursor=pointer]:
+            - /url: /inquiry
+      - generic [ref=e109]:
+        - generic [ref=e110]: Copyright © 2024 뉴스온 (NEWSON). All Rights Reserved.
+        - generic [ref=e111]:
+          - link "이용약관" [ref=e112] [cursor=pointer]:
+            - /url: "#"
+          - link "개인정보처리방침" [ref=e113] [cursor=pointer]:
+            - /url: "#"
+          - link "오시는 길" [ref=e114] [cursor=pointer]:
+            - /url: /location
+  - button "Open Next.js Dev Tools" [ref=e120] [cursor=pointer]:
+    - img [ref=e121]

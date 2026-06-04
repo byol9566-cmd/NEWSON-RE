@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="언론홍보, 보도자료배포, 기사광고, 언론홍보대행사">
+  <meta name="keywords" content="뉴스온,언론홍보대행,인터넷기사광고,인터넷뉴스,언론보도,보도기사">
+  <title>뉴스온 - News Marketing &amp; Viral Marketing Company</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div id="top-bar">
+    <div class="container">
+      <div class="topbar-links">
+        <a href="index.html">홈</a>
+        <a href="#">로그인</a>
+        <a href="#">회원가입</a>
+        <a href="#" id="bookmark-btn">즐겨찾기</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div id="logo">
+        <a href="index.html">
+          <img src="http://www.newson.co.kr/default/img/logo.gif" alt="뉴스온">
+        </a>
+      </div>
+      <nav id="nav">
+        <a href="brand-award.html">브랜드대상</a>
+        <a href="pricing.html">언론홍보 비용</a>
+        <a href="clients.html">Clients</a>
+        <a href="inquiry.html">온라인문의</a>
+        <a href="customer.html">고객센터</a>
+      </nav>
+      <button id="hamburger" aria-label="메뉴 열기" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div id="mobile-nav">
+    <button id="close-nav" onclick="toggleNav()" aria-label="메뉴 닫기">&#x2715;</button>
+    <a href="brand-award.html">브랜드대상</a>
+    <a href="pricing.html">언론홍보 비용</a>
+    <a href="clients.html">Clients</a>
+    <a href="inquiry.html">온라인문의</a>
+    <a href="customer.html">고객센터</a>
+  </div>
+
+  <!-- Hero Banner -->
+  <section id="hero">
+    <div class="slides" id="hero-slides">
+      <div class="banner-slide active">
+        <img src="http://www.newson.co.kr/default/img/main01.jpg" alt="뉴스마케팅">
+      </div>
+      <div class="banner-slide">
+        <img src="http://www.newson.co.kr/default/img/main02.jpg" alt="언론홍보">
+      </div>
+      <div class="banner-slide">
+        <img src="http://www.newson.co.kr/default/img/main03.jpg" alt="뉴스온">
+      </div>
+    </div>
+    <button class="hero-nav prev" id="hero-prev" aria-label="이전">&#8249;</button>
+    <button class="hero-nav next" id="hero-next" aria-label="다음">&#8250;</button>
+    <div class="hero-dots" id="hero-dots">
+      <button class="hero-dot active" onclick="goSlide(0)" aria-label="슬라이드 1"></button>
+      <button class="hero-dot" onclick="goSlide(1)" aria-label="슬라이드 2"></button>
+      <button class="hero-dot" onclick="goSlide(2)" aria-label="슬라이드 3"></button>
+    </div>
+  </section>
+
+  <!-- Info Cards -->
+  <section id="content">
+    <div class="container">
+      <div class="content-grid">
+
+        <!-- Notice Card -->
+        <div class="info-card">
+          <div class="card-top red"></div>
+          <div class="notice-hd">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/>
+              <rect x="9" y="3" width="6" height="4" rx="1"/>
+              <path d="M9 12h6M9 16h4"/>
+            </svg>
+            <span class="notice-hd-title">NOTICE &amp; NOTICE</span>
+          </div>
+          <div class="notice-list">
+            <span class="notice-empty">등록된 공지사항이 없습니다.</span>
+          </div>
+          <div class="notice-ft">
+            <a href="customer.html">더보기 <span>→</span></a>
+          </div>
+        </div>
+
+        <!-- Online Inquiry Card -->
+        <a href="inquiry.html" class="info-card">
+          <div class="card-top blue"></div>
+          <div class="card-body-inner">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                <path d="M8 21h8M12 17v4"/>
+                <path d="M7 8h4M7 11.5h10"/>
+              </svg>
+            </div>
+            <div class="card-title-main">ONLINE INQUIRY</div>
+            <p class="card-desc">온라인 견적으로 빠르고<br>효율적인 상담을 받으세요.</p>
+            <span class="card-cta">더보기 +</span>
+          </div>
+        </a>
+
+        <!-- Business Info Card -->
+        <a href="pricing.html" class="info-card">
+          <div class="card-top blue"></div>
+          <div class="card-body-inner">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 20V10"/>
+                <path d="M12 20V4"/>
+                <path d="M6 20v-6"/>
+                <path d="M2 20h20"/>
+              </svg>
+            </div>
+            <div class="card-title-main">
+              BUSINESS INFO
+              <span class="card-title-ko">비용/이용절차</span>
+            </div>
+            <p class="card-desc">당사는 고객사와 함께<br>성장합니다.</p>
+            <span class="card-cta">더보기 +</span>
+          </div>
+        </a>
+
+        <!-- Location Info Card -->
+        <a href="customer.html" class="info-card">
+          <div class="card-top blue"></div>
+          <div class="card-body-inner">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                <circle cx="12" cy="9" r="2.5"/>
+              </svg>
+            </div>
+            <div class="card-title-main">LOCATION INFO</div>
+            <p class="card-desc">당사로 찾아오시는 길을<br>안내해 드립니다.</p>
+            <span class="card-cta">더보기 +</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">뉴스온 (NEWSON)</div>
+        <div class="footer-links">
+          <a href="#">이용약관</a>
+          <a href="#">개인정보처리방침</a>
+          <a href="inquiry.html">온라인문의</a>
+          <a href="customer.html">고객센터</a>
+        </div>
+        <p>서울특별시 금천구 가산디지털2로 98, 2동 1306호 | 사업자등록번호 : 116-86-43178 | 대표 : 김영기</p>
+        <p class="footer-copy">Copyright &copy; 2024 뉴스온 All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="common.js"></script>
+  <script>
+    let current = 0;
+    const slides = document.querySelectorAll('#hero-slides .banner-slide');
+    const dots   = document.querySelectorAll('#hero-dots .hero-dot');
+
+    function goSlide(n) {
+      slides[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      current = (n + slides.length) % slides.length;
+      slides[current].classList.add('active');
+      dots[current].classList.add('active');
+    }
+
+    document.getElementById('hero-prev').addEventListener('click', () => goSlide(current - 1));
+    document.getElementById('hero-next').addEventListener('click', () => goSlide(current + 1));
+
+    const timer = setInterval(() => goSlide(current + 1), 4500);
+    document.getElementById('hero').addEventListener('mouseenter', () => clearInterval(timer));
+  </script>
+</body>
+</html>

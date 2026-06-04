@@ -1,0 +1,252 @@
+- generic [ref=e4]:
+  - navigation [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - link "Unsplash 홈" [ref=e8] [cursor=pointer]:
+          - /url: /ko
+          - img "Unsplash 홈" [ref=e9]
+        - link "사진" [ref=e11] [cursor=pointer]:
+          - /url: /ko
+          - img [ref=e12]
+        - link "일러스트" [ref=e14] [cursor=pointer]:
+          - /url: /ko/%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8
+          - img [ref=e15]
+      - generic [ref=e17]:
+        - button "탐색" [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+        - button "컬렉션" [ref=e21] [cursor=pointer]:
+          - img [ref=e22]
+        - button "다운로드 내역" [ref=e24] [cursor=pointer]:
+          - img [ref=e25]
+      - button "북마크" [ref=e28] [cursor=pointer]:
+        - img [ref=e29]
+    - generic [ref=e31]:
+      - link "로그인 / 가입" [ref=e32] [cursor=pointer]:
+        - /url: /ko/%EB%A1%9C%EA%B7%B8%EC%9D%B8?referrer=%2Fko%2Fs%2F%25EC%2582%25AC%25EC%25A7%2584%2Fnewspaper
+        - img [ref=e33]
+      - button "언어" [ref=e35] [cursor=pointer]:
+        - img [ref=e36]
+      - button "메뉴" [ref=e38] [cursor=pointer]:
+        - img [ref=e39]
+  - generic [ref=e41]:
+    - generic [ref=e42]:
+      - navigation [ref=e43]:
+        - search "사이트 전체에서 이미지 찾기" [ref=e45]:
+          - button "Unsplash 검색" [ref=e46] [cursor=pointer]:
+            - img [ref=e47]
+          - combobox [ref=e49]:
+            - searchbox "Unsplash 검색" [ref=e50]: newspaper
+            - listbox
+          - button "삭제" [ref=e51] [cursor=pointer]:
+            - img [ref=e52]
+          - button "시각적 검색" [ref=e56] [cursor=pointer]:
+            - img [ref=e57]
+        - generic [ref=e59]:
+          - link "Unsplash+ 구독" [ref=e60] [cursor=pointer]:
+            - /url: /ko/%ED%94%8C%EB%9F%AC%EC%8A%A4
+          - link "로그인" [ref=e61] [cursor=pointer]:
+            - /url: /ko/%EB%A1%9C%EA%B7%B8%EC%9D%B8?referrer=%2Fko%2Fs%2F%25EC%2582%25AC%25EC%25A7%2584%2Fnewspaper
+        - button "이미지 제출" [ref=e63] [cursor=pointer]
+      - generic [ref=e64]:
+        - generic [ref=e70]:
+          - list [ref=e71]:
+            - listitem [ref=e72]:
+              - link "사진 5.3천":
+                - /url: /ko/s/%EC%82%AC%EC%A7%84/newspaper
+                - img
+                - text: 사진
+                - generic: 5.3천
+            - listitem [ref=e73]:
+              - link "일러스트 240" [ref=e74] [cursor=pointer]:
+                - /url: /ko/s/%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8/newspaper
+                - img [ref=e75]
+                - text: 일러스트
+                - generic [ref=e77]: "240"
+            - listitem [ref=e78]:
+              - button "더 보기" [ref=e79] [cursor=pointer]
+          - generic [ref=e82]:
+            - button "라이선스" [ref=e83] [cursor=pointer]:
+              - img [ref=e84]
+              - generic [ref=e86]: 라이선스
+              - img [ref=e87]
+            - button "방향" [ref=e89] [cursor=pointer]:
+              - img [ref=e90]
+              - generic [ref=e92]: 방향
+              - img [ref=e93]
+            - button "정렬 기준 관련성" [ref=e95] [cursor=pointer]:
+              - img [ref=e96]
+              - generic [ref=e98]: 정렬 기준 관련성
+              - img [ref=e99]
+        - generic [ref=e101]:
+          - heading "Newspaper" [level=1] [ref=e103]
+          - generic [ref=e107]:
+            - link "신문 질감" [ref=e109] [cursor=pointer]:
+              - /url: /ko/s/%EC%82%AC%EC%A7%84/%EC%8B%A0%EB%AC%B8-%EC%A7%88%EA%B0%90
+            - link "소식" [ref=e111] [cursor=pointer]:
+              - /url: /ko/s/%EC%82%AC%EC%A7%84/%EC%86%8C%EC%8B%9D
+            - link "종이" [ref=e113] [cursor=pointer]:
+              - /url: /ko/s/%EC%82%AC%EC%A7%84/%EC%A2%85%EC%9D%B4
+            - link "신문 배경" [ref=e115] [cursor=pointer]:
+              - /url: /ko/s/%EC%82%AC%EC%A7%84/%EC%8B%A0%EB%AC%B8-%EB%B0%B0%EA%B2%BD
+            - link "신문" [ref=e117] [cursor=pointer]:
+              - /url: /ko/s/%EC%82%AC%EC%A7%84/%EC%8B%A0%EB%AC%B8
+            - link "잡지" [ref=e119] [cursor=pointer]:
+              - /url: /ko/s/%EC%82%AC%EC%A7%84/%EC%9E%A1%EC%A7%80
+            - link "오래된 신문" [ref=e121] [cursor=pointer]:
+              - /url: /ko/s/%EC%82%AC%EC%A7%84/%EC%98%A4%EB%9E%98%EB%90%9C-%EC%8B%A0%EB%AC%B8
+            - link "종이 질감" [ref=e123] [cursor=pointer]:
+              - /url: /ko/s/%EC%82%AC%EC%A7%84/%EC%A2%85%EC%9D%B4-%EC%A7%88%EA%B0%90
+            - link "미디어" [ref=e125] [cursor=pointer]:
+              - /url: /ko/s/%EC%82%AC%EC%A7%84/%EB%AF%B8%EB%94%94%EC%96%B4
+            - link "신문 읽기" [ref=e127] [cursor=pointer]:
+              - /url: /ko/s/%EC%82%AC%EC%A7%84/%EC%8B%A0%EB%AC%B8-%EC%9D%BD%EA%B8%B0
+            - link "뉴스 레터" [ref=e129] [cursor=pointer]:
+              - /url: /ko/s/%EC%82%AC%EC%A7%84/%EB%89%B4%EC%8A%A4-%EB%A0%88%ED%84%B0
+            - link "뉴스 속보" [ref=e131] [cursor=pointer]:
+              - /url: /ko/s/%EC%82%AC%EC%A7%84/%EB%89%B4%EC%8A%A4-%EC%86%8D%EB%B3%B4
+        - generic [ref=e133]:
+          - generic [ref=e137]:
+            - generic [ref=e138]:
+              - figure [ref=e139]:
+                - link "종이 위에 놓인 휴대폰" [ref=e142]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EC%A2%85%EC%9D%B4-%EC%9C%84%EC%97%90-%EB%86%93%EC%9D%B8-%ED%9C%B4%EB%8C%80%ED%8F%B0-catUz9OVQdg
+                  - img "종이 위에 놓인 휴대폰" [ref=e143]
+              - figure [ref=e144]:
+                - link "구겨진 베이지색 유산지 질감" [ref=e147]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EA%B5%AC%EA%B2%A8%EC%A7%84-%EB%B2%A0%EC%9D%B4%EC%A7%80%EC%83%89-%EC%9C%A0%EC%82%B0%EC%A7%80-%EC%A7%88%EA%B0%90-XFWiZTa2Ub0
+                  - img "구겨진 베이지색 유산지 질감" [ref=e148]
+              - figure [ref=e149]:
+                - link "man sitting on bench reading newspaper" [ref=e152]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/man-sitting-on-bench-reading-newspaper-_Zua2hyvTBk
+                  - img "man sitting on bench reading newspaper" [ref=e153]
+              - figure [ref=e154]:
+                - link "신문에 커피 한 잔과 안경 한 켤레" [ref=e157]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EC%8B%A0%EB%AC%B8%EC%97%90-%EC%BB%A4%ED%94%BC-%ED%95%9C-%EC%9E%94%EA%B3%BC-%EC%95%88%EA%B2%BD-%ED%95%9C-%EC%BC%A4%EB%A0%88-Wh9ZC4727e4
+                  - img "신문에 커피 한 잔과 안경 한 켤레" [ref=e158]
+              - figure [ref=e159]:
+                - link "탁자 위에 놓인 신문 더미" [ref=e162]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%ED%83%81%EC%9E%90-%EC%9C%84%EC%97%90-%EB%86%93%EC%9D%B8-%EC%8B%A0%EB%AC%B8-%EB%8D%94%EB%AF%B8-yKI4x4Yz3ek
+                  - img "탁자 위에 놓인 신문 더미" [ref=e163]
+              - figure [ref=e164]:
+                - link "낮에 눈 덮인 땅을 걷는 사람들" [ref=e167]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EB%82%AE%EC%97%90-%EB%88%88-%EB%8D%AE%EC%9D%B8-%EB%95%85%EC%9D%84-%EA%B1%B7%EB%8A%94-%EC%82%AC%EB%9E%8C%EB%93%A4-gfZZViTxuqw
+                  - img "낮에 눈 덮인 땅을 걷는 사람들" [ref=e168]
+              - figure [ref=e169]:
+                - link "나무 탁자 위에 앉아 있는 신문 더미" [ref=e172]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EB%82%98%EB%AC%B4-%ED%83%81%EC%9E%90-%EC%9C%84%EC%97%90-%EC%95%89%EC%95%84-%EC%9E%88%EB%8A%94-%EC%8B%A0%EB%AC%B8-%EB%8D%94%EB%AF%B8-hWJsOnaWTqs
+                  - img "나무 탁자 위에 앉아 있는 신문 더미" [ref=e173]
+            - generic [ref=e174]:
+              - figure [ref=e175]:
+                - link "단어가 적힌 종이" [ref=e178]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EB%8B%A8%EC%96%B4%EA%B0%80-%EC%A0%81%ED%9E%8C-%EC%A2%85%EC%9D%B4-hYaAxItJGoM
+                  - img "단어가 적힌 종이" [ref=e179]
+              - figure [ref=e180]:
+                - link "신문 기사 로트" [ref=e183]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EC%8B%A0%EB%AC%B8-%EA%B8%B0%EC%82%AC-%EB%A1%9C%ED%8A%B8-R-js25Pv1LQ
+                  - img "신문 기사 로트" [ref=e184]
+              - figure [ref=e185]:
+                - link "비즈니스 신문 기사" [ref=e188]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4-%EC%8B%A0%EB%AC%B8-%EA%B8%B0%EC%82%AC-WYd_PkCa1BY
+                  - img "비즈니스 신문 기사" [ref=e189]
+              - figure [ref=e190]:
+                - link "신문 더미가 서로 겹쳐져 있습니다" [ref=e193]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EC%8B%A0%EB%AC%B8-%EB%8D%94%EB%AF%B8%EA%B0%80-%EC%84%9C%EB%A1%9C-%EA%B2%B9%EC%B3%90%EC%A0%B8-%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4-6khMCoTlLG4
+                  - img "신문 더미가 서로 겹쳐져 있습니다" [ref=e194]
+              - figure [ref=e195]:
+                - link "흑백 빈티지 자동차 스케일 모델" [ref=e198]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%ED%9D%91%EB%B0%B1-%EB%B9%88%ED%8B%B0%EC%A7%80-%EC%9E%90%EB%8F%99%EC%B0%A8-%EC%8A%A4%EC%BC%80%EC%9D%BC-%EB%AA%A8%EB%8D%B8-sbGITOEJMKM
+                  - img "흑백 빈티지 자동차 스케일 모델" [ref=e199]
+              - figure [ref=e200]:
+                - link "문자 메시지" [ref=e203]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EB%AC%B8%EC%9E%90-%EB%A9%94%EC%8B%9C%EC%A7%80-ePWaAwUn80k
+                  - img "문자 메시지" [ref=e204]
+              - figure [ref=e205]:
+                - link "흰색 큐브로 둘러싸인 빨간색 속보 표지판" [ref=e208]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%ED%9D%B0%EC%83%89-%ED%81%90%EB%B8%8C%EB%A1%9C-%EB%91%98%EB%9F%AC%EC%8B%B8%EC%9D%B8-%EB%B9%A8%EA%B0%84%EC%83%89-%EC%86%8D%EB%B3%B4-%ED%91%9C%EC%A7%80%ED%8C%90-qxio376IXao
+                  - img "흰색 큐브로 둘러싸인 빨간색 속보 표지판" [ref=e209]
+              - figure [ref=e210]:
+                - link "주름진 갈색 크라프트 종이 질감" [ref=e213]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EC%A3%BC%EB%A6%84%EC%A7%84-%EA%B0%88%EC%83%89-%ED%81%AC%EB%9D%BC%ED%94%84%ED%8A%B8-%EC%A2%85%EC%9D%B4-%EC%A7%88%EA%B0%90-Y3vPEuNlf7w
+                  - img "주름진 갈색 크라프트 종이 질감" [ref=e214]
+            - generic [ref=e215]:
+              - contentinfo [ref=e220]:
+                - generic [ref=e226]: –– ––– ––– –– ––– – ––– ––– –––– – – –– ––– – – ––– –– –– –––– ––
+              - generic [ref=e228]:
+                - banner [ref=e229]:
+                  - heading "관련 일러스트" [level=4] [ref=e230]
+                  - link "모두 보기" [ref=e231] [cursor=pointer]:
+                    - /url: /ko/s/%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8/newspaper
+                    - heading "모두 보기" [level=4] [ref=e232]
+                - generic [ref=e234]:
+                  - link [ref=e235]:
+                    - /url: /ko/%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8/%EC%8B%A0%EB%AC%B8-%EB%8D%94%EB%AF%B8%EA%B0%80-%EC%84%9C%EB%A1%9C-%EA%B2%B9%EC%B3%90%EC%A0%B8-%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4-4Zn-_57uQs0
+                    - img [ref=e236]
+                  - link [ref=e237]:
+                    - /url: /ko/%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8/%EB%89%B4%EC%8A%A4%EB%9D%BC%EB%8A%94-%EB%8B%A8%EC%96%B4%EA%B0%80-%EC%A0%81%ED%9E%8C-%EC%8B%A0%EB%AC%B8%EC%9D%B4%EC%97%88%EB%8B%A4-gRpmVEI4SP0
+                    - img [ref=e238]
+                  - link [ref=e239]:
+                    - /url: /ko/%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8/%EC%86%8D%EB%B3%B4%EB%9D%BC%EA%B3%A0-%EC%A0%81%ED%9E%8C-%EC%8B%A0%EB%AC%B8%EC%9D%B4%EC%97%88%EB%8B%A4-IiFBkYxeQs8
+                    - img [ref=e240]
+                  - link [ref=e241]:
+                    - /url: /ko/%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8/%ED%8C%8C%EB%9E%80-%EB%B0%B0%EA%B2%BD%EC%97%90-%EA%B8%B4-%EA%B7%B8%EB%A6%BC%EC%9E%90%EA%B0%80-%EB%93%9C%EB%A6%AC%EC%9B%8C%EC%A7%84-%EC%B1%85-MfqiEhbcCSU
+                    - img [ref=e242]
+              - figure [ref=e243]:
+                - link "검은 고양이가 앉아 있는 흰 종이" [ref=e246]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EA%B2%80%EC%9D%80-%EA%B3%A0%EC%96%91%EC%9D%B4%EA%B0%80-%EC%95%89%EC%95%84-%EC%9E%88%EB%8A%94-%ED%9D%B0-%EC%A2%85%EC%9D%B4-nl5YmkYisLU
+                  - img "검은 고양이가 앉아 있는 흰 종이" [ref=e247]
+              - figure [ref=e248]:
+                - link "서핑 보드에있는 사람의 흑백 사진" [ref=e251]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EC%84%9C%ED%95%91-%EB%B3%B4%EB%93%9C%EC%97%90%EC%9E%88%EB%8A%94-%EC%82%AC%EB%9E%8C%EC%9D%98-%ED%9D%91%EB%B0%B1-%EC%82%AC%EC%A7%84-k4Lt0CjUnb0
+                  - img "서핑 보드에있는 사람의 흑백 사진" [ref=e252]
+              - figure [ref=e253]:
+                - link "갈색 나무 테이블에 흰색 프린터 용지" [ref=e256]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EA%B0%88%EC%83%89-%EB%82%98%EB%AC%B4-%ED%85%8C%EC%9D%B4%EB%B8%94%EC%97%90-%ED%9D%B0%EC%83%89-%ED%94%84%EB%A6%B0%ED%84%B0-%EC%9A%A9%EC%A7%80-794QUz5-cso
+                  - img "갈색 나무 테이블에 흰색 프린터 용지" [ref=e257]
+              - figure [ref=e258]:
+                - link "구식 타자기의 클로즈업" [ref=e261]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%EA%B5%AC%EC%8B%9D-%ED%83%80%EC%9E%90%EA%B8%B0%EC%9D%98-%ED%81%B4%EB%A1%9C%EC%A6%88%EC%97%85-aId-xYRTlEc
+                  - img "구식 타자기의 클로즈업" [ref=e262]
+              - figure [ref=e263]:
+                - link "탁자 위에 놓인 신문 뭉치" [ref=e266]:
+                  - /url: /ko/%EC%82%AC%EC%A7%84/%ED%83%81%EC%9E%90-%EC%9C%84%EC%97%90-%EB%86%93%EC%9D%B8-%EC%8B%A0%EB%AC%B8-%EB%AD%89%EC%B9%98-Mwuod2cm8g4
+                  - img "탁자 위에 놓인 신문 뭉치" [ref=e267]
+          - generic [ref=e270]:
+            - heading "iStock에서 프리미엄 이미지 찾아보기 | 지금 바로 할인 요청하기" [level=2] [ref=e271]:
+              - text: iStock에서 프리미엄 이미지 찾아보기
+              - generic [ref=e272]: "| 지금 바로 할인 요청하기"
+            - generic [ref=e274]:
+              - link "질감 배경에 대 한 흰색 구겨진 종이의 근접 촬영" [ref=e275] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/closeup-of-white-crumpled-paper-for-texture-background-gm2207238240-624491554?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fko%2Fs%2F%25EC%2582%25AC%25EC%25A7%2584%2Fnewspaper&utm_term=newspaper%3A%3A%3A%3A
+                - img "질감 배경에 대 한 흰색 구겨진 종이의 근접 촬영" [ref=e276]
+              - link "백서 질감 거친 배경" [ref=e277] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/white-paper-texture-rough-background-gm2252025398-665523923?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fko%2Fs%2F%25EC%2582%25AC%25EC%25A7%2584%2Fnewspaper&utm_term=newspaper%3A%3A%3A%3A
+                - img "백서 질감 거친 배경" [ref=e278]
+              - link "질감 배경에 대 한 흰색 구겨진 종이의 근접 촬영" [ref=e279] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/closeup-of-white-crumpled-paper-for-texture-background-gm2233239706-648747748?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fko%2Fs%2F%25EC%2582%25AC%25EC%25A7%2584%2Fnewspaper&utm_term=newspaper%3A%3A%3A%3A
+                - img "질감 배경에 대 한 흰색 구겨진 종이의 근접 촬영" [ref=e280]
+              - link "배경으로 흰색 재활용 공예 종이 질감" [ref=e281] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/white-recycled-craft-paper-texture-as-background-gm2243668749-657792998?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fko%2Fs%2F%25EC%2582%25AC%25EC%25A7%2584%2Fnewspaper&utm_term=newspaper%3A%3A%3A%3A
+                - img "배경으로 흰색 재활용 공예 종이 질감" [ref=e282]
+              - link "텍스트빈티지 배경. 오래된 종이 텍스처" [ref=e283] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/vintage-background-for-text-old-paper-texture-gm2223175401-639401243?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fko%2Fs%2F%25EC%2582%25AC%25EC%25A7%2584%2Fnewspaper&utm_term=newspaper%3A%3A%3A%3A
+                - img "텍스트빈티지 배경. 오래된 종이 텍스처" [ref=e284]
+              - link "블랙 그런 지 잉크 페인팅 붓놀림 얼룩 드롭 닷 얼룩. 추상적인 그런 지 베이지색 회색 종이 배경에 손으로 그린 더러운 얼룩." [ref=e285] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/black-grunge-ink-painting-brush-stroke-smear-drop-dot-blot-abstract-grunge-hand-gm2237551918-652690090?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fko%2Fs%2F%25EC%2582%25AC%25EC%25A7%2584%2Fnewspaper&utm_term=newspaper%3A%3A%3A%3A
+                - img "블랙 그런 지 잉크 페인팅 붓놀림 얼룩 드롭 닷 얼룩. 추상적인 그런 지 베이지색 회색 종이 배경에 손으로 그린 더러운 얼룩." [ref=e286]
+              - link "배경으로 흰색 재활용 공예 종이 질감" [ref=e287] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/white-recycled-craft-paper-texture-as-background-gm2216115958-632811219?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fko%2Fs%2F%25EC%2582%25AC%25EC%25A7%2584%2Fnewspaper&utm_term=newspaper%3A%3A%3A%3A
+                - img "배경으로 흰색 재활용 공예 종이 질감" [ref=e288]
+              - generic [ref=e289]:
+                - link "질감 배경에 대 한 흰색 구겨진 종이의 근접 촬영" [ref=e290] [cursor=pointer]:
+                  - /url: https://www.istockphoto.com/photo/closeup-of-white-crumpled-paper-for-texture-background-gm2212455977-629392630?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fko%2Fs%2F%25EC%2582%25AC%25EC%25A7%2584%2Fnewspaper&utm_term=newspaper%3A%3A%3A%3A
+                  - img "질감 배경에 대 한 흰색 구겨진 종이의 근접 촬영" [ref=e291]
+                - link "iStock에서 더 많은 자료 보기 ↗" [ref=e292] [cursor=pointer]:
+                  - /url: https://www.istockphoto.com/search/2/image?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fko%2Fs%2F%25EC%2582%25AC%25EC%25A7%2584%2Fnewspaper&utm_term=newspaper%3A%3A%3A%3A&phrase=newspaper&alloweduse=availableforalluses&excludenudity=true&sort=best&mediatype=photography
+          - button "더 로드" [ref=e296] [cursor=pointer]
+          - generic [ref=e297]:
+            - link [ref=e298] [cursor=pointer]:
+              - /url: /ko
+              - img [ref=e299]
+            - paragraph [ref=e301]: 멋진 것을 만들어 보세요
+    - generic:
+      - region "Notifications"

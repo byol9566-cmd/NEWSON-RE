@@ -1,0 +1,203 @@
+- generic [active] [ref=e1]:
+  - link "본문 바로가기" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "뉴스온 홈으로" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - text: NEWS
+        - generic [ref=e9]: "ON"
+      - button "메뉴 열기" [ref=e10] [cursor=pointer]
+  - dialog "모바일 메뉴":
+    - generic:
+      - generic:
+        - generic: NEWSON
+        - button "메뉴 닫기": ✕
+      - navigation:
+        - link "홈":
+          - /url: /
+        - link "브랜드대상":
+          - /url: /brand-award
+        - link "언론홍보 비용":
+          - /url: /pricing
+        - link "사업분야":
+          - /url: /business
+        - link "Clients":
+          - /url: /clients
+        - link "온라인문의":
+          - /url: /inquiry
+        - link "고객센터":
+          - /url: /customer
+      - generic:
+        - generic: 전화 상담
+        - generic: 031-758-0215
+        - generic: 평일 09:00 ~ 18:00
+        - link "온라인 견적 신청 →":
+          - /url: /inquiry
+  - main [ref=e14]:
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - generic [ref=e19]: PRICING
+        - heading "언론홍보 비용" [level=1] [ref=e20]
+        - paragraph [ref=e21]: 합리적인 단가와 투명한 견적. 필요한 범위만큼만 선택하는 맞춤 패키지.
+      - navigation "경로" [ref=e22]:
+        - link "HOME" [ref=e23] [cursor=pointer]:
+          - /url: /
+        - text: /PRICING
+    - generic [ref=e25]:
+      - complementary [ref=e26]:
+        - generic [ref=e27]:
+          - generic [ref=e28]: 언론홍보 비용
+          - link "패키지 및 절차 →" [ref=e29] [cursor=pointer]:
+            - /url: /pricing
+          - link "사업분야 →" [ref=e30] [cursor=pointer]:
+            - /url: /business
+        - generic [ref=e31]:
+          - generic [ref=e32]: CONTACT
+          - text: 031-758-0215
+          - generic [ref=e33]:
+            - text: 운영시간
+            - text: 평일 09:00 ~ 18:00
+            - text: 토·일·공휴일 휴무
+          - link "온라인 문의하기" [ref=e34] [cursor=pointer]:
+            - /url: /inquiry
+      - generic [ref=e36]:
+        - heading "필요한 범위만큼, 투명한 견적" [level=2] [ref=e37]
+        - paragraph [ref=e38]: 브랜드 규모와 홍보 목표에 맞춘 3가지 기본 패키지를 제공합니다. 기업 특성이 명확하다면 완전 맞춤 견적도 가능합니다.
+        - generic [ref=e39]:
+          - generic [ref=e40]:
+            - text: BASIC
+            - generic [ref=e41]: 스타트업 패키지
+            - generic [ref=e42]: 80만원~
+            - list [ref=e43]:
+              - listitem [ref=e44]: 핵심 언론사 30개 배포
+              - listitem [ref=e45]: 보도자료 1건 송출
+              - listitem [ref=e46]: 네이버·다음 포털 노출
+              - listitem [ref=e47]: 배포 결과 리포트
+            - link "문의하기" [ref=e48] [cursor=pointer]:
+              - /url: /inquiry
+          - generic [ref=e49]:
+            - text: 추천STANDARD
+            - generic [ref=e50]: 중견기업 패키지
+            - generic [ref=e51]: 180만원~
+            - list [ref=e52]:
+              - listitem [ref=e53]: 주요 언론사 100개 배포
+              - listitem [ref=e54]: 보도자료 1건 + 네이버 블로그 게재
+              - listitem [ref=e55]: 대필·편집 서비스 포함
+              - listitem [ref=e56]: 키워드 최적화
+              - listitem [ref=e57]: 상세 노출 리포트
+            - link "문의하기" [ref=e58] [cursor=pointer]:
+              - /url: /inquiry
+          - generic [ref=e59]:
+            - text: PREMIUM
+            - generic [ref=e60]: 대기업 패키지
+            - generic [ref=e61]: 350만원~
+            - list [ref=e62]:
+              - listitem [ref=e63]: 전 언론사 200개 배포
+              - listitem [ref=e64]: 보도자료 + 블로그 + 인터뷰 기사
+              - listitem [ref=e65]: 전담 AE 상주 컨설팅
+              - listitem [ref=e66]: 위기관리·정정 대응
+              - listitem [ref=e67]: 월간 브랜드 리포트
+            - link "문의하기" [ref=e68] [cursor=pointer]:
+              - /url: /inquiry
+        - heading "이용 절차" [level=3] [ref=e69]
+        - list [ref=e70]:
+          - listitem [ref=e71]:
+            - text: "01"
+            - generic [ref=e72]:
+              - strong [ref=e73]: 상담 · 신청
+              - text: — 전담 AE가 브랜드 목표에 맞는 전략을 컨설팅합니다
+          - listitem [ref=e74]:
+            - text: "02"
+            - generic [ref=e75]:
+              - strong [ref=e76]: 보도자료 준비
+              - text: — 초안 검토, 키워드 최적화, 이미지 준비 (대필 가능)
+          - listitem [ref=e77]:
+            - text: "03"
+            - generic [ref=e78]:
+              - strong [ref=e79]: 언론사 배포
+              - text: — 선정 언론사 동시 송출, 예약 송출 가능
+          - listitem [ref=e80]:
+            - text: "04"
+            - generic [ref=e81]:
+              - strong [ref=e82]: 포털 + 블로그 노출
+              - text: — 네이버·다음·구글 노출 + 블로그 동시 게재
+          - listitem [ref=e83]:
+            - text: "05"
+            - generic [ref=e84]:
+              - strong [ref=e85]: 결과 보고
+              - text: — 노출 URL과 조회수, 도달 분석 리포트 전달
+        - heading "자주 묻는 질문" [level=3] [ref=e86]
+        - generic [ref=e87]:
+          - group [ref=e88]:
+            - generic "배포 후 기사 확인까지 얼마나 걸리나요?" [ref=e89]
+          - group [ref=e90]:
+            - generic "보도자료 원고가 없는데 대필이 가능한가요?" [ref=e91]
+          - group [ref=e92]:
+            - generic "부정 기사가 나왔을 때 정정 요청이 가능한가요?" [ref=e93]
+          - group [ref=e94]:
+            - generic "주말·공휴일에도 송출 가능한가요?" [ref=e95]
+          - group [ref=e96]:
+            - generic "세금계산서 발행이 되나요?" [ref=e97]
+        - generic [ref=e98]:
+          - generic [ref=e99]:
+            - strong [ref=e100]: 맞춤 견적이 필요하신가요?
+            - paragraph [ref=e101]: 브랜드 상황을 분석해 최적 패키지를 제안해 드립니다
+          - link "무료 견적 신청 →" [ref=e102] [cursor=pointer]:
+            - /url: /inquiry
+  - contentinfo [ref=e103]:
+    - generic [ref=e104]:
+      - generic [ref=e105]:
+        - generic [ref=e106]:
+          - generic [ref=e107]:
+            - text: NEWS
+            - generic [ref=e109]: "ON"
+          - paragraph [ref=e110]: 언론홍보·보도자료 배포·네이버 블로그 게재를 한 번에 처리하는 언론홍보 전문 대행사입니다.
+          - generic [ref=e111]:
+            - paragraph [ref=e112]:
+              - strong [ref=e113]: 뉴스온 (NEWSON)
+            - paragraph [ref=e114]: "사업자등록번호 : 116-86-43178 | 대표 : 김영기"
+            - paragraph [ref=e115]: 서울특별시 금천구 가산디지털2로 98, 2동 1306호
+        - generic [ref=e116]:
+          - heading "서비스" [level=4] [ref=e117]
+          - list [ref=e118]:
+            - listitem [ref=e119]:
+              - link "보도자료 배포" [ref=e120] [cursor=pointer]:
+                - /url: /pressrelease
+            - listitem [ref=e121]:
+              - link "네이버 블로그 게재" [ref=e122] [cursor=pointer]:
+                - /url: /business
+            - listitem [ref=e123]:
+              - link "언론홍보 비용" [ref=e124] [cursor=pointer]:
+                - /url: /pricing
+            - listitem [ref=e125]:
+              - link "브랜드대상" [ref=e126] [cursor=pointer]:
+                - /url: /brand-award
+            - listitem [ref=e127]:
+              - link "클라이언트" [ref=e128] [cursor=pointer]:
+                - /url: /clients
+        - generic [ref=e129]:
+          - heading "연락처" [level=4] [ref=e130]
+          - generic [ref=e131]:
+            - img [ref=e132]
+            - generic [ref=e134]:
+              - link "031-758-0215" [ref=e135] [cursor=pointer]:
+                - /url: tel:031-758-0215
+              - text: 평일 09:00 ~ 18:00
+          - generic [ref=e136]:
+            - img [ref=e137]
+            - link "newsmarketing@daum.net" [ref=e140] [cursor=pointer]:
+              - /url: mailto:newsmarketing@daum.net
+          - link "온라인 문의하기" [ref=e141] [cursor=pointer]:
+            - /url: /inquiry
+      - generic [ref=e142]:
+        - generic [ref=e143]: Copyright © 2024 뉴스온 (NEWSON). All Rights Reserved.
+        - generic [ref=e144]:
+          - link "이용약관" [ref=e145] [cursor=pointer]:
+            - /url: "#"
+          - link "개인정보처리방침" [ref=e146] [cursor=pointer]:
+            - /url: "#"
+          - link "오시는 길" [ref=e147] [cursor=pointer]:
+            - /url: /location
+  - button "Open Next.js Dev Tools" [ref=e153] [cursor=pointer]:
+    - img [ref=e154]

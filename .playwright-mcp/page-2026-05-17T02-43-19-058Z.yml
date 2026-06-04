@@ -1,0 +1,214 @@
+- generic [active] [ref=e1]:
+  - link "본문 바로가기" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img [ref=e8]
+        - link "031-758-0215" [ref=e10] [cursor=pointer]:
+          - /url: tel:031-758-0215
+      - generic [ref=e11]: 평일 09:00 ~ 18:00
+    - generic [ref=e12]:
+      - link "홈" [ref=e13] [cursor=pointer]:
+        - /url: /
+      - link "온라인문의" [ref=e14] [cursor=pointer]:
+        - /url: /inquiry
+      - link "고객센터" [ref=e15] [cursor=pointer]:
+        - /url: /customer
+  - banner [ref=e16]:
+    - generic [ref=e17]:
+      - link "뉴스온 홈으로" [ref=e19] [cursor=pointer]:
+        - /url: /
+        - text: NEWS
+        - generic [ref=e21]: "ON"
+      - navigation "주요 메뉴" [ref=e22]:
+        - link "브랜드대상" [ref=e23] [cursor=pointer]:
+          - /url: /brand-award
+        - link "언론홍보 비용" [ref=e24] [cursor=pointer]:
+          - /url: /pricing
+        - link "사업분야" [ref=e25] [cursor=pointer]:
+          - /url: /business
+        - link "Clients" [ref=e26] [cursor=pointer]:
+          - /url: /clients
+        - link "온라인문의" [ref=e27] [cursor=pointer]:
+          - /url: /inquiry
+        - link "고객센터" [ref=e28] [cursor=pointer]:
+          - /url: /customer
+      - link "무료 견적 받기" [ref=e29] [cursor=pointer]:
+        - /url: /inquiry
+        - img [ref=e30]
+        - text: 무료 견적
+  - dialog "모바일 메뉴":
+    - generic:
+      - generic:
+        - generic: NEWSON
+        - button "메뉴 닫기": ✕
+      - navigation:
+        - link "홈":
+          - /url: /
+        - link "브랜드대상":
+          - /url: /brand-award
+        - link "언론홍보 비용":
+          - /url: /pricing
+        - link "사업분야":
+          - /url: /business
+        - link "Clients":
+          - /url: /clients
+        - link "온라인문의":
+          - /url: /inquiry
+        - link "고객센터":
+          - /url: /customer
+      - generic:
+        - generic: 전화 상담
+        - generic: 031-758-0215
+        - generic: 평일 09:00 ~ 18:00
+        - link "온라인 견적 신청 →":
+          - /url: /inquiry
+  - main [ref=e33]:
+    - generic [ref=e36]:
+      - generic [ref=e37]:
+        - generic [ref=e38]: ABOUT NEWSON
+        - heading "브랜드대상" [level=1] [ref=e39]
+        - paragraph [ref=e40]: 뉴스온은 15년간 대한민국 대표 기업들과 함께 언론홍보를 기획하고 실행해 왔습니다.
+      - navigation "경로" [ref=e41]:
+        - link "HOME" [ref=e42] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e43]: /
+        - generic [ref=e44]: BRAND AWARD
+    - generic [ref=e46]:
+      - complementary [ref=e47]:
+        - generic [ref=e48]:
+          - generic [ref=e49]: 회사소개
+          - link "브랜드대상 →" [ref=e50] [cursor=pointer]:
+            - /url: /brand-award
+            - text: 브랜드대상
+            - generic [ref=e51]: →
+          - link "오시는 길 →" [ref=e52] [cursor=pointer]:
+            - /url: /location
+            - text: 오시는 길
+            - generic [ref=e53]: →
+        - generic [ref=e54]:
+          - generic [ref=e55]: CONTACT
+          - generic [ref=e56]: 031-758-0215
+          - generic [ref=e57]:
+            - text: 운영시간
+            - text: 평일 09:00 ~ 18:00
+            - text: 토·일·공휴일 휴무
+          - link "온라인 문의하기" [ref=e58] [cursor=pointer]:
+            - /url: /inquiry
+      - generic [ref=e60]:
+        - heading "대한민국 대표 언론홍보 전문기업" [level=2] [ref=e61]
+        - paragraph [ref=e62]: 뉴스온은 보도자료 기획, 언론사 배포, 네이버 블로그 게재를 원스톱으로 제공하는 언론홍보 전문 대행사입니다. 200개 이상의 제휴 언론사 네트워크를 바탕으로 기업의 이야기를 가장 효과적인 매체에 전달합니다.
+        - generic [ref=e63]:
+          - generic [ref=e64]:
+            - generic [ref=e65]: 15년
+            - generic [ref=e66]: 업력
+          - generic [ref=e67]:
+            - generic [ref=e68]: 200+
+            - generic [ref=e69]: 제휴 언론사
+          - generic [ref=e70]:
+            - generic [ref=e71]: 1,500+
+            - generic [ref=e72]: 누적 파트너사
+          - generic [ref=e73]:
+            - generic [ref=e74]: 12,800+
+            - generic [ref=e75]: 배포 보도자료
+        - heading "주요 수상 및 인증" [level=3] [ref=e76]
+        - generic [ref=e77]:
+          - generic [ref=e78]:
+            - generic [ref=e79]: "2024"
+            - generic [ref=e80]: 대한민국 브랜드대상
+            - generic [ref=e81]: PR·언론홍보 부문 우수기업 선정
+          - generic [ref=e82]:
+            - generic [ref=e83]: "2023"
+            - generic [ref=e84]: 한국서비스품질지수
+            - generic [ref=e85]: 미디어 커뮤니케이션 부문 1위
+          - generic [ref=e86]:
+            - generic [ref=e87]: "2022"
+            - generic [ref=e88]: 고객만족 브랜드대상
+            - generic [ref=e89]: 언론홍보 대행 서비스 부문
+          - generic [ref=e90]:
+            - generic [ref=e91]: "2021"
+            - generic [ref=e92]: 소비자가 뽑은 브랜드
+            - generic [ref=e93]: 신뢰도 높은 홍보 대행사
+        - heading "회사 연혁" [level=3] [ref=e94]
+        - list [ref=e95]:
+          - listitem [ref=e96]:
+            - generic [ref=e97]: "2024"
+            - generic [ref=e98]: 200개 언론사 제휴 달성 / 네이버 블로그 게재 서비스 개시
+          - listitem [ref=e99]:
+            - generic [ref=e100]: "2022"
+            - generic [ref=e101]: 가산디지털단지 본사 확장 이전 / 연 3,000건 보도자료 배포 돌파
+          - listitem [ref=e102]:
+            - generic [ref=e103]: "2020"
+            - generic [ref=e104]: 위기관리 커뮤니케이션 전담팀 신설
+          - listitem [ref=e105]:
+            - generic [ref=e106]: "2017"
+            - generic [ref=e107]: 누적 파트너사 1,000개 돌파 / 업계 주요 협력 매체 100개 돌파
+          - listitem [ref=e108]:
+            - generic [ref=e109]: "2014"
+            - generic [ref=e110]: 기사형 광고·인터뷰 기획 서비스 출시
+          - listitem [ref=e111]:
+            - generic [ref=e112]: "2010"
+            - generic [ref=e113]: 뉴스온 설립 / 보도자료 배포 서비스 개시
+        - generic [ref=e114]:
+          - generic [ref=e115]:
+            - strong [ref=e116]: 무료 견적 상담
+            - paragraph [ref=e117]: 전담 AE가 브랜드 상황에 맞춰 맞춤 전략을 제안합니다
+          - link "견적 신청 →" [ref=e118] [cursor=pointer]:
+            - /url: /inquiry
+  - contentinfo [ref=e119]:
+    - generic [ref=e120]:
+      - generic [ref=e121]:
+        - generic [ref=e122]:
+          - generic [ref=e123]:
+            - text: NEWS
+            - generic [ref=e125]: "ON"
+          - paragraph [ref=e126]: 언론홍보·보도자료 배포·네이버 블로그 게재를 한 번에 처리하는 언론홍보 전문 대행사입니다.
+          - generic [ref=e127]:
+            - paragraph [ref=e128]:
+              - strong [ref=e129]: 뉴스온 (NEWSON)
+            - paragraph [ref=e130]: "사업자등록번호 : 116-86-43178 | 대표 : 김영기"
+            - paragraph [ref=e131]: 서울특별시 금천구 가산디지털2로 98, 2동 1306호
+        - generic [ref=e132]:
+          - heading "서비스" [level=4] [ref=e133]
+          - list [ref=e134]:
+            - listitem [ref=e135]:
+              - link "보도자료 배포" [ref=e136] [cursor=pointer]:
+                - /url: /pressrelease
+            - listitem [ref=e137]:
+              - link "네이버 블로그 게재" [ref=e138] [cursor=pointer]:
+                - /url: /business
+            - listitem [ref=e139]:
+              - link "언론홍보 비용" [ref=e140] [cursor=pointer]:
+                - /url: /pricing
+            - listitem [ref=e141]:
+              - link "브랜드대상" [ref=e142] [cursor=pointer]:
+                - /url: /brand-award
+            - listitem [ref=e143]:
+              - link "클라이언트" [ref=e144] [cursor=pointer]:
+                - /url: /clients
+        - generic [ref=e145]:
+          - heading "연락처" [level=4] [ref=e146]
+          - generic [ref=e147]:
+            - img [ref=e148]
+            - generic [ref=e150]:
+              - link "031-758-0215" [ref=e151] [cursor=pointer]:
+                - /url: tel:031-758-0215
+              - text: 평일 09:00 ~ 18:00
+          - generic [ref=e152]:
+            - img [ref=e153]
+            - link "newsmarketing@daum.net" [ref=e156] [cursor=pointer]:
+              - /url: mailto:newsmarketing@daum.net
+          - link "온라인 문의하기" [ref=e157] [cursor=pointer]:
+            - /url: /inquiry
+      - generic [ref=e158]:
+        - generic [ref=e159]: Copyright © 2024 뉴스온 (NEWSON). All Rights Reserved.
+        - generic [ref=e160]:
+          - link "이용약관" [ref=e161] [cursor=pointer]:
+            - /url: "#"
+          - link "개인정보처리방침" [ref=e162] [cursor=pointer]:
+            - /url: "#"
+          - link "오시는 길" [ref=e163] [cursor=pointer]:
+            - /url: /location
+  - button "Open Next.js Dev Tools" [ref=e169] [cursor=pointer]:
+    - img [ref=e170]

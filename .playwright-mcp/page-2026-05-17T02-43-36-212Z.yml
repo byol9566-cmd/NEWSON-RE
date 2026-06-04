@@ -1,0 +1,202 @@
+- generic [active] [ref=e1]:
+  - link "본문 바로가기" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img [ref=e8]
+        - link "031-758-0215" [ref=e10] [cursor=pointer]:
+          - /url: tel:031-758-0215
+      - generic [ref=e11]: 평일 09:00 ~ 18:00
+    - generic [ref=e12]:
+      - link "홈" [ref=e13] [cursor=pointer]:
+        - /url: /
+      - link "온라인문의" [ref=e14] [cursor=pointer]:
+        - /url: /inquiry
+      - link "고객센터" [ref=e15] [cursor=pointer]:
+        - /url: /customer
+  - banner [ref=e16]:
+    - generic [ref=e17]:
+      - link "뉴스온 홈으로" [ref=e19] [cursor=pointer]:
+        - /url: /
+        - text: NEWS
+        - generic [ref=e21]: "ON"
+      - navigation "주요 메뉴" [ref=e22]:
+        - link "브랜드대상" [ref=e23] [cursor=pointer]:
+          - /url: /brand-award
+        - link "언론홍보 비용" [ref=e24] [cursor=pointer]:
+          - /url: /pricing
+        - link "사업분야" [ref=e25] [cursor=pointer]:
+          - /url: /business
+        - link "Clients" [ref=e26] [cursor=pointer]:
+          - /url: /clients
+        - link "온라인문의" [ref=e27] [cursor=pointer]:
+          - /url: /inquiry
+        - link "고객센터" [ref=e28] [cursor=pointer]:
+          - /url: /customer
+      - link "무료 견적 받기" [ref=e29] [cursor=pointer]:
+        - /url: /inquiry
+        - img [ref=e30]
+        - text: 무료 견적
+  - dialog "모바일 메뉴":
+    - generic:
+      - generic:
+        - generic: NEWSON
+        - button "메뉴 닫기": ✕
+      - navigation:
+        - link "홈":
+          - /url: /
+        - link "브랜드대상":
+          - /url: /brand-award
+        - link "언론홍보 비용":
+          - /url: /pricing
+        - link "사업분야":
+          - /url: /business
+        - link "Clients":
+          - /url: /clients
+        - link "온라인문의":
+          - /url: /inquiry
+        - link "고객센터":
+          - /url: /customer
+      - generic:
+        - generic: 전화 상담
+        - generic: 031-758-0215
+        - generic: 평일 09:00 ~ 18:00
+        - link "온라인 견적 신청 →":
+          - /url: /inquiry
+  - main [ref=e33]:
+    - generic [ref=e36]:
+      - generic [ref=e37]:
+        - generic [ref=e38]: CLIENTS
+        - heading "함께한 파트너" [level=1] [ref=e39]
+        - paragraph [ref=e40]: 금융·의료·IT·유통·공공까지 — 뉴스온과 함께한 1,500개 이상의 기업과 기관.
+      - navigation "경로" [ref=e41]:
+        - link "HOME" [ref=e42] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e43]: /
+        - generic [ref=e44]: CLIENTS
+    - generic [ref=e46]:
+      - complementary [ref=e47]:
+        - generic [ref=e48]:
+          - generic [ref=e49]: Clients
+          - link "파트너 목록 →" [ref=e50] [cursor=pointer]:
+            - /url: /clients
+            - text: 파트너 목록
+            - generic [ref=e51]: →
+        - generic [ref=e52]:
+          - generic [ref=e53]: CONTACT
+          - generic [ref=e54]: 031-758-0215
+          - generic [ref=e55]:
+            - text: 운영시간
+            - text: 평일 09:00 ~ 18:00
+            - text: 토·일·공휴일 휴무
+          - link "온라인 문의하기" [ref=e56] [cursor=pointer]:
+            - /url: /inquiry
+      - generic [ref=e58]:
+        - heading "뉴스온을 선택한 기업들" [level=2] [ref=e59]
+        - paragraph [ref=e60]: 금융, 의료, IT, 유통, 교육, 공공기관까지 다양한 분야의 기업들과 함께하고 있습니다. 각 산업 특성에 맞는 맞춤형 커뮤니케이션 전략을 제공합니다.
+        - generic [ref=e61]:
+          - generic [ref=e62]:
+            - generic [ref=e63]: 1,500+
+            - generic [ref=e64]: 누적 파트너
+          - generic [ref=e65]:
+            - generic [ref=e66]: 200+
+            - generic [ref=e67]: 제휴 언론사
+          - generic [ref=e68]:
+            - generic [ref=e69]: 15년
+            - generic [ref=e70]: 업력
+          - generic [ref=e71]:
+            - generic [ref=e72]: 87%
+            - generic [ref=e73]: 재의뢰율
+        - heading "주요 고객사" [level=3] [ref=e74]
+        - generic [ref=e75]:
+          - generic [ref=e76]: 린나이코리아
+          - generic [ref=e77]: 미소빌딩연구소
+          - generic [ref=e78]: (주)마켓비
+          - generic [ref=e79]: (주)티엘비코리아
+          - generic [ref=e80]: 서울약사신협협동조합
+          - generic [ref=e81]: 고운세상피부과
+          - generic [ref=e82]: 명지혼혜병원
+          - generic [ref=e83]: 한국경제연구원
+          - generic [ref=e84]: 신한카드
+          - generic [ref=e85]: KB국민은행
+          - generic [ref=e86]: 하나투어
+          - generic [ref=e87]: CJ ENM
+          - generic [ref=e88]: 대한무역투자진흥공사
+          - generic [ref=e89]: 한국관광공사
+          - generic [ref=e90]: 중소벤처기업부
+          - generic [ref=e91]: 서울시 금천구
+          - generic [ref=e92]: 현대엠엔소프트
+          - generic [ref=e93]: 삼성웰스토리
+          - generic [ref=e94]: LG유플러스
+          - generic [ref=e95]: 네이버클라우드
+          - generic [ref=e96]: 카카오모빌리티
+          - generic [ref=e97]: 쿠팡
+          - generic [ref=e98]: 배달의민족
+          - generic [ref=e99]: 야놀자
+          - generic [ref=e100]: 당근마켓
+          - generic [ref=e101]: 토스
+          - generic [ref=e102]: 우아한형제들
+          - generic [ref=e103]: 마켓컬리
+        - generic [ref=e104]:
+          - generic [ref=e105]:
+            - strong [ref=e106]: 귀사의 브랜드도 함께하세요
+            - paragraph [ref=e107]: 맞춤 레퍼런스와 성공 사례를 확인하실 수 있습니다
+          - link "상담 신청 →" [ref=e108] [cursor=pointer]:
+            - /url: /inquiry
+  - contentinfo [ref=e109]:
+    - generic [ref=e110]:
+      - generic [ref=e111]:
+        - generic [ref=e112]:
+          - generic [ref=e113]:
+            - text: NEWS
+            - generic [ref=e115]: "ON"
+          - paragraph [ref=e116]: 언론홍보·보도자료 배포·네이버 블로그 게재를 한 번에 처리하는 언론홍보 전문 대행사입니다.
+          - generic [ref=e117]:
+            - paragraph [ref=e118]:
+              - strong [ref=e119]: 뉴스온 (NEWSON)
+            - paragraph [ref=e120]: "사업자등록번호 : 116-86-43178 | 대표 : 김영기"
+            - paragraph [ref=e121]: 서울특별시 금천구 가산디지털2로 98, 2동 1306호
+        - generic [ref=e122]:
+          - heading "서비스" [level=4] [ref=e123]
+          - list [ref=e124]:
+            - listitem [ref=e125]:
+              - link "보도자료 배포" [ref=e126] [cursor=pointer]:
+                - /url: /pressrelease
+            - listitem [ref=e127]:
+              - link "네이버 블로그 게재" [ref=e128] [cursor=pointer]:
+                - /url: /business
+            - listitem [ref=e129]:
+              - link "언론홍보 비용" [ref=e130] [cursor=pointer]:
+                - /url: /pricing
+            - listitem [ref=e131]:
+              - link "브랜드대상" [ref=e132] [cursor=pointer]:
+                - /url: /brand-award
+            - listitem [ref=e133]:
+              - link "클라이언트" [ref=e134] [cursor=pointer]:
+                - /url: /clients
+        - generic [ref=e135]:
+          - heading "연락처" [level=4] [ref=e136]
+          - generic [ref=e137]:
+            - img [ref=e138]
+            - generic [ref=e140]:
+              - link "031-758-0215" [ref=e141] [cursor=pointer]:
+                - /url: tel:031-758-0215
+              - text: 평일 09:00 ~ 18:00
+          - generic [ref=e142]:
+            - img [ref=e143]
+            - link "newsmarketing@daum.net" [ref=e146] [cursor=pointer]:
+              - /url: mailto:newsmarketing@daum.net
+          - link "온라인 문의하기" [ref=e147] [cursor=pointer]:
+            - /url: /inquiry
+      - generic [ref=e148]:
+        - generic [ref=e149]: Copyright © 2024 뉴스온 (NEWSON). All Rights Reserved.
+        - generic [ref=e150]:
+          - link "이용약관" [ref=e151] [cursor=pointer]:
+            - /url: "#"
+          - link "개인정보처리방침" [ref=e152] [cursor=pointer]:
+            - /url: "#"
+          - link "오시는 길" [ref=e153] [cursor=pointer]:
+            - /url: /location
+  - button "Open Next.js Dev Tools" [ref=e159] [cursor=pointer]:
+    - img [ref=e160]

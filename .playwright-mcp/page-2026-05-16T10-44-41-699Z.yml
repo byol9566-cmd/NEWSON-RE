@@ -1,0 +1,489 @@
+- generic [ref=e4]:
+  - generic:
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - paragraph [ref=e9]: AI Study Builder | Describe what you want to learn. Maze builds the study.
+        - link "Explore" [ref=e10] [cursor=pointer]:
+          - /url: https://maze.co/features/ai-study-builder/
+          - button "Explore" [ref=e11]:
+            - text: Explore
+            - img [ref=e12]
+      - button "Close banner" [ref=e15] [cursor=pointer]:
+        - img [ref=e16]
+    - banner [ref=e19]:
+      - generic [ref=e21]:
+        - link "Maze" [ref=e23] [cursor=pointer]:
+          - /url: /
+          - img [ref=e24]
+        - generic [ref=e26]:
+          - generic [ref=e29] [cursor=pointer]:
+            - generic [ref=e30]: Platform
+            - img [ref=e32]
+          - generic [ref=e36] [cursor=pointer]:
+            - generic [ref=e37]: Solutions
+            - img [ref=e39]
+          - generic [ref=e43] [cursor=pointer]:
+            - generic [ref=e44]: Resources
+            - img [ref=e46]
+          - generic [ref=e50] [cursor=pointer]:
+            - generic [ref=e51]: Customers
+            - img [ref=e53]
+          - link "Pricing" [ref=e57] [cursor=pointer]:
+            - /url: /pricing/
+            - generic [ref=e59]: Pricing
+        - generic [ref=e60]:
+          - link "Log in" [ref=e61] [cursor=pointer]:
+            - /url: https://auth.maze.co/login
+            - button "Log in" [ref=e62]
+          - link "Try Maze" [ref=e63] [cursor=pointer]:
+            - /url: https://auth.maze.co/signup/
+            - button "Try Maze" [ref=e64]
+          - link "Contact sales" [ref=e65] [cursor=pointer]:
+            - /url: /demo/
+            - button "Contact sales" [ref=e66]
+  - main [ref=e67]:
+    - generic [ref=e68]:
+      - generic:
+        - generic [ref=e70]:
+          - generic "Research at the pace of change" [ref=e72]:
+            - heading [level=1] [ref=e75]: Research at the
+            - heading [level=1] [ref=e78]: pace of change
+          - generic [ref=e80]:
+            - paragraph [ref=e83]: In a world moving faster than ever, Maze turns insights into clarity your team can act on
+            - generic [ref=e84]:
+              - link "Try Maze for free" [ref=e85] [cursor=pointer]:
+                - /url: https://auth.maze.co/signup
+                - button "Try Maze for free" [ref=e86]
+              - link "Request a demo" [ref=e87] [cursor=pointer]:
+                - /url: /demo/
+                - button "Request a demo" [ref=e88]
+          - generic [ref=e90]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+          - generic [ref=e92]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - heading "End-to-end user research on one platform" [level=1]
+                  - generic:
+                    - paragraph: Maze brings together every method, every team, and every stage of research in a single place, so you can go deeper, move faster, and influence more decisions.
+        - generic [ref=e93]:
+          - button "Scroll to continue" [disabled]:
+            - text: Scroll to continue
+            - img
+    - generic [ref=e96]:
+      - generic [ref=e98]:
+        - button "Recruit" [ref=e99] [cursor=pointer]:
+          - heading "Recruit" [level=2] [ref=e100]
+        - button "Research" [ref=e102] [cursor=pointer]:
+          - heading "Research" [level=2] [ref=e103]
+        - button "Analyze" [ref=e105] [cursor=pointer]:
+          - heading "Analyze" [level=2] [ref=e106]
+      - generic [ref=e108]:
+        - generic [ref=e110]:
+          - heading "Reach the right people, effortlessly" [level=3] [ref=e111]
+          - paragraph [ref=e113]: Instantly tap into our panel of over 6 million participants or connect with your own community. Maze handles precise targeting and scheduling, giving you room to ask smarter questions without worrying about logistics.
+          - link "Explore study recruitment" [ref=e115] [cursor=pointer]:
+            - /url: /features/research-panel/
+            - button "Explore study recruitment" [ref=e116]:
+              - text: Explore study recruitment
+              - img [ref=e117]
+        - generic [ref=e120]:
+          - region "video player" [ref=e125]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+          - region "video player" [ref=e133]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+          - region "video player" [ref=e141]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+    - link "With Maze it all comes together. Companies recruit the right participants effortlessly, conduct research autonomously, and deliver user insights that drive actual decisions. Card sorting Tree testing Surveys Study templates Automated reports AI-powered themes Interview clips AI transcripts Interview highlights Easily embeddable results Card sorting Tree testing Surveys Study templates Automated reports AI-powered themes Interview clips AI transcripts Interview highlights Easily embeddable results Maze panel In-product prompts Participant management Screener questions B2B or B2C participants Moderated interviews AI moderator Prototype testing Live website testing Mobile testing Maze panel In-product prompts Participant management Screener questions B2B or B2C participants Moderated interviews AI moderator Prototype testing Live website testing Mobile testing" [ref=e150] [cursor=pointer]:
+      - /url: /platform/
+      - generic [ref=e152]:
+        - heading "With Maze it all comes together. Companies recruit the right participants effortlessly, conduct research autonomously, and deliver user insights that drive actual decisions." [level=3] [ref=e155]:
+          - generic [ref=e156]: With Maze it all comes together. Companies
+          - generic [ref=e157]: recruit the right participants effortlessly,
+          - generic [ref=e158]: conduct research autonomously, and deliver
+          - generic [ref=e159]: user insights that drive actual decisions.
+        - generic [ref=e161]:
+          - generic [ref=e162]:
+            - generic [ref=e163]:
+              - generic [ref=e164]: Card sorting
+              - generic [ref=e165]: Tree testing
+              - generic [ref=e166]: Surveys
+              - generic [ref=e167]: Study templates
+              - generic [ref=e168]: Automated reports
+              - generic [ref=e169]: AI-powered themes
+              - generic [ref=e170]: Interview clips
+              - generic [ref=e171]: AI transcripts
+              - generic [ref=e172]: Interview highlights
+              - generic [ref=e173]: Easily embeddable results
+            - generic [ref=e174]:
+              - generic [ref=e175]: Card sorting
+              - generic [ref=e176]: Tree testing
+              - generic [ref=e177]: Surveys
+              - generic [ref=e178]: Study templates
+              - generic [ref=e179]: Automated reports
+              - generic [ref=e180]: AI-powered themes
+              - generic [ref=e181]: Interview clips
+              - generic [ref=e182]: AI transcripts
+              - generic [ref=e183]: Interview highlights
+              - generic [ref=e184]: Easily embeddable results
+          - generic [ref=e185]:
+            - generic [ref=e186]:
+              - generic [ref=e187]: Maze panel
+              - generic [ref=e188]: In-product prompts
+              - generic [ref=e189]: Participant management
+              - generic [ref=e190]: Screener questions
+              - generic [ref=e191]: B2B or B2C participants
+              - generic [ref=e192]: Moderated interviews
+              - generic [ref=e193]: AI moderator
+              - generic [ref=e194]: Prototype testing
+              - generic [ref=e195]: Live website testing
+              - generic [ref=e196]: Mobile testing
+            - generic [ref=e197]:
+              - generic [ref=e198]: Maze panel
+              - generic [ref=e199]: In-product prompts
+              - generic [ref=e200]: Participant management
+              - generic [ref=e201]: Screener questions
+              - generic [ref=e202]: B2B or B2C participants
+              - generic [ref=e203]: Moderated interviews
+              - generic [ref=e204]: AI moderator
+              - generic [ref=e205]: Prototype testing
+              - generic [ref=e206]: Live website testing
+              - generic [ref=e207]: Mobile testing
+    - generic [ref=e210]:
+      - generic [ref=e211]:
+        - region "video player" [ref=e216]:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - img
+        - region "video player" [ref=e224]:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - img
+        - region "video player" [ref=e232]:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - img
+        - region "video player" [ref=e240]:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - img
+      - generic [ref=e245]:
+        - button "Versatility" [ref=e246] [cursor=pointer]:
+          - paragraph [ref=e247]: Versatility
+        - button "Scale" [ref=e248] [cursor=pointer]:
+          - paragraph [ref=e249]: Scale
+        - button "Influence" [ref=e250] [cursor=pointer]:
+          - paragraph [ref=e251]: Influence
+        - button "Research-grade AI" [ref=e252] [cursor=pointer]:
+          - paragraph [ref=e253]: Research-grade AI
+      - generic [ref=e254]:
+        - generic [ref=e257]:
+          - generic [ref=e258]:
+            - heading "Research needs versatility" [level=1] [ref=e260]
+            - paragraph [ref=e262]: Answer the questions that matter most. Run any kind of study, from big surveys to one-on-one interviews, and reach over 6 million people to get answers at any scale.
+          - generic [ref=e263]:
+            - link "Platform overview" [ref=e264] [cursor=pointer]:
+              - /url: /platform/
+              - button "Platform overview" [ref=e265]
+            - link "Get a demo" [ref=e266] [cursor=pointer]:
+              - /url: /demo/
+              - button "Get a demo" [ref=e267]
+        - generic [ref=e269]:
+          - generic [ref=e271]:
+            - img [ref=e273]
+            - img [ref=e274]
+          - generic [ref=e276]:
+            - img [ref=e278]
+            - img [ref=e279]
+          - generic [ref=e281]:
+            - img [ref=e283]
+            - img [ref=e284]
+          - generic [ref=e286]:
+            - img [ref=e288]
+            - img [ref=e289]
+    - generic [ref=e292]:
+      - generic [ref=e294]:
+        - generic [ref=e295]:
+          - generic [ref=e299]: FRESH INSIGHTS
+          - heading "The Future of User Research Report 2026" [level=1] [ref=e301]
+          - paragraph [ref=e303]: Explore the top user research trends for 2026, with insights from nearly 500 researchers, designers, and product professionals.
+        - link "Get the report" [ref=e305] [cursor=pointer]:
+          - /url: /resources/user-research-report/
+          - button "Get the report" [ref=e306]
+      - generic [ref=e309]:
+        - img [ref=e311]
+        - img [ref=e312]
+    - generic [ref=e315]:
+      - heading "From startups to enterprises, research runs on Maze" [level=2] [ref=e320]
+      - generic [ref=e322]:
+        - generic [ref=e323]:
+          - generic [ref=e328]:
+            - img [ref=e330]
+            - img [ref=e331]
+          - generic [ref=e335]:
+            - img [ref=e337]
+            - img [ref=e338]
+        - generic [ref=e352]:
+          - generic [ref=e357]:
+            - img [ref=e359]
+            - img [ref=e360]
+          - generic [ref=e364]:
+            - img [ref=e366]
+            - img [ref=e367]
+    - generic [ref=e383]:
+      - generic [ref=e385]:
+        - img [ref=e387]
+        - img [ref=e388]
+      - generic [ref=e390]:
+        - heading "Trust and security at every level" [level=2] [ref=e393]
+        - link "Contact sales" [ref=e395] [cursor=pointer]:
+          - /url: /demo/
+          - button "Contact sales" [ref=e396]
+      - generic [ref=e398]:
+        - generic [ref=e403]:
+          - generic [ref=e407]: Encrypted transmission
+          - paragraph [ref=e409]: All traffic, including customer data, is transported securely and encrypted via SSL.
+        - generic [ref=e414]:
+          - generic [ref=e418]: Access control
+          - paragraph [ref=e420]: Set up passwords for tests and assign roles to view, manage, and collaborate on studies.
+        - generic [ref=e425]:
+          - generic [ref=e429]: Data center security
+          - paragraph [ref=e431]: Our platform leverages AWS’s comprehensive security measures to keep your data safe and our services highly available.
+        - generic [ref=e436]:
+          - generic [ref=e440]: GDPR Compliance
+          - paragraph [ref=e442]: We protect your data according to GDPR standards and make it easy for you to be compliant too.
+        - generic [ref=e447]:
+          - generic [ref=e451]: SSO
+          - paragraph [ref=e453]: Reduce security risk by authenticating access to your account with Single Sign On (SSO).
+        - generic [ref=e458]:
+          - generic [ref=e462]: Private workspaces
+          - paragraph [ref=e464]: Enable role-based access to workspaces, which only certain members of your team can collaborate on.
+    - generic [ref=e469]:
+      - heading "Shape change together" [level=1] [ref=e472]
+      - generic [ref=e473]:
+        - link "Sign up" [ref=e474] [cursor=pointer]:
+          - /url: https://auth.maze.co/signup
+          - button "Sign up" [ref=e475]
+        - link "Request a demo" [ref=e476] [cursor=pointer]:
+          - /url: /demo/
+          - button "Request a demo" [ref=e477]
+  - contentinfo [ref=e478]:
+    - generic [ref=e479]:
+      - generic [ref=e480]:
+        - generic [ref=e481]:
+          - generic [ref=e483]:
+            - generic [ref=e485]: Company
+            - generic [ref=e487]:
+              - link "About" [ref=e488] [cursor=pointer]:
+                - /url: /about-us/
+                - generic [ref=e490]: About
+              - link "Blog" [ref=e491] [cursor=pointer]:
+                - /url: /blog/
+                - generic [ref=e493]: Blog
+              - link "Careers" [ref=e494] [cursor=pointer]:
+                - /url: /careers/
+                - generic [ref=e496]: Careers
+              - link "Newsroom" [ref=e497] [cursor=pointer]:
+                - /url: /newsroom/
+                - generic [ref=e499]: Newsroom
+              - link "Contact us" [ref=e500] [cursor=pointer]:
+                - /url: https://portal.usepylon.com/maze/forms/request
+                - generic [ref=e502]: Contact us
+          - generic [ref=e504]:
+            - generic [ref=e506]: Platform
+            - generic [ref=e508]:
+              - link "Pricing" [ref=e509] [cursor=pointer]:
+                - /url: /pricing/
+                - generic [ref=e511]: Pricing
+              - link "AI Moderator New" [ref=e512] [cursor=pointer]:
+                - /url: /features/ai-moderator/
+                - generic [ref=e513]:
+                  - generic [ref=e514]: AI Moderator
+                  - generic [ref=e516]: New
+              - link "Moderated Interviews" [ref=e517] [cursor=pointer]:
+                - /url: /features/interview-studies/
+                - generic [ref=e519]: Moderated Interviews
+              - link "Prototype Testing" [ref=e520] [cursor=pointer]:
+                - /url: /features/prototype-testing/
+                - generic [ref=e522]: Prototype Testing
+              - link "Surveys" [ref=e523] [cursor=pointer]:
+                - /url: /features/surveys/
+                - generic [ref=e525]: Surveys
+              - link "Live Website Testing" [ref=e526] [cursor=pointer]:
+                - /url: /features/live-website-testing/
+                - generic [ref=e528]: Live Website Testing
+              - link "Mobile Testing" [ref=e529] [cursor=pointer]:
+                - /url: /features/mobile-testing/
+                - generic [ref=e531]: Mobile Testing
+              - link "Card Sorting" [ref=e532] [cursor=pointer]:
+                - /url: /features/card-sorting/
+                - generic [ref=e534]: Card Sorting
+              - link "Tree Testing" [ref=e535] [cursor=pointer]:
+                - /url: /features/tree-testing/
+                - generic [ref=e537]: Tree Testing
+          - generic [ref=e539]:
+            - generic [ref=e541]: Resources
+            - generic [ref=e543]:
+              - link "Future of User Research New" [ref=e544] [cursor=pointer]:
+                - /url: /resources/user-research-report/
+                - generic [ref=e545]:
+                  - generic [ref=e546]: Future of User Research
+                  - generic [ref=e548]: New
+              - link "Reports & Guides" [ref=e549] [cursor=pointer]:
+                - /url: /guides/
+                - generic [ref=e551]: Reports & Guides
+              - link "Research Collections" [ref=e552] [cursor=pointer]:
+                - /url: /collections/
+                - generic [ref=e554]: Research Collections
+              - link "Events & Webinars" [ref=e555] [cursor=pointer]:
+                - /url: /events/
+                - generic [ref=e557]: Events & Webinars
+              - link "Maze University" [ref=e558] [cursor=pointer]:
+                - /url: https://learn.maze.co
+                - generic [ref=e560]: Maze University
+              - link "Customer Stories" [ref=e561] [cursor=pointer]:
+                - /url: /customers/
+                - generic [ref=e563]: Customer Stories
+              - link "Glossary" [ref=e564] [cursor=pointer]:
+                - /url: /resources/glossary/
+                - generic [ref=e566]: Glossary
+              - link "Question Library" [ref=e567] [cursor=pointer]:
+                - /url: /resources/question-bank/
+                - generic [ref=e569]: Question Library
+              - link "Sample Size Calculator" [ref=e570] [cursor=pointer]:
+                - /url: /resources/sample-size/
+                - generic [ref=e572]: Sample Size Calculator
+              - link "Templates" [ref=e573] [cursor=pointer]:
+                - /url: /templates/
+                - generic [ref=e575]: Templates
+              - link "Compare Maze" [ref=e576] [cursor=pointer]:
+                - /url: /compare/
+                - generic [ref=e578]: Compare Maze
+          - generic [ref=e579]:
+            - generic [ref=e580]:
+              - generic [ref=e582]: Use Cases
+              - generic [ref=e584]:
+                - link "Concept Validation" [ref=e585] [cursor=pointer]:
+                  - /url: /use-cases/concept-and-idea-validation/
+                  - generic [ref=e587]: Concept Validation
+                - link "Usability Testing" [ref=e588] [cursor=pointer]:
+                  - /url: /use-cases/wireframe-and-usability-testing/
+                  - generic [ref=e590]: Usability Testing
+                - link "Copy Testing" [ref=e591] [cursor=pointer]:
+                  - /url: /use-cases/content-and-copy-testing/
+                  - generic [ref=e593]: Copy Testing
+                - link "User Satisfaction" [ref=e594] [cursor=pointer]:
+                  - /url: /use-cases/feedback-and-satisfaction/
+                  - generic [ref=e596]: User Satisfaction
+            - generic [ref=e597]:
+              - generic [ref=e599]: Customers
+              - generic [ref=e601]:
+                - link "Itau" [ref=e602] [cursor=pointer]:
+                  - /url: /customers/itau/
+                  - generic [ref=e604]: Itau
+                - link "Homebase" [ref=e605] [cursor=pointer]:
+                  - /url: /customers/homebase/
+                  - generic [ref=e607]: Homebase
+                - link "LCS" [ref=e608] [cursor=pointer]:
+                  - /url: /customers/lcs/
+                  - generic [ref=e610]: LCS
+                - link "Braze" [ref=e611] [cursor=pointer]:
+                  - /url: /customers/braze-ab-testing-designs/
+                  - generic [ref=e613]: Braze
+                - link "Hopper" [ref=e614] [cursor=pointer]:
+                  - /url: /customers/hopper/
+                  - generic [ref=e616]: Hopper
+        - generic [ref=e617]:
+          - generic [ref=e618]:
+            - generic [ref=e620]:
+              - img [ref=e622]
+              - img [ref=e623]
+            - heading "Sign up for our newsletter" [level=4] [ref=e625]
+            - generic [ref=e627]:
+              - group [ref=e628]:
+                - textbox "Work email*" [ref=e631]:
+                  - /placeholder: Enter your email
+              - button "Subscribe" [ref=e634] [cursor=pointer]
+          - generic [ref=e635]:
+            - generic [ref=e636]: Follow us
+            - generic [ref=e637]:
+              - link "Linkedin" [ref=e638] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/mazedesign
+                - img [ref=e640]
+              - link "Instagram" [ref=e643] [cursor=pointer]:
+                - /url: https://www.instagram.com/mazedesignhq/
+                - img [ref=e645]
+              - link "X" [ref=e648] [cursor=pointer]:
+                - /url: https://twitter.com/mazedesignhq
+                - img [ref=e650]
+              - link "Youtube" [ref=e655] [cursor=pointer]:
+                - /url: https://www.youtube.com/@mazeHQ
+                - img [ref=e657]
+      - link "Maze" [ref=e662] [cursor=pointer]:
+        - /url: /
+        - img [ref=e663]
+      - generic [ref=e666]:
+        - generic [ref=e667]: Copyright © 2026 Maze
+        - link "Privacy Policy" [ref=e669] [cursor=pointer]:
+          - /url: /privacy-policy/
+        - link "Terms and Conditions" [ref=e671] [cursor=pointer]:
+          - /url: /tos/
+        - link "Security" [ref=e673] [cursor=pointer]:
+          - /url: /security/
+        - link "Compliance" [ref=e675] [cursor=pointer]:
+          - /url: https://compliance.maze.co/
+        - generic [ref=e676]: Cookie Settings
+        - link "Status" [ref=e678] [cursor=pointer]:
+          - /url: https://status.maze.co/

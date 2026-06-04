@@ -1,0 +1,243 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "link to homepage" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img [ref=e5]
+      - navigation [ref=e12]:
+        - list [ref=e13]:
+          - listitem [ref=e14]:
+            - link "Products" [ref=e15] [cursor=pointer]:
+              - /url: "#"
+              - text: Products
+              - img [ref=e16]
+          - listitem [ref=e18]:
+            - link "Mission" [ref=e19] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e20]:
+            - link "Careers" [ref=e21] [cursor=pointer]:
+              - /url: /careers
+      - link "Book an intro" [ref=e25] [cursor=pointer]:
+        - /url: "#"
+        - text: Book an intro
+        - img [ref=e26]
+  - generic [ref=e28]:
+    - generic [ref=e29]:
+      - generic [ref=e32]:
+        - heading "Superintelligence for work" [level=1] [ref=e33]
+        - paragraph [ref=e34]: Give your teams the tools they need to thrive in an AI-first world.
+      - generic [ref=e39]:
+        - img "Swile" [ref=e42]
+        - img "Piab" [ref=e45]
+        - img "Robinhood" [ref=e48]
+        - img "Asics" [ref=e51]
+        - img "Polestar" [ref=e54]
+        - img "Voi" [ref=e57]
+        - img "Brex" [ref=e60]
+      - generic [ref=e61]:
+        - generic [ref=e62]:
+          - generic [ref=e63]:
+            - paragraph [ref=e64]: Sana Learn
+            - paragraph [ref=e65]: The best of an LMS, LXP, authoring tool, and virtual classroom in one AI-native learning platform.
+            - link "Explore" [ref=e66] [cursor=pointer]:
+              - /url: /products/sana-learn
+          - generic [ref=e67]:
+            - generic [ref=e68]:
+              - img [ref=e69]
+              - strong [ref=e72]: Create
+              - generic [ref=e73]: Beautiful content, 10x faster
+            - generic [ref=e74]:
+              - img [ref=e75]
+              - strong [ref=e77]: Learn
+              - generic [ref=e78]: A tutor at everyone's fingertips
+            - generic [ref=e79]:
+              - img [ref=e80]
+              - strong [ref=e92]: Manage
+              - generic [ref=e93]: All your admin on autopilot
+            - generic [ref=e94]:
+              - img [ref=e95]
+              - strong [ref=e97]: Analyze
+              - generic [ref=e98]: Granular insights in seconds
+        - img "Home Sana Learn" [ref=e99]
+      - generic [ref=e101]:
+        - img [ref=e103]
+        - paragraph [ref=e106]: “If we're going to move to the level of AI fluency that we want, then Sana is the key.”
+        - paragraph [ref=e107]:
+          - strong [ref=e108]: Hedvig Mossvall
+          - text: Associate Director of Learning and Development, Spotify
+        - link "Watch video" [ref=e109] [cursor=pointer]:
+          - /url: /customers/learning/spotify?autoplay=1
+      - generic [ref=e110]:
+        - generic [ref=e111]:
+          - paragraph [ref=e112]: Sana
+          - paragraph [ref=e113]: Your enterprise AI platform for real work. A seamless, beautiful way to bring AI into your company’s apps, knowledge, and culture.
+          - link "Explore" [ref=e114] [cursor=pointer]:
+            - /url: /products/sana
+        - generic [ref=e115]:
+          - generic [ref=e116]:
+            - img [ref=e117]
+            - strong [ref=e119]: Find
+            - generic [ref=e120]: Instant access to your company’s knowledge
+          - generic [ref=e121]:
+            - img [ref=e122]
+            - strong [ref=e124]: Act
+            - generic [ref=e125]: Automate tasks across all your company's apps
+          - generic [ref=e126]:
+            - img [ref=e127]
+            - strong [ref=e130]: Build
+            - generic [ref=e131]: Generate docs, analyses, and dashboards
+          - generic [ref=e132]:
+            - img [ref=e133]
+            - strong [ref=e136]: Automate
+            - generic [ref=e137]: Run complex workflows automatically
+        - img "Home Sana" [ref=e138]
+      - generic [ref=e142]:
+        - generic:
+          - generic: New York
+          - heading "Sana AI Summit May 21, 2026" [level=2]:
+            - text: Sana AI Summit
+            - text: May 21, 2026
+          - link "Register interest" [ref=e143] [cursor=pointer]:
+            - /url: /events/sana-ai-summit-2026
+        - link "video player" [ref=e145] [cursor=pointer]:
+          - /url: /events/sana-ai-summit-2026
+          - region "video player" [ref=e148]
+    - generic [ref=e153]: Sana is now a part of Workday.
+  - contentinfo [ref=e154]:
+    - generic [ref=e155]:
+      - generic [ref=e156]:
+        - link [ref=e158] [cursor=pointer]:
+          - /url: /
+          - img [ref=e159]
+        - generic [ref=e162] [cursor=pointer]:
+          - text: Subscribe to our newsletter
+          - generic [ref=e164]:
+            - textbox [ref=e168]:
+              - /placeholder: Your email*
+            - text: →
+      - generic [ref=e169]:
+        - generic [ref=e170]:
+          - paragraph [ref=e171]:
+            - strong [ref=e172]: Sana
+          - list [ref=e173]:
+            - listitem [ref=e174]:
+              - link "Overview" [ref=e175] [cursor=pointer]:
+                - /url: /products/sana
+            - listitem [ref=e176]:
+              - link "AI agents" [ref=e177] [cursor=pointer]:
+                - /url: /products/sana/ai-agents
+            - listitem [ref=e178]:
+              - link "Enterprise search" [ref=e179] [cursor=pointer]:
+                - /url: /products/sana/enterprise-search
+            - listitem [ref=e180]:
+              - link "iOS app" [ref=e181] [cursor=pointer]:
+                - /url: /products/sana/ios-app
+            - listitem [ref=e182]:
+              - link "Solutions" [ref=e183] [cursor=pointer]:
+                - /url: "#"
+                - text: Solutions
+                - img [ref=e184]
+            - listitem [ref=e186]:
+              - link "Integrations" [ref=e187] [cursor=pointer]:
+                - /url: /products/sana/integrations
+            - listitem [ref=e188]:
+              - link "Events" [ref=e189] [cursor=pointer]:
+                - /url: /products/sana/events
+            - listitem [ref=e190]:
+              - link "Security" [ref=e191] [cursor=pointer]:
+                - /url: /products/sana/security
+            - listitem [ref=e192]:
+              - link "Stories" [ref=e193] [cursor=pointer]:
+                - /url: /products/sana/stories
+            - listitem [ref=e194]:
+              - link "Pricing" [ref=e195] [cursor=pointer]:
+                - /url: /products/sana/pricing
+            - listitem [ref=e196]:
+              - link "Help Center" [ref=e197] [cursor=pointer]:
+                - /url: https://support.sana.ai/en/
+        - generic [ref=e198]:
+          - paragraph [ref=e199]:
+            - strong [ref=e200]: Sana Learn
+          - list [ref=e201]:
+            - listitem [ref=e202]:
+              - link "Overview" [ref=e203] [cursor=pointer]:
+                - /url: /products/sana-learn
+            - listitem [ref=e204]:
+              - link "Learning management" [ref=e205] [cursor=pointer]:
+                - /url: /products/sana-learn/learning-management
+            - listitem [ref=e206]:
+              - link "Content creation" [ref=e207] [cursor=pointer]:
+                - /url: /products/sana-learn/content-creation
+            - listitem [ref=e208]:
+              - link "AI tutor" [ref=e209] [cursor=pointer]:
+                - /url: /products/sana-learn/ai-tutor
+            - listitem [ref=e210]:
+              - link "Solutions" [ref=e211] [cursor=pointer]:
+                - /url: "#"
+                - text: Solutions
+                - img [ref=e212]
+            - listitem [ref=e214]:
+              - link "Customer stories" [ref=e215] [cursor=pointer]:
+                - /url: /products/sana-learn/customer-stories
+            - listitem [ref=e216]:
+              - link "Integrations" [ref=e217] [cursor=pointer]:
+                - /url: /products/sana-learn/integrations
+            - listitem [ref=e218]:
+              - link "Events" [ref=e219] [cursor=pointer]:
+                - /url: /products/sana-learn/events
+            - listitem [ref=e220]:
+              - link "Pricing" [ref=e221] [cursor=pointer]:
+                - /url: /products/sana-learn/pricing
+            - listitem [ref=e222]:
+              - link "Help Center" [ref=e223] [cursor=pointer]:
+                - /url: https://help.sana.ai/en/
+            - listitem [ref=e224]:
+              - link "Changelog" [ref=e225] [cursor=pointer]:
+                - /url: /sana-learn-changelog
+        - generic [ref=e226]:
+          - paragraph [ref=e227]:
+            - strong [ref=e228]: Company
+          - list [ref=e229]:
+            - listitem [ref=e230]:
+              - link "Sana AI Summit 2026" [ref=e231] [cursor=pointer]:
+                - /url: /events/sana-ai-summit-2026
+            - listitem [ref=e232]:
+              - link "Strange Loop Podcast" [ref=e233] [cursor=pointer]:
+                - /url: /strange-loop
+            - listitem [ref=e234]:
+              - link "Swedish AI Reform" [ref=e235] [cursor=pointer]:
+                - /url: /ai-reform
+            - listitem [ref=e236]:
+              - link "Mission" [ref=e237] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e238]:
+              - link "Careers" [ref=e239] [cursor=pointer]:
+                - /url: /careers
+            - listitem [ref=e240]:
+              - link "Press" [ref=e241] [cursor=pointer]:
+                - /url: /press
+            - listitem [ref=e242]:
+              - link "Legal" [ref=e243] [cursor=pointer]:
+                - /url: /legal
+            - listitem [ref=e244]:
+              - link "Cookie settings" [ref=e245] [cursor=pointer]:
+                - /url: /legal/cookie-settings
+    - generic [ref=e246]:
+      - link [ref=e249] [cursor=pointer]:
+        - /url: https://www.workday.com/
+        - img [ref=e250]
+      - paragraph [ref=e269]: © Sana Labs AB 2026
+      - list [ref=e271]:
+        - listitem [ref=e272]:
+          - link "LinkedIn" [ref=e273] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/sana-labs
+        - listitem [ref=e274]:
+          - link "Instagram" [ref=e275] [cursor=pointer]:
+            - /url: https://www.instagram.com/sanalabs/
+        - listitem [ref=e276]:
+          - link "X" [ref=e277] [cursor=pointer]:
+            - /url: https://x.com/sanalabs
+        - listitem [ref=e278]:
+          - link "YouTube" [ref=e279] [cursor=pointer]:
+            - /url: https://www.youtube.com/@SanaLabs
+  - img
