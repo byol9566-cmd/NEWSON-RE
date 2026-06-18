@@ -269,7 +269,7 @@ body {
   display: flex;
   align-items: center;
   gap: 2px;
-  font-size: 22px;
+  font-size: 34px;
   font-weight: 800;
   letter-spacing: -0.04em;
   color: var(--color-ns-ink);
@@ -278,14 +278,15 @@ body {
 }
 .logo-mark {
   display: inline-block;
-  width: 8px;
-  height: 8px;
+  width: 9px;
+  height: 9px;
   background: var(--color-ns-red);
   border-radius: 50%;
   margin-right: 2px;
   flex-shrink: 0;
 }
 .logo-dot { color: var(--color-ns-red); }
+#logo .logo-mark { width: 12px; height: 12px; margin-right: 3px; }
 
 #nav {
   display: flex;
@@ -1963,6 +1964,49 @@ body {
 }
 .tier-cta:hover { filter: brightness(0.92); }
 
+/* ── Price Table (per-release tiers) ── */
+.price-table-wrap { overflow-x: auto; margin-bottom: 20px; }
+.price-table {
+  width: 100%;
+  min-width: 480px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.price-table thead th {
+  text-align: left;
+  padding: 14px 16px;
+  background: var(--color-ns-ink);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+.price-table thead th:first-child { border-top-left-radius: var(--radius-md); }
+.price-table thead th:last-child { border-top-right-radius: var(--radius-md); }
+.price-table tbody td {
+  padding: 16px;
+  border-bottom: 1px solid var(--color-ns-line-2);
+  color: var(--color-ns-slate);
+}
+.price-table tbody tr:hover td { background: var(--color-ns-mist); }
+.pt-name { font-weight: 700; color: var(--color-ns-ink); }
+.pt-cost { font-weight: 800; color: var(--color-ns-red); white-space: nowrap; }
+.price-note { font-size: 13px; color: var(--color-ns-slate-2); line-height: 1.6; margin-bottom: 24px; }
+.pay-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 14px;
+  padding: 18px 20px;
+  background: var(--color-ns-red-soft);
+  border: 1px solid var(--color-ns-red);
+  border-radius: var(--radius-md);
+  margin-bottom: 48px;
+  font-size: 14px;
+}
+.pay-label { font-weight: 800; color: var(--color-ns-red); flex-shrink: 0; }
+.pay-value { color: var(--color-ns-ink); }
+.pay-value strong { font-weight: 800; letter-spacing: 0.02em; }
+
 /* ── Timeline List (procedure steps) ── */
 .timeline-list {
   list-style: none;
@@ -2213,13 +2257,14 @@ body {
 /* ── Award Grid (brand-award) ── */
 .award-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
   margin-bottom: 48px;
 }
-@media (max-width: 540px) { .award-grid { grid-template-columns: 1fr; } }
+@media (max-width: 820px) { .award-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .award-grid { grid-template-columns: 1fr; } }
 .award-card {
-  padding: 28px 24px;
+  padding: 22px 20px;
   background: var(--color-ns-mist);
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-ns-line-2);
@@ -2229,18 +2274,104 @@ body {
 .award-year {
   font-size: 12px;
   font-weight: 800;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   color: var(--color-ns-red);
   margin-bottom: 8px;
 }
 .award-title {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--color-ns-ink);
-  margin-bottom: 6px;
+  margin-bottom: 0;
   letter-spacing: -0.02em;
+  line-height: 1.4;
 }
 .award-desc { font-size: 13px; color: var(--color-ns-slate-2); }
+
+/* ── Brand-award graphic figures ── */
+.brand-award-graphic { margin: 0 0 28px; }
+.brand-award-graphic img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-ns-line-2);
+}
+
+/* ── Company page (history / link feeds / media / partners) ── */
+.history-list { list-style: none; padding: 0; margin: 0 0 40px; }
+.history-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-ns-line-2);
+}
+.history-list li:last-child { border-bottom: none; }
+.hl-date {
+  flex-shrink: 0;
+  width: 92px;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--color-ns-red);
+  letter-spacing: -0.01em;
+}
+.hl-text { font-size: 14px; line-height: 1.6; color: var(--color-ns-slate); }
+
+.linkfeed-list { list-style: none; padding: 0; margin: 0 0 40px; }
+.linkfeed-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--color-ns-line-2);
+  font-size: 14px;
+}
+.linkfeed-list li:last-child { border-bottom: none; }
+.lf-name { font-weight: 700; color: var(--color-ns-ink); }
+.lf-desc { font-size: 13px; color: var(--color-ns-slate-2); }
+.linkfeed-list a { color: var(--color-ns-red); text-decoration: none; word-break: break-all; }
+.linkfeed-list a:hover { text-decoration: underline; }
+
+.partner-text {
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--color-ns-slate);
+  word-break: keep-all;
+  margin-bottom: 12px;
+}
+.partner-more { margin: 0 0 40px; }
+.partner-more a { color: var(--color-ns-red); text-decoration: none; font-weight: 600; }
+.partner-more a:hover { text-decoration: underline; }
+
+.media-box { margin: 0 0 40px; }
+.media-box > summary {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-ns-ink);
+  padding: 14px 18px;
+  background: var(--color-ns-mist);
+  border: 1px solid var(--color-ns-line-2);
+  border-radius: var(--radius-md);
+  list-style: none;
+}
+.media-box > summary::-webkit-details-marker { display: none; }
+.media-box > summary::before { content: '＋ '; color: var(--color-ns-red); font-weight: 800; }
+.media-box[open] > summary::before { content: '－ '; }
+.media-names {
+  margin-top: 14px;
+  max-height: 360px;
+  overflow-y: auto;
+  padding: 18px;
+  border: 1px solid var(--color-ns-line-2);
+  border-radius: var(--radius-md);
+  font-size: 12.5px;
+  line-height: 2;
+  color: var(--color-ns-slate);
+  word-break: keep-all;
+}
 
 /* ── Clients Grid ── */
 .clients-grid-text {

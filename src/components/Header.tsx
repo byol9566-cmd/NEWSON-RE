@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 const NAV_LINKS = [
+  { label: '회사소개', href: '/company' },
   { label: '브랜드대상', href: '/brand-award' },
   { label: '언론홍보 비용', href: '/pricing' },
   { label: '사업분야', href: '/business' },
@@ -111,7 +112,7 @@ export default function Header() {
           </nav>
           <div className="mn-foot">
             <span>전화 상담</span>
-            <span className="mn-phone">031-758-0215</span>
+            <span className="mn-phone">1544-4701</span>
             <span>평일 09:00 ~ 18:00</span>
             <Link href="/inquiry">온라인 견적 신청 →</Link>
           </div>

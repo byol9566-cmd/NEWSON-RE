@@ -3,7 +3,7 @@ import SubPageLayout from '@/components/SubPageLayout'
 
 export const metadata: Metadata = {
   title: '오시는 길 — 뉴스온',
-  description: '뉴스온 본사 위치 및 오시는 길 안내. 서울특별시 금천구 가산디지털2로 98, 2동 1306호.',
+  description: '뉴스온 본사 위치 및 오시는 길 안내. 경기도 하남시 미사대로 550, 현대지식산업센터 한강미사 C동 10층 1001호.',
 }
 
 export default function LocationPage() {
@@ -12,20 +12,20 @@ export default function LocationPage() {
       <SubPageLayout
         eyebrow="CONTACT"
         title="오시는 길"
-        sub="서울특별시 금천구 가산디지털2로 98, 2동 1306호"
+        sub="경기도 하남시 미사대로 550, 현대지식산업센터 한강미사 C동 10층"
         breadcrumb="LOCATION"
-        sidebarHeading="회사소개"
+        sidebarHeading=""
         sidebarItems={[
-          { label: '브랜드대상', href: '/brand-award' },
+          { label: '회사소개', href: '/company' },
           { label: '오시는 길', href: '/location', active: true },
         ]}
       >
         <h2 className="content-h2">뉴스온 본사 오시는 길</h2>
-        <p className="content-lead">지하철 1·7호선 가산디지털단지역 5번 출구에서 도보 5분 거리입니다. 엘리베이터 이용 후 13층으로 올라와 주세요.</p>
+        <p className="content-lead">수도권 전철 5호선 하남풍산역에서 도보 3분 거리의 역세권입니다. 현대지식산업센터 한강미사 건물 엘리베이터 이용 후 10층으로 올라와 주세요.</p>
 
         <div className="location-map-wrap">
           <iframe
-            src="https://maps.google.com/maps?q=%EA%B0%80%EC%82%B0%EB%94%94%EC%A7%80%ED%84%B82%EB%A1%9C+98&hl=ko&z=16&output=embed"
+            src="https://maps.google.com/maps?q=%EA%B2%BD%EA%B8%B0%20%ED%95%98%EB%82%A8%EC%8B%9C%20%EB%AF%B8%EC%82%AC%EB%8C%80%EB%A1%9C%20550%20%ED%98%84%EB%8C%80%EC%A7%80%EC%8B%9D%EC%82%B0%EC%97%85%EC%84%BC%ED%84%B0%20%ED%95%9C%EA%B0%95%EB%AF%B8%EC%82%AC&hl=ko&z=16&output=embed"
             width="100%"
             height="400"
             style={{ border: 0 }}
@@ -39,11 +39,11 @@ export default function LocationPage() {
         <h3 className="content-h3">주소 및 연락처</h3>
         <div className="address-block">
           <span className="ab-label">주소</span>
-          <span className="ab-value">서울특별시 금천구 가산디지털2로 98, 2동 1306호</span>
+          <span className="ab-value">경기도 하남시 미사대로 550, C동 10층 1001호 브이17 (덕풍동, 현대지식산업센터 한강미사)</span>
         </div>
         <div className="address-block">
           <span className="ab-label">대표번호</span>
-          <span className="ab-value"><a href="tel:031-758-0215">031-758-0215</a></span>
+          <span className="ab-value"><a href="tel:1544-4701">1544-4701</a></span>
         </div>
         <div className="address-block">
           <span className="ab-label">이메일</span>
@@ -58,15 +58,15 @@ export default function LocationPage() {
         <div className="transport-list">
           <div className="transport-row">
             <span className="tr-type">지하철</span>
-            <div className="tr-text"><strong>1·7호선 가산디지털단지역</strong><br />5번 출구 도보 5분</div>
+            <div className="tr-text"><strong>5호선 하남풍산역</strong><br />도보 3분 (역세권)</div>
           </div>
           <div className="transport-row">
             <span className="tr-type">버스</span>
-            <div className="tr-text"><strong>가산디지털단지역 정류장</strong><br />500, 504, 5616, 5618, 6515</div>
+            <div className="tr-text"><strong>하남풍산역·미사대로 정류장</strong><br />하차 후 도보 3분</div>
           </div>
           <div className="transport-row">
             <span className="tr-type">주차</span>
-            <div className="tr-text"><strong>건물 내 주차장 이용</strong><br />시간당 2,000원 (방문 시 할인)</div>
+            <div className="tr-text"><strong>건물 지하주차장 이용</strong><br />방문 상담 시 주차 안내</div>
           </div>
         </div>
       </SubPageLayout>

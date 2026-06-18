@@ -10,14 +10,15 @@ export default function Footer() {
             <p className="footer-tagline">언론홍보·보도자료 배포·네이버 블로그 게재를 한 번에 처리하는 언론홍보 전문 대행사입니다.</p>
             <div className="footer-meta">
               <p><strong>뉴스온 (NEWSON)</strong></p>
-              <p>사업자등록번호 : 116-86-43178 | 대표 : 김영기</p>
-              <p>서울특별시 금천구 가산디지털2로 98, 2동 1306호</p>
+              <p>사업자등록번호 : 428-86-00314 | 대표 : 이은별</p>
+              <p>경기도 하남시 미사대로 550, C동 10층 1001호 (현대지식산업센터 한강미사)</p>
             </div>
           </div>
 
           <div className="footer-col">
             <h4>서비스</h4>
             <ul>
+              <li><a href="/company">회사소개</a></li>
               <li><a href="/pressrelease">보도자료 배포</a></li>
               <li><a href="/business">네이버 블로그 게재</a></li>
               <li><a href="/pricing">언론홍보 비용</a></li>
@@ -33,7 +34,7 @@ export default function Footer() {
                 <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
               </svg>
               <div>
-                <a href="tel:031-758-0215" className="fc-phone">031-758-0215</a><br />
+                <a href="tel:1544-4701" className="fc-phone">1544-4701</a><br />
                 평일 09:00 ~ 18:00
               </div>
             </div>
@@ -49,7 +50,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <span>Copyright &copy; 2024 뉴스온 (NEWSON). All Rights Reserved.</span>
+          <span>Copyright &copy; 2026 뉴스온 (NEWSON). All Rights Reserved.</span>
           <div className="fb-links">
             <a href="#">이용약관</a>
             <a href="#">개인정보처리방침</a>

@@ -55,7 +55,7 @@ export default function SubPageLayout({
         <div className="container">
           <aside id="sidebar">
             <div className="sidebar-block">
-              <div className="sidebar-block-hd">{sidebarHeading}</div>
+              {sidebarHeading && <div className="sidebar-block-hd">{sidebarHeading}</div>}
               {sidebarItems.map((item) => (
                 <Link
                   key={item.href + item.label}
@@ -68,7 +68,7 @@ export default function SubPageLayout({
             </div>
             <div className="sidebar-consult">
               <div className="sidebar-consult-hd">{consultHeading}</div>
-              <span className="consult-phone">031-758-0215</span>
+              <span className="consult-phone">1544-4701</span>
               <div className="consult-hours">
                 <span className="label">운영시간</span><br />
                 평일 09:00 ~ 18:00<br />

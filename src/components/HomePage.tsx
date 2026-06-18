@@ -7,17 +7,17 @@ import Link from 'next/link'
 const HERO_SLIDES = [
   {
     eyebrow: 'VOL.01 · PRESS NETWORK',
-    headline: <>당신의 이야기를,<br /><span className="hl-accent">200개 언론사</span>에<br />한 번에.</>,
+    headline: <>귀사의 이야기를,<br /><span className="hl-accent">908개 언론사</span>에<br />배포해드립니다.</>,
     sub: '보도자료 기획부터 언론사 송출, 네이버 블로그 게재까지 — 모든 언론홍보를 원스톱으로 처리합니다.',
     cta1: { label: '무료 견적 받기', href: '/inquiry', icon: true },
     cta2: { label: '비용 안내 보기', href: '/pricing' },
     bg: '/images/hero-01.png',
     caption: 'PRESS CONFERENCE · DAILY BRIEFING',
-    figure: 'Coverage across 200+ Korean media outlets',
+    figure: 'Across 908 media outlets and 3,000+ journalists',
   },
   {
     eyebrow: 'VOL.02 · DIGITAL REACH',
-    headline: <>언론 기사 +<br /><span className="hl-accent">네이버 블로그</span><br />동시 게재.</>,
+    headline: <>뉴스기사 +<br />보도자료 배포 +<br /><span className="hl-accent">네이버 블로그</span></>,
     sub: '포털 뉴스 노출과 네이버 블로그 게재를 동시에 진행해 검색 노출 효과를 극대화합니다.',
     cta1: { label: '상담 신청하기', href: '/inquiry', icon: false },
     cta2: { label: '서비스 자세히 보기', href: '/business' },
@@ -157,9 +157,9 @@ function HeroSection() {
 
 /* ── Trust Strip countup ── */
 const TRUST_ITEMS = [
-  { eyebrow: '누적 보도자료', target: 12800, suffix: '+', label: '건 배포 완료' },
-  { eyebrow: '제휴 언론사', target: 200, suffix: '+', label: '개 매체 네트워크' },
-  { eyebrow: '누적 고객사', target: 1500, suffix: '+', label: '개 브랜드와 함께' },
+  { eyebrow: '누적 보도자료', target: 468000, suffix: '+', label: '건 배포 완료' },
+  { eyebrow: '제휴 언론사', target: 908, suffix: '+', label: '개 매체 네트워크' },
+  { eyebrow: '누적 고객사', target: 3500, suffix: '+', label: '개 브랜드와 함께' },
   { eyebrow: '재계약률', target: 87, suffix: '%', label: '높은 만족도' },
 ]
 
@@ -344,7 +344,7 @@ const PROCESS_STEPS = [
     ),
   },
   {
-    num: '05', title: '결과 보고', desc: '송출 완료 후 노출 결과 리포트를 상세하게 전달해 드립니다',
+    num: '05', title: '결과 보고', desc: '송출 완료 후 노출 결과를 메일로 상세하게 전달해 드립니다',
     icon: (
       <>
         <path d="M3 3v18h18"/>
@@ -401,7 +401,7 @@ function ProcessSteps() {
 const SERVICES = [
   {
     num: '01', kicker: 'CORE', title: '보도자료 배포', href: '/pressrelease',
-    desc: '200개 이상 제휴 언론사에 동시 송출. 메이저 종합지부터 업종별 전문지까지 맞춤 매체를 선택하실 수 있습니다.',
+    desc: '908개 제휴 언론사에 동시 송출. 메이저 종합지부터 업종별 전문지까지 맞춤 매체를 선택하실 수 있습니다.',
     icon: (
       <>
         <path d="M3 11l13-7v16L3 13z"/>
@@ -542,7 +542,7 @@ export default function HomePage() {
           <div className="onestop-inner section-animate">
             <div className="onestop-badge">ONE-STOP</div>
             <h2 className="onestop-title">언론홍보 · 보도자료 배포 · 네이버 블로그<br />한 번에 해결합니다</h2>
-            <p className="onestop-desc">뉴스온은 국내 유일하게 언론 기사 송출과 네이버 블로그 게재를 동시에 진행합니다.<br />포털 뉴스 노출과 블로그 검색 유입을 동시에 극대화하여 브랜드 신뢰도를 빠르게 높입니다.</p>
+            <p className="onestop-desc">뉴스온은 국내에서 유일하게 언론 기사 송출과 네이버 블로그 게재를 동시에 진행합니다.<br />포털 뉴스 노출과 블로그 검색 유입을 동시에 극대화하여 브랜드 신뢰도를 빠르게 높입니다.</p>
             <div className="onestop-steps">
               {[
                 {
@@ -557,7 +557,7 @@ export default function HomePage() {
                   ),
                 },
                 {
-                  label: '200개 언론사 배포', desc: '메이저 언론사부터 전문지까지 맞춤 매체에 동시 송출합니다',
+                  label: '908개 언론사 배포', desc: '메이저 언론사부터 전문지까지 맞춤 매체에 동시 송출합니다',
                   icon: (
                     <>
                       <path key="p1" d="M3 11l13-7v16L3 13z"/>
@@ -582,7 +582,7 @@ export default function HomePage() {
                   ),
                 },
                 {
-                  label: '포털 노출 확인', desc: '네이버·다음·구글 노출 결과를 리포트로 전달해 드립니다',
+                  label: '포털 노출 확인', desc: '네이버·다음·구글 노출 결과를 메일로 전달해 드립니다',
                   icon: (
                     <>
                       <path key="p1" d="M3 3v18h18"/>
@@ -719,13 +719,13 @@ export default function HomePage() {
         <div className="container">
           <div className="marquee-head section-animate">
             <span className="eyebrow">OUR CLIENTS</span>
-            <h2>1,500+ 브랜드가 뉴스온과 함께합니다</h2>
+            <h2>3,500개 브랜드가 뉴스온과 함께합니다</h2>
           </div>
         </div>
         <div className="marquee" aria-hidden="true">
           <div className="marquee-track">
-            {['미소빌딩연구소','마켓비','린나이코리아','티엘비코리아','서울약사신협','고운세상피부과','명지혼혜병원','이름코리아','동서제약웰빙',
-              '미소빌딩연구소','마켓비','린나이코리아','티엘비코리아','서울약사신협','고운세상피부과','명지혼혜병원','이름코리아','동서제약웰빙',
+            {['린나이(주)','고진모터스','(주)한국오키시스템즈','(주)슈어소프트테크','스낵24','(주)미래나노텍','(주)모션어드바이저','(주)벤타브이알','일렉배리','마이아트뮤지엄','국선생 (주)홈스푸드','쿨사인','버텍스아이디','(주)엑스오비스','서초문화원','(주)팜팜','한강뮤지엄','(주)런케이에듀','라이앤캐처스','농어촌청소년육성재단','리멤버피부과','마켓비','재단법인 선교','(주)피에스인터네셔널',
+              '린나이(주)','고진모터스','(주)한국오키시스템즈','(주)슈어소프트테크','스낵24','(주)미래나노텍','(주)모션어드바이저','(주)벤타브이알','일렉배리','마이아트뮤지엄','국선생 (주)홈스푸드','쿨사인','버텍스아이디','(주)엑스오비스','서초문화원','(주)팜팜','한강뮤지엄','(주)런케이에듀','라이앤캐처스','농어촌청소년육성재단','리멤버피부과','마켓비','재단법인 선교','(주)피에스인터네셔널',
             ].map((name, i) => (
               <span key={i} className="marquee-item"><span className="mi-mark" />{name}</span>
             ))}
@@ -733,8 +733,8 @@ export default function HomePage() {
         </div>
         <div className="marquee right" aria-hidden="true">
           <div className="marquee-track">
-            {['현대백화점','롯데면세점','GS리테일','CJ푸드빌','빙그레','한국맥도날드','오뚜기','풀무원','매일유업',
-              '현대백화점','롯데면세점','GS리테일','CJ푸드빌','빙그레','한국맥도날드','오뚜기','풀무원','매일유업',
+            {['제트컨버터클라우드','시사어학원','아젠다북','(주)혼 미니골드','계림당','뷰소닉','위시켓','피코코리아','한양그린파크','용인비상에듀기숙학원','하루하루움직임연구소','어나더컴퍼니','일만족발','새로운학원','유니컵컴퍼니','HY이공계편입학원','경북시민재단','엑스퍼트컨설팅','코드잇','트리포스','파마칼인터내셔널','위드윈인베스트먼트','프린파크','닥터효',
+              '제트컨버터클라우드','시사어학원','아젠다북','(주)혼 미니골드','계림당','뷰소닉','위시켓','피코코리아','한양그린파크','용인비상에듀기숙학원','하루하루움직임연구소','어나더컴퍼니','일만족발','새로운학원','유니컵컴퍼니','HY이공계편입학원','경북시민재단','엑스퍼트컨설팅','코드잇','트리포스','파마칼인터내셔널','위드윈인베스트먼트','프린파크','닥터효',
             ].map((name, i) => (
               <span key={i} className="marquee-item"><span className="mi-mark" />{name}</span>
             ))}
@@ -779,7 +779,7 @@ export default function HomePage() {
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
                   </svg>
-                  <span><strong>031-758-0215</strong>전화 상담도 가능합니다</span>
+                  <span><strong>1544-4701</strong>전화 상담도 가능합니다</span>
                 </div>
                 <div className="cta-meta-item">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">

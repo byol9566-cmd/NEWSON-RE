@@ -35,9 +35,12 @@ export default function InquiryForm() {
         <label htmlFor="if-service">문의 서비스 <span className="required">*</span></label>
         <select id="if-service" name="service" required>
           <option value="">선택하세요</option>
-          <option value="basic">BASIC — 스타트업 패키지 (80만원~)</option>
-          <option value="standard">STANDARD — 중견기업 패키지 (180만원~)</option>
-          <option value="premium">PREMIUM — 대기업 패키지 (350만원~)</option>
+          <option value="basic">보도자료 배포 (55,000원~)</option>
+          <option value="minor">마이너 (110,000원~)</option>
+          <option value="mid">중급 (165,000원~)</option>
+          <option value="premium">프리미엄 (275,000원~)</option>
+          <option value="major">메이저 (440,000원~)</option>
+          <option value="top">TOP 메이저 (660,000원~)</option>
           <option value="custom">맞춤 견적</option>
           <option value="crisis">위기관리·정정 대응</option>
           <option value="other">기타 문의</option>

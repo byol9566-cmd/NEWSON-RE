@@ -77,8 +77,8 @@ export default function PressReleasePage() {
         <p className="content-lead">금융·의료·IT·유통 등 다양한 산업의 클라이언트가 뉴스온을 통해 주요 일간지와 포털 메인에 노출된 사례입니다. 클라이언트 보안상 브랜드명은 일부 마스킹 처리되었습니다.</p>
 
         <div className="stat-row">
-          <div className="stat-cell"><div className="stat-num">12,800<span>+</span></div><div className="stat-label">누적 배포</div></div>
-          <div className="stat-cell"><div className="stat-num">200<span>+</span></div><div className="stat-label">제휴 언론사</div></div>
+          <div className="stat-cell"><div className="stat-num">468,000<span>+</span></div><div className="stat-label">누적 배포</div></div>
+          <div className="stat-cell"><div className="stat-num">908<span>+</span></div><div className="stat-label">제휴 언론사</div></div>
           <div className="stat-cell"><div className="stat-num">98<span>%</span></div><div className="stat-label">네이버 노출</div></div>
           <div className="stat-cell"><div className="stat-num">2<span>h</span></div><div className="stat-label">평균 게재 속도</div></div>
         </div>

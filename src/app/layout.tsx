@@ -6,11 +6,11 @@ import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: '뉴스온 — 언론홍보·보도자료배포·네이버블로그 원스톱 대행',
-  description: '뉴스온은 언론홍보·보도자료 배포·네이버 블로그 게재를 한 번에 처리하는 언론홍보 전문 대행사입니다. 200개 이상 제휴 언론사 네트워크를 보유하고 있습니다.',
+  description: '뉴스온은 언론홍보·보도자료 배포·네이버 블로그 게재를 한 번에 처리하는 언론홍보 전문 대행사입니다. 908개 제휴 언론사 네트워크를 보유하고 있습니다.',
   keywords: '언론홍보,보도자료배포,네이버블로그,기사광고,언론홍보대행사,뉴스온,보도자료,포털노출',
   openGraph: {
     title: '뉴스온 — 언론홍보·보도자료배포·네이버블로그 원스톱 대행',
-    description: '언론홍보·보도자료 배포·네이버 블로그 게재를 한 번에. 200개 이상 제휴 언론사 네트워크.',
+    description: '언론홍보·보도자료 배포·네이버 블로그 게재를 한 번에. 908개 제휴 언론사 네트워크.',
     type: 'website',
     url: 'https://www.newson.co.kr/',
   },
@@ -34,13 +34,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               '@type': 'LocalBusiness',
               name: '뉴스온 (NEWSON)',
               description: '언론홍보·보도자료 배포·네이버 블로그 원스톱 대행사',
-              telephone: '031-758-0215',
+              telephone: '1544-4701',
               email: 'newsmarketing@daum.net',
               address: {
                 '@type': 'PostalAddress',
-                streetAddress: '가산디지털2로 98, 2동 1306호',
-                addressLocality: '금천구',
-                addressRegion: '서울특별시',
+                streetAddress: '미사대로 550, C동 10층 1001호',
+                addressLocality: '하남시',
+                addressRegion: '경기도',
                 addressCountry: 'KR',
               },
               openingHours: 'Mo-Fr 09:00-18:00',

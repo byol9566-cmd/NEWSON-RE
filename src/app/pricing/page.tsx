@@ -4,7 +4,7 @@ import SubPageLayout from '@/components/SubPageLayout'
 
 export const metadata: Metadata = {
   title: '언론홍보 비용 — 뉴스온',
-  description: '뉴스온 언론홍보 비용 안내. 합리적 단가의 3가지 패키지와 맞춤 견적 서비스.',
+  description: '뉴스온 보도자료 배포 비용 안내. 매체 등급별 건당 단가(55,000~660,000원)와 맞춤 견적 서비스.',
 }
 
 export default function PricingPage() {
@@ -13,59 +13,37 @@ export default function PricingPage() {
       <SubPageLayout
         eyebrow="PRICING"
         title="언론홍보 비용"
-        sub="합리적인 단가와 투명한 견적. 필요한 범위만큼만 선택하는 맞춤 패키지."
+        sub="매체 등급별 건당 단가와 투명한 견적. 필요한 매체 범위만큼만 선택하실 수 있습니다."
         breadcrumb="PRICING"
         sidebarHeading="언론홍보 비용"
         sidebarItems={[
-          { label: '패키지 및 절차', href: '/pricing', active: true },
+          { label: '비용 및 절차', href: '/pricing', active: true },
           { label: '사업분야', href: '/business' },
         ]}
       >
-        <h2 className="content-h2">필요한 범위만큼, 투명한 견적</h2>
-        <p className="content-lead">브랜드 규모와 홍보 목표에 맞춘 3가지 기본 패키지를 제공합니다. 기업 특성이 명확하다면 완전 맞춤 견적도 가능합니다.</p>
+        <h2 className="content-h2">보도자료 배포 비용</h2>
+        <p className="content-lead">보도자료 1건 배포 기준의 매체 등급별 단가입니다. 등급이 높을수록 더 많은 주요·상위 매체에 송출되며, 매체 구성·건수에 따라 맞춤 견적도 가능합니다.</p>
 
-        <div className="pricing-tiers">
-          <div className="tier">
-            <span className="tier-name">BASIC</span>
-            <div className="tier-title">스타트업 패키지</div>
-            <div className="tier-price"><span className="tp-num">80</span><span className="tp-suffix">만원~</span></div>
-            <ul className="tier-list">
-              <li>핵심 언론사 30개 배포</li>
-              <li>보도자료 1건 송출</li>
-              <li>네이버·다음 포털 노출</li>
-              <li>배포 결과 리포트</li>
-            </ul>
-            <Link href="/inquiry" className="tier-cta">문의하기</Link>
-          </div>
+        <div className="price-table-wrap">
+          <table className="price-table">
+            <thead>
+              <tr><th>등급</th><th>건당 비용</th><th>배포 매체</th></tr>
+            </thead>
+            <tbody>
+              <tr><td className="pt-name">보도자료 배포</td><td className="pt-cost">55,000원</td><td>기본 온라인 매체 송출</td></tr>
+              <tr><td className="pt-name">마이너</td><td className="pt-cost">110,000원</td><td>중소·전문 온라인 매체 확대</td></tr>
+              <tr><td className="pt-name">중급</td><td className="pt-cost">165,000원</td><td>일반 일간지·전문지 포함</td></tr>
+              <tr><td className="pt-name">프리미엄</td><td className="pt-cost">275,000원</td><td>주요 경제지·산업지 포함</td></tr>
+              <tr><td className="pt-name">메이저</td><td className="pt-cost">440,000원</td><td>주요 종합 일간지 포함</td></tr>
+              <tr><td className="pt-name">TOP 메이저</td><td className="pt-cost">660,000원</td><td>최상위 종합지·방송·통신사까지</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="price-note">※ 표시 금액은 보도자료 1건 배포 기준입니다. 매체 구성·건수에 따라 맞춤 견적이 가능하며, 정식 사업자로 전자세금계산서 발행이 가능합니다.</p>
 
-          <div className="tier recommended">
-            <span className="tier-ribbon">추천</span>
-            <span className="tier-name">STANDARD</span>
-            <div className="tier-title">중견기업 패키지</div>
-            <div className="tier-price"><span className="tp-num">180</span><span className="tp-suffix">만원~</span></div>
-            <ul className="tier-list">
-              <li>주요 언론사 100개 배포</li>
-              <li>보도자료 1건 + 네이버 블로그 게재</li>
-              <li>대필·편집 서비스 포함</li>
-              <li>키워드 최적화</li>
-              <li>상세 노출 리포트</li>
-            </ul>
-            <Link href="/inquiry" className="tier-cta">문의하기</Link>
-          </div>
-
-          <div className="tier">
-            <span className="tier-name">PREMIUM</span>
-            <div className="tier-title">대기업 패키지</div>
-            <div className="tier-price"><span className="tp-num">350</span><span className="tp-suffix">만원~</span></div>
-            <ul className="tier-list">
-              <li>전 언론사 200개 배포</li>
-              <li>보도자료 + 블로그 + 인터뷰 기사</li>
-              <li>전담 AE 상주 컨설팅</li>
-              <li>위기관리·정정 대응</li>
-              <li>월간 브랜드 리포트</li>
-            </ul>
-            <Link href="/inquiry" className="tier-cta">문의하기</Link>
-          </div>
+        <div className="pay-box">
+          <span className="pay-label">결제 계좌</span>
+          <span className="pay-value">하나은행 <strong>260-910013-86604</strong> · 예금주 (주)뉴스온미디어</span>
         </div>
 
         <h3 className="content-h3">이용 절차</h3>
@@ -74,7 +52,7 @@ export default function PricingPage() {
           <li><span className="tl-year">02</span><span className="tl-text"><strong>보도자료 준비</strong> — 초안 검토, 키워드 최적화, 이미지 준비 (대필 가능)</span></li>
           <li><span className="tl-year">03</span><span className="tl-text"><strong>언론사 배포</strong> — 선정 언론사 동시 송출, 예약 송출 가능</span></li>
           <li><span className="tl-year">04</span><span className="tl-text"><strong>포털 + 블로그 노출</strong> — 네이버·다음·구글 노출 + 블로그 동시 게재</span></li>
-          <li><span className="tl-year">05</span><span className="tl-text"><strong>결과 보고</strong> — 노출 URL과 조회수, 도달 분석 리포트 전달</span></li>
+          <li><span className="tl-year">05</span><span className="tl-text"><strong>결과 보고</strong> — 노출 URL과 조회수, 도달 분석을 메일로 전달</span></li>
         </ol>
 
         <h3 className="content-h3">자주 묻는 질문</h3>
@@ -85,11 +63,11 @@ export default function PricingPage() {
           </details>
           <details>
             <summary>보도자료 원고가 없는데 대필이 가능한가요?</summary>
-            <div className="faq-a">전문 카피라이터가 브랜드 핵심 메시지를 인터뷰한 뒤 기사 형식으로 작성해 드립니다. STANDARD 이상 패키지에 기본 포함됩니다.</div>
+            <div className="faq-a">전문 카피라이터가 브랜드 핵심 메시지를 인터뷰한 뒤 기사 형식으로 작성해 드립니다. 원고가 없으셔도 대필·편집 서비스로 진행 가능합니다.</div>
           </details>
           <details>
             <summary>부정 기사가 나왔을 때 정정 요청이 가능한가요?</summary>
-            <div className="faq-a">PREMIUM 패키지에서 제공됩니다. 긍정 보도자료로 검색 순위를 밀어내 부정 콘텐츠의 도달을 최소화합니다.</div>
+            <div className="faq-a">긍정 보도자료를 집중 송출해 검색 순위를 밀어내 부정 콘텐츠의 도달을 최소화하는 위기관리 대응을 제공합니다. 필요 시 정정 보도·반론 기사 협의를 지원합니다.</div>
           </details>
           <details>
             <summary>주말·공휴일에도 송출 가능한가요?</summary>
@@ -104,7 +82,7 @@ export default function PricingPage() {
         <div className="cta-box">
           <div>
             <strong>맞춤 견적이 필요하신가요?</strong>
-            <p>브랜드 상황을 분석해 최적 패키지를 제안해 드립니다</p>
+            <p>브랜드 상황을 분석해 최적 배포 등급을 제안해 드립니다</p>
           </div>
           <Link href="/inquiry" className="btn btn-primary">무료 견적 신청 →</Link>
         </div>

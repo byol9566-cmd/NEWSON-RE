@@ -61,7 +61,7 @@ export default function CustomerPage() {
           </div>
           <div className="board-row">
             <span className="br-num">15</span>
-            <span className="br-title"><Link href="#">주요 언론사 200개 돌파 기념 이벤트</Link></span>
+            <span className="br-title"><Link href="#">주요 언론사 900개 돌파 기념 이벤트</Link></span>
             <span className="br-author">관리자</span>
             <span className="br-date">2025.11.01</span>
           </div>
@@ -81,11 +81,11 @@ export default function CustomerPage() {
           </details>
           <details>
             <summary>보도자료 원고가 없는데 대필이 가능한가요?</summary>
-            <div className="faq-a">전문 카피라이터가 브랜드 핵심 메시지를 인터뷰한 뒤 기사 형식으로 작성해 드립니다. STANDARD 이상 패키지에 기본 포함됩니다.</div>
+            <div className="faq-a">전문 카피라이터가 브랜드 핵심 메시지를 인터뷰한 뒤 기사 형식으로 작성해 드립니다. 원고가 없으셔도 대필·편집 서비스로 진행 가능합니다.</div>
           </details>
           <details>
             <summary>부정 기사가 나왔을 때 정정 요청이 가능한가요?</summary>
-            <div className="faq-a">PREMIUM 패키지에서 제공됩니다. 긍정 보도자료로 검색 순위를 밀어내 부정 콘텐츠의 도달을 최소화합니다.</div>
+            <div className="faq-a">긍정 보도자료를 집중 송출해 검색 순위를 밀어내 부정 콘텐츠의 도달을 최소화합니다. 필요 시 정정 보도·반론 기사 협의를 지원합니다.</div>
           </details>
           <details>
             <summary>주말·공휴일에도 송출 가능한가요?</summary>

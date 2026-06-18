@@ -34,7 +34,7 @@ export default function InquiryPage() {
             <strong>전화 상담을 원하시나요?</strong>
             <p>평일 09:00 ~ 18:00 · 전담 AE가 바로 응대합니다</p>
           </div>
-          <a href="tel:031-758-0215" className="btn btn-primary">031-758-0215</a>
+          <a href="tel:1544-4701" className="btn btn-primary">1544-4701</a>
         </div>
       </SubPageLayout>
     </main>

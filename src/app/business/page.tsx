@@ -23,11 +23,11 @@ export default function BusinessPage() {
         ]}
       >
         <h2 className="content-h2">원스톱 언론홍보 서비스</h2>
-        <p className="content-lead">언론홍보·보도자료 배포·네이버 블로그 게재를 한 번에 처리합니다. 200개 이상의 제휴 언론사 네트워크와 15년간 쌓아온 기자·편집국 신뢰관계로 브랜드 메시지를 정확하게 전달합니다.</p>
+        <p className="content-lead">언론홍보·보도자료 배포·네이버 블로그 게재를 한 번에 처리합니다. 908개 제휴 언론사 네트워크와 15년간 쌓아온 기자·편집국 신뢰관계로 브랜드 메시지를 정확하게 전달합니다.</p>
 
         <div className="stat-row">
-          <div className="stat-cell"><div className="stat-num">200<span>+</span></div><div className="stat-label">제휴 언론사</div></div>
-          <div className="stat-cell"><div className="stat-num">12,800<span>+</span></div><div className="stat-label">누적 보도</div></div>
+          <div className="stat-cell"><div className="stat-num">908<span>+</span></div><div className="stat-label">제휴 언론사</div></div>
+          <div className="stat-cell"><div className="stat-num">468,000<span>+</span></div><div className="stat-label">누적 보도</div></div>
           <div className="stat-cell"><div className="stat-num">2<span>시간</span></div><div className="stat-label">평균 게재 속도</div></div>
           <div className="stat-cell"><div className="stat-num">98<span>%</span></div><div className="stat-label">네이버 검색 노출</div></div>
         </div>
@@ -37,7 +37,7 @@ export default function BusinessPage() {
           <div className="svc-cell">
             <div className="svc-num">01 / CORE</div>
             <h3>보도자료 배포</h3>
-            <p>주요 일간지·경제지·산업지·지역지까지 200개 이상의 제휴 언론사에 동시 송출합니다. 매체별 편집 데스크에 맞춘 형식으로 기사 채택률을 극대화합니다.</p>
+            <p>주요 일간지·경제지·산업지·지역지까지 908개 제휴 언론사에 동시 송출합니다. 매체별 편집 데스크에 맞춘 형식으로 기사 채택률을 극대화합니다.</p>
           </div>
           <div className="svc-cell">
             <div className="svc-num">02 / DIGITAL</div>
@@ -78,7 +78,7 @@ export default function BusinessPage() {
         <div className="cta-box">
           <div>
             <strong>어떤 서비스가 필요하신가요?</strong>
-            <p>전담 AE가 브랜드에 가장 효과적인 패키지를 설계해 드립니다</p>
+            <p>전담 AE가 브랜드에 가장 효과적인 배포 전략을 설계해 드립니다</p>
           </div>
           <Link href="/inquiry" className="btn btn-primary">무료 견적 받기 →</Link>
         </div>
