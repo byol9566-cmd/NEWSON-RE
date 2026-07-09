@@ -4,7 +4,14 @@ import SubPageLayout from '@/components/SubPageLayout'
 
 export const metadata: Metadata = {
   title: '클라이언트 — 뉴스온',
-  description: '뉴스온과 함께한 3,500개 이상 기업·기관 파트너 레퍼런스.',
+  description: '뉴스온과 함께 언론홍보를 진행한 3,500개 이상의 기업·기관 파트너 레퍼런스를 소개합니다. 대기업부터 스타트업까지 다양한 산업군의 클라이언트가 뉴스온을 신뢰하고 선택했습니다.',
+  alternates: { canonical: '/clients' },
+  openGraph: {
+    title: '클라이언트 — 뉴스온',
+    description: '뉴스온과 함께 언론홍보를 진행한 3,500개 이상의 기업·기관 파트너 레퍼런스를 소개합니다. 대기업부터 스타트업까지 다양한 산업군의 클라이언트가 뉴스온을 신뢰하고 선택했습니다.',
+    url: '/clients',
+    type: 'website',
+  },
 }
 
 const CLIENTS = [

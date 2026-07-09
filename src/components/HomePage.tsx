@@ -43,7 +43,13 @@ function HeroSection() {
   const [idx, setIdx] = useState(0)
   const [prog, setProg] = useState(0)
   const [paused, setPaused] = useState(false)
+  const [autoplayEnabled, setAutoplayEnabled] = useState(true)
   const progRef = useRef<ReturnType<typeof setInterval> | null>(null)
+
+  useEffect(() => {
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (prefersReduced) setAutoplayEnabled(false)
+  }, [])
 
   const goTo = useCallback((n: number) => {
     setIdx((prev) => {
@@ -54,7 +60,7 @@ function HeroSection() {
   }, [])
 
   useEffect(() => {
-    if (paused) return
+    if (paused || !autoplayEnabled) return
     progRef.current = setInterval(() => {
       setProg((p) => {
         const next = p + 100 / (SLIDE_DUR / 100)
@@ -66,7 +72,7 @@ function HeroSection() {
       })
     }, 100)
     return () => { if (progRef.current) clearInterval(progRef.current) }
-  }, [paused, idx])
+  }, [paused, idx, autoplayEnabled])
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -114,7 +120,7 @@ function HeroSection() {
                 <span className="hc-sep">/</span>
                 <span>03</span>
               </span>
-              <div className="hero-progress" role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(prog)}>
+              <div className="hero-progress" role="progressbar" aria-label="슬라이드 자동재생 진행률" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(prog)}>
                 <div className="hero-progress-bar" style={{ width: `${prog}%` }} />
               </div>
               <div className="hero-arrows">
@@ -181,7 +187,7 @@ function TrustItem({ eyebrow, target, suffix, label }: typeof TRUST_ITEMS[0]) {
         const dur = 1000
         const start = performance.now()
         const step = (now: number) => {
-          const p = Math.min((now - start) / dur, 1)
+          const p = Math.min(Math.max((now - start) / dur, 0), 1)
           setCount(Math.round(p * target))
           if (p < 1) requestAnimationFrame(step)
         }
@@ -360,6 +366,19 @@ function ProcessSteps() {
   const total = PROCESS_STEPS.length
   const goPrev = () => setActive((i) => (i - 1 + total) % total)
   const goNext = () => setActive((i) => (i + 1) % total)
+  const dotRefs = useRef<(HTMLButtonElement | null)[]>([])
+
+  function handleTabKeyDown(e: React.KeyboardEvent<HTMLDivElement>) {
+    let next: number
+    if (e.key === 'ArrowRight') next = (active + 1) % total
+    else if (e.key === 'ArrowLeft') next = (active - 1 + total) % total
+    else if (e.key === 'Home') next = 0
+    else if (e.key === 'End') next = total - 1
+    else return
+    e.preventDefault()
+    setActive(next)
+    dotRefs.current[next]?.focus()
+  }
 
   return (
     <div className="process-steps section-animate" data-active={active}>
@@ -380,13 +399,15 @@ function ProcessSteps() {
       ))}
       <button type="button" className="ps-nav ps-nav-prev" onClick={goPrev} aria-label="이전 단계">‹</button>
       <button type="button" className="ps-nav ps-nav-next" onClick={goNext} aria-label="다음 단계">›</button>
-      <div className="ps-dots" role="tablist" aria-label="단계 선택">
+      <div className="ps-dots" role="tablist" aria-label="단계 선택" onKeyDown={handleTabKeyDown}>
         {PROCESS_STEPS.map((s, i) => (
           <button
             key={s.num}
+            ref={(el) => { dotRefs.current[i] = el }}
             type="button"
             role="tab"
             aria-selected={i === active}
+            tabIndex={i === active ? 0 : -1}
             aria-label={`${s.num} ${s.title}`}
             className={`ps-dot${i === active ? ' is-active' : ''}`}
             onClick={() => setActive(i)}
@@ -482,6 +503,19 @@ function ServicesGrid() {
   const total = SERVICES.length
   const goPrev = () => setActive((i) => (i - 1 + total) % total)
   const goNext = () => setActive((i) => (i + 1) % total)
+  const dotRefs = useRef<(HTMLButtonElement | null)[]>([])
+
+  function handleTabKeyDown(e: React.KeyboardEvent<HTMLDivElement>) {
+    let next: number
+    if (e.key === 'ArrowRight') next = (active + 1) % total
+    else if (e.key === 'ArrowLeft') next = (active - 1 + total) % total
+    else if (e.key === 'Home') next = 0
+    else if (e.key === 'End') next = total - 1
+    else return
+    e.preventDefault()
+    setActive(next)
+    dotRefs.current[next]?.focus()
+  }
 
   return (
     <div className="services-grid section-animate" data-active={active}>
@@ -508,13 +542,15 @@ function ServicesGrid() {
       ))}
       <button type="button" className="sg-nav sg-nav-prev" onClick={goPrev} aria-label="이전 서비스">‹</button>
       <button type="button" className="sg-nav sg-nav-next" onClick={goNext} aria-label="다음 서비스">›</button>
-      <div className="sg-dots" role="tablist" aria-label="서비스 선택">
+      <div className="sg-dots" role="tablist" aria-label="서비스 선택" onKeyDown={handleTabKeyDown}>
         {SERVICES.map((s, i) => (
           <button
             key={s.num}
+            ref={(el) => { dotRefs.current[i] = el }}
             type="button"
             role="tab"
             aria-selected={i === active}
+            tabIndex={i === active ? 0 : -1}
             aria-label={`${s.num} ${s.title}`}
             className={`sg-dot${i === active ? ' is-active' : ''}`}
             onClick={() => setActive(i)}
@@ -632,7 +668,7 @@ export default function HomePage() {
           <div className="why-spread section-animate">
             {/* Left: editorial figure + pull quote */}
             <div className="why-figure">
-              <div className="why-figure-frame">
+              <div className="why-figure-frame" aria-hidden="true">
                 <div
                   className="why-figure-img"
                   style={{ backgroundImage: "url('/images/why-01.jpg')" }}

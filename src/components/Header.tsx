@@ -1,8 +1,10 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+
+const FOCUSABLE_SELECTOR = 'a[href], button:not([disabled])'
 
 const NAV_LINKS = [
   { label: '회사소개', href: '/company' },
@@ -18,6 +20,8 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [navOpen, setNavOpen] = useState(false)
   const pathname = usePathname()
+  const hamburgerRef = useRef<HTMLButtonElement>(null)
+  const panelRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10)
@@ -38,13 +42,45 @@ export default function Header() {
     setNavOpen(false)
   }, [pathname])
 
+  const isFirstRender = useRef(true)
+  useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false
+      return
+    }
+    if (navOpen) {
+      panelRef.current?.querySelector<HTMLElement>(FOCUSABLE_SELECTOR)?.focus()
+    } else {
+      hamburgerRef.current?.focus()
+    }
+  }, [navOpen])
+
+  function handleNavKeyDown(e: React.KeyboardEvent<HTMLDivElement>) {
+    if (e.key === 'Escape') {
+      setNavOpen(false)
+      return
+    }
+    if (e.key !== 'Tab' || !panelRef.current) return
+    const focusable = Array.from(panelRef.current.querySelectorAll<HTMLElement>(FOCUSABLE_SELECTOR))
+    if (focusable.length === 0) return
+    const first = focusable[0]
+    const last = focusable[focusable.length - 1]
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault()
+      last.focus()
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault()
+      first.focus()
+    }
+  }
+
   return (
     <>
       <header id="header" role="banner" className={scrolled ? 'scrolled' : ''}>
         <div className="container">
           <div id="logo">
             <Link href="/" aria-label="뉴스온 홈으로">
-              <span className="logo-mark" aria-hidden="true" />NEWS<span className="logo-dot">ON</span>
+              NEWS<span className="logo-dot">ON</span>
             </Link>
           </div>
 
@@ -69,6 +105,7 @@ export default function Header() {
           </Link>
 
           <button
+            ref={hamburgerRef}
             id="hamburger"
             aria-label={navOpen ? '메뉴 닫기' : '메뉴 열기'}
             aria-expanded={navOpen}
@@ -88,13 +125,15 @@ export default function Header() {
         role="dialog"
         aria-label="모바일 메뉴"
         aria-modal="true"
+        inert={!navOpen}
         className={navOpen ? 'open' : ''}
         onClick={(e) => { if (e.target === e.currentTarget) setNavOpen(false) }}
+        onKeyDown={handleNavKeyDown}
       >
-        <div className="mn-panel">
+        <div className="mn-panel" ref={panelRef}>
           <div className="mn-header">
             <span className="mn-brand">
-              <span className="logo-mark" aria-hidden="true" />NEWSON
+              NEWS<span className="logo-dot">ON</span>
             </span>
             <button id="close-nav" onClick={() => setNavOpen(false)} aria-label="메뉴 닫기">✕</button>
           </div>

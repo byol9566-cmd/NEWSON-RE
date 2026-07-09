@@ -3,7 +3,14 @@ import SubPageLayout from '@/components/SubPageLayout'
 
 export const metadata: Metadata = {
   title: '오시는 길 — 뉴스온',
-  description: '뉴스온 본사 위치 및 오시는 길 안내. 경기도 하남시 미사대로 550, 현대지식산업센터 한강미사 C동 10층 1001호.',
+  description: '뉴스온 본사 위치와 오시는 길을 안내합니다. 경기도 하남시 미사대로 550 현대지식산업센터 한강미사 C동 10층 1001호에 위치하며, 지하철 5호선 하남풍산역에서 도보 3분 거리입니다.',
+  alternates: { canonical: '/location' },
+  openGraph: {
+    title: '오시는 길 — 뉴스온',
+    description: '뉴스온 본사 위치와 오시는 길을 안내합니다. 경기도 하남시 미사대로 550 현대지식산업센터 한강미사 C동 10층 1001호에 위치하며, 지하철 5호선 하남풍산역에서 도보 3분 거리입니다.',
+    url: '/location',
+    type: 'website',
+  },
 }
 
 export default function LocationPage() {

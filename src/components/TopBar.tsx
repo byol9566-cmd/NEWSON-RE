@@ -1,4 +1,11 @@
+'use client'
+
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+
 export default function TopBar() {
+  const pathname = usePathname()
+
   return (
     <div id="top-bar">
       <div className="container">
@@ -12,9 +19,9 @@ export default function TopBar() {
           <span className="tm-item">평일 09:00 ~ 18:00</span>
         </div>
         <div className="topbar-links">
-          <a href="/" aria-current="page">홈</a>
-          <a href="/inquiry">온라인문의</a>
-          <a href="/customer">고객센터</a>
+          <Link href="/" aria-current={pathname === '/' ? 'page' : undefined}>홈</Link>
+          <Link href="/inquiry" aria-current={pathname === '/inquiry' ? 'page' : undefined}>온라인문의</Link>
+          <Link href="/customer" aria-current={pathname === '/customer' ? 'page' : undefined}>고객센터</Link>
         </div>
       </div>
     </div>

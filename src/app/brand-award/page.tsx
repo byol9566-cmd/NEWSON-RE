@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -27,9 +28,39 @@ const BRAND_AWARDS = [
   { outlet: '한경BUSINESS', award: '한국품질만족도 1위' },
 ]
 
+const PROCESS_FLOW = [
+  { title: '신청서 작성', desc: '브랜드 소개' },
+  { title: '신청서 제출', desc: '신청서 접수' },
+  { title: '심사 및 발표', desc: '수상 통보' },
+  { title: '시상식', desc: '수상 혜택 제공' },
+] as const
+
+const BENEFIT_ITEMS = [
+  '시상식 및 호텔 코스요리',
+  '엠블럼',
+  '상장 및 상패',
+  '기업 인터뷰 영상 촬영',
+  '신문/잡지 연합광고, 특집기사',
+  '온라인 기사',
+]
+
+const EFFECT_ITEMS = [
+  '브랜드 인지도 향상',
+  '매출증대',
+  '기업 히스토리 수상 기록',
+  '기업에 대한 긍정적인 인식의 변화',
+]
+
 export const metadata: Metadata = {
   title: '브랜드대상 — 뉴스온',
-  description: '뉴스온이 선정한 브랜드대상 수상기업. 언론홍보 대행 15년 업력의 전문 커뮤니케이션 파트너.',
+  description: '뉴스온이 15년간 함께해온 브랜드대상 수상 기업 리스트와 신청 절차, 수상 특전을 소개합니다. 신문·잡지 연합광고, 특집기사 게재까지 지원하는 언론홍보 전문 커뮤니케이션 파트너 뉴스온과 함께하세요.',
+  alternates: { canonical: '/brand-award' },
+  openGraph: {
+    title: '브랜드대상 — 뉴스온',
+    description: '뉴스온이 15년간 함께해온 브랜드대상 수상 기업 리스트와 신청 절차, 수상 특전을 소개합니다. 신문·잡지 연합광고, 특집기사 게재까지 지원하는 언론홍보 전문 커뮤니케이션 파트너 뉴스온과 함께하세요.',
+    url: '/brand-award',
+    type: 'website',
+  },
 }
 
 export default function BrandAwardPage() {
@@ -56,21 +87,14 @@ export default function BrandAwardPage() {
           <div className="award-hero-shade" />
           <figcaption className="award-hero-caption">
             <span className="ahc-eyebrow">BRAND AWARD CEREMONY</span>
-            <span className="ahc-text">대한민국 대표 브랜드를 만든 15년의 발자취</span>
+            <span className="ahc-text">대한민국 대표 브랜드대상</span>
           </figcaption>
         </figure>
 
-        <h2 className="content-h2">대한민국 대표 언론홍보 전문기업</h2>
-        <p className="content-lead">뉴스온은 보도자료 기획, 언론사 배포, 네이버 블로그 게재를 원스톱으로 제공하는 언론홍보 전문 대행사입니다. 908개 제휴 언론사 네트워크를 바탕으로 기업의 이야기를 가장 효과적인 매체에 전달합니다.</p>
+        <h2 className="content-h2">대한민국 대표 브랜드대상</h2>
+        <p className="content-lead">15년간 축적된 언론홍보 노하우로 다수의 브랜드대상 수상 기업과 함께해왔습니다. 아래에서 수상 이력과 신청 절차, 수상 특전을 확인하세요.</p>
 
-        <div className="stat-row">
-          <div className="stat-cell"><div className="stat-num">15<span>년</span></div><div className="stat-label">업력</div></div>
-          <div className="stat-cell"><div className="stat-num">908<span>+</span></div><div className="stat-label">제휴 언론사</div></div>
-          <div className="stat-cell"><div className="stat-num">3,500<span>+</span></div><div className="stat-label">누적 파트너사</div></div>
-          <div className="stat-cell"><div className="stat-num">468,000<span>+</span></div><div className="stat-label">배포 보도자료</div></div>
-        </div>
-
-        <h3 className="content-h3">브랜드 대상 리스트</h3>
+        <h3 className="content-h3">브랜드대상 리스트</h3>
         <div className="award-grid">
           {BRAND_AWARDS.map((item, i) => (
             <div key={`${item.outlet}-${i}`} className="award-card">
@@ -80,24 +104,79 @@ export default function BrandAwardPage() {
           ))}
         </div>
 
+        <div className="pf-block" role="group" aria-label="브랜드대상 신청 진행절차: 신청서 작성 → 신청서 제출 → 심사 및 발표 → 시상식">
+          <h3 className="content-h3">진행절차 <span className="h3-sub">(PROCESS)</span></h3>
+          <div className="pf-steps">
+            {PROCESS_FLOW.map((step, i, arr) => (
+              <Fragment key={step.title}>
+                <div className="pf-step">
+                  <div className="pf-circle">
+                    <span className="pf-step-title">{step.title}</span>
+                    <span className="pf-step-desc">{step.desc}</span>
+                  </div>
+                </div>
+                {i < arr.length - 1 && <span className="pf-arrow" aria-hidden="true">›</span>}
+              </Fragment>
+            ))}
+          </div>
+        </div>
+        <h3 className="content-h3">수상특전</h3>
+        <div className="benefit-panel">
+          <ol className="benefit-list">
+            {BENEFIT_ITEMS.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ol>
+          <div className="benefit-media">
+            <Image
+              src="/images/brand-award-badges.jpg"
+              width={619}
+              height={233}
+              alt="브랜드대상 수상 엠블럼 · 상패 · 브랜드선호도 1위 인증서"
+              sizes="(max-width: 720px) 100vw, 400px"
+            />
+          </div>
+        </div>
+
+        <h3 className="content-h3">한국경제신문 연합광고</h3>
         <figure className="brand-award-graphic">
           <Image
-            src="/images/brand-award-process.png"
+            src="/images/brand-award-hankyung-ad.jpg"
             width={660}
-            height={216}
-            alt="브랜드대상 신청 진행절차 — 신청서 작성(브랜드 소개), 신청서 제출(접수), 심사 및 발표(수상 통보), 시상식(수상 혜택 제공)"
+            height={416}
+            alt="한국경제신문 연합광고 지면 · 한국브랜드선호도 1위 인증 지면"
             sizes="(max-width: 800px) 100vw, 800px"
           />
         </figure>
+
+        <h3 className="content-h3">한경BUSINESS 특집기사</h3>
         <figure className="brand-award-graphic">
           <Image
-            src="/images/brand-award-benefits.png"
+            src="/images/brand-award-hankyung-business.jpg"
             width={660}
-            height={2047}
-            alt="브랜드대상 수상특전 · 한국경제신문 연합광고 · 한경BUSINESS 특집기사 · 기대효과 안내"
+            height={415}
+            alt="한경BUSINESS 특집기사 지면 — 중소기업 다시 뛴다"
             sizes="(max-width: 800px) 100vw, 800px"
           />
         </figure>
+
+        <h3 className="content-h3">기대효과</h3>
+        <div className="benefit-panel">
+          <ol className="benefit-list">
+            {EFFECT_ITEMS.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ol>
+          <div className="benefit-media">
+            <Image
+              src="/images/brand-award-effect-medals.jpg"
+              width={660}
+              height={183}
+              alt="브랜드대상 수상 메달 — KSBA · CSBA · KBBA · KBA 인증"
+              sizes="(max-width: 720px) 100vw, 400px"
+            />
+          </div>
+        </div>
 
         <div className="cta-box">
           <div>

@@ -1,12 +1,64 @@
 'use client'
 
-import { FormEvent } from 'react'
+import { FormEvent, useState } from 'react'
+import Link from 'next/link'
 
-export default function InquiryForm() {
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+type SubmitState = 'idle' | 'submitting' | 'success' | 'error'
+
+interface InquiryFormProps {
+  defaultName?: string
+  defaultTel?: string
+  defaultMessage?: string
+}
+
+export default function InquiryForm({ defaultName, defaultTel, defaultMessage }: InquiryFormProps) {
+  const [state, setState] = useState<SubmitState>('idle')
+  const [errorMessage, setErrorMessage] = useState('')
+
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    alert('문의가 접수되었습니다. 전담 AE가 2시간 내에 연락 드리겠습니다.')
-    e.currentTarget.reset()
+    const form = e.currentTarget
+    const formData = new FormData(form)
+
+    setState('submitting')
+    setErrorMessage('')
+
+    try {
+      const res = await fetch('/api/inquiry', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.get('name'),
+          company: formData.get('company'),
+          tel: formData.get('tel'),
+          email: formData.get('email'),
+          service: formData.get('service'),
+          message: formData.get('message'),
+        }),
+      })
+      const data = await res.json()
+
+      if (!res.ok || !data.ok) {
+        setState('error')
+        setErrorMessage(data.error || '문의 접수에 실패했습니다. 잠시 후 다시 시도해 주세요.')
+        return
+      }
+
+      setState('success')
+      form.reset()
+    } catch {
+      setState('error')
+      setErrorMessage('네트워크 오류로 문의 접수에 실패했습니다. 전화(1544-4701)로 문의해 주세요.')
+    }
+  }
+
+  if (state === 'success') {
+    return (
+      <div className="inquiry-success" role="status">
+        <strong>문의가 접수되었습니다.</strong>
+        <p>전담 AE가 2시간 내에 연락 드리겠습니다.</p>
+      </div>
+    )
   }
 
   return (
@@ -14,7 +66,7 @@ export default function InquiryForm() {
       <div className="if-row">
         <div>
           <label htmlFor="if-name">담당자 성함 <span className="required">*</span></label>
-          <input type="text" id="if-name" name="name" required placeholder="홍길동" />
+          <input type="text" id="if-name" name="name" required placeholder="홍길동" defaultValue={defaultName} />
         </div>
         <div>
           <label htmlFor="if-company">회사명 <span className="required">*</span></label>
@@ -24,7 +76,7 @@ export default function InquiryForm() {
       <div className="if-row">
         <div>
           <label htmlFor="if-tel">연락처 <span className="required">*</span></label>
-          <input type="tel" id="if-tel" name="tel" required placeholder="010-0000-0000" />
+          <input type="tel" id="if-tel" name="tel" required placeholder="010-0000-0000" defaultValue={defaultTel} />
         </div>
         <div>
           <label htmlFor="if-email">이메일</label>
@@ -48,13 +100,20 @@ export default function InquiryForm() {
       </div>
       <div>
         <label htmlFor="if-message">상세 내용 <span className="required">*</span></label>
-        <textarea id="if-message" name="message" required placeholder="브랜드 소개, 홍보 목적, 원하는 일정 등을 간단히 작성해 주세요" />
+        <textarea id="if-message" name="message" required placeholder="브랜드 소개, 홍보 목적, 원하는 일정 등을 간단히 작성해 주세요" defaultValue={defaultMessage} />
       </div>
       <div className="if-agree">
         <input type="checkbox" id="if-privacy" required />
-        <label htmlFor="if-privacy">개인정보 수집 · 이용에 동의합니다 <span className="required">*</span></label>
+        <label htmlFor="if-privacy">
+          <Link href="/privacy" target="_blank" rel="noopener noreferrer">개인정보 수집 · 이용</Link>에 동의합니다 <span className="required">*</span>
+        </label>
       </div>
-      <button type="submit">무료 견적 신청 →</button>
+      {state === 'error' && (
+        <p className="if-submit-error" role="alert">{errorMessage}</p>
+      )}
+      <button type="submit" disabled={state === 'submitting'}>
+        {state === 'submitting' ? '접수 중...' : '무료 견적 신청 →'}
+      </button>
     </form>
   )
 }

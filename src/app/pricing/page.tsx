@@ -4,7 +4,14 @@ import SubPageLayout from '@/components/SubPageLayout'
 
 export const metadata: Metadata = {
   title: '언론홍보 비용 — 뉴스온',
-  description: '뉴스온 보도자료 배포 비용 안내. 매체 등급별 건당 단가(55,000~660,000원)와 맞춤 견적 서비스.',
+  description: '뉴스온 보도자료 배포 비용을 매체 등급별로 투명하게 안내합니다. 건당 55,000원부터 660,000원까지 예산에 맞는 등급을 선택하고, 브랜드 상황에 맞춘 맞춤 견적 상담도 받아보세요.',
+  alternates: { canonical: '/pricing' },
+  openGraph: {
+    title: '언론홍보 비용 — 뉴스온',
+    description: '뉴스온 보도자료 배포 비용을 매체 등급별로 투명하게 안내합니다. 건당 55,000원부터 660,000원까지 예산에 맞는 등급을 선택하고, 브랜드 상황에 맞춘 맞춤 견적 상담도 받아보세요.',
+    url: '/pricing',
+    type: 'website',
+  },
 }
 
 export default function PricingPage() {
@@ -27,7 +34,7 @@ export default function PricingPage() {
         <div className="price-table-wrap">
           <table className="price-table">
             <thead>
-              <tr><th>등급</th><th>건당 비용</th><th>배포 매체</th></tr>
+              <tr><th scope="col">등급</th><th scope="col">건당 비용</th><th scope="col">배포 매체</th></tr>
             </thead>
             <tbody>
               <tr><td className="pt-name">보도자료 배포</td><td className="pt-cost">55,000원</td><td>기본 온라인 매체 송출</td></tr>

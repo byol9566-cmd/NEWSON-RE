@@ -17,6 +17,7 @@ interface SubPageLayoutProps {
   consultHeading?: string
   consultBtnLabel?: string
   consultBtnHref?: string
+  showConsultBtn?: boolean
   children: ReactNode
 }
 
@@ -30,6 +31,7 @@ export default function SubPageLayout({
   consultHeading = 'CONTACT',
   consultBtnLabel = '온라인 문의하기',
   consultBtnHref = '/inquiry',
+  showConsultBtn = true,
   children,
 }: SubPageLayoutProps) {
   return (
@@ -74,7 +76,9 @@ export default function SubPageLayout({
                 평일 09:00 ~ 18:00<br />
                 토·일·공휴일 휴무
               </div>
-              <Link href={consultBtnHref} className="consult-btn">{consultBtnLabel}</Link>
+              {showConsultBtn && (
+                <Link href={consultBtnHref} className="consult-btn">{consultBtnLabel}</Link>
+              )}
             </div>
           </aside>
 

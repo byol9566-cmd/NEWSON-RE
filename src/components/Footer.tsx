@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Footer() {
   return (
     <footer id="footer" role="contentinfo">
@@ -5,7 +7,7 @@ export default function Footer() {
         <div className="footer-top">
           <div className="footer-col-brand">
             <div className="footer-brand">
-              <span className="logo-mark" aria-hidden="true" />NEWS<span className="logo-dot">ON</span>
+              NEWS<span className="logo-dot">ON</span>
             </div>
             <p className="footer-tagline">언론홍보·보도자료 배포·네이버 블로그 게재를 한 번에 처리하는 언론홍보 전문 대행사입니다.</p>
             <div className="footer-meta">
@@ -18,12 +20,12 @@ export default function Footer() {
           <div className="footer-col">
             <h4>서비스</h4>
             <ul>
-              <li><a href="/company">회사소개</a></li>
-              <li><a href="/pressrelease">보도자료 배포</a></li>
-              <li><a href="/business">네이버 블로그 게재</a></li>
-              <li><a href="/pricing">언론홍보 비용</a></li>
-              <li><a href="/brand-award">브랜드대상</a></li>
-              <li><a href="/clients">클라이언트</a></li>
+              <li><Link href="/company">회사소개</Link></li>
+              <li><Link href="/pressrelease">보도자료 배포</Link></li>
+              <li><Link href="/business">네이버 블로그 게재</Link></li>
+              <li><Link href="/pricing">언론홍보 비용</Link></li>
+              <li><Link href="/brand-award">브랜드대상</Link></li>
+              <li><Link href="/clients">클라이언트</Link></li>
             </ul>
           </div>
 
@@ -45,16 +47,16 @@ export default function Footer() {
               </svg>
               <a href="mailto:newsmarketing@daum.net">newsmarketing@daum.net</a>
             </div>
-            <a href="/inquiry" className="btn btn-primary" style={{ marginTop: '16px', fontSize: '13px', padding: '10px 18px' }}>온라인 문의하기</a>
+            <Link href="/inquiry" className="btn btn-primary" style={{ marginTop: '16px', fontSize: '13px', padding: '10px 18px' }}>온라인 문의하기</Link>
           </div>
         </div>
 
         <div className="footer-bottom">
           <span>Copyright &copy; 2026 뉴스온 (NEWSON). All Rights Reserved.</span>
           <div className="fb-links">
-            <a href="#">이용약관</a>
-            <a href="#">개인정보처리방침</a>
-            <a href="/location">오시는 길</a>
+            <Link href="/terms">이용약관</Link>
+            <Link href="/privacy">개인정보처리방침</Link>
+            <Link href="/location">오시는 길</Link>
           </div>
         </div>
       </div>

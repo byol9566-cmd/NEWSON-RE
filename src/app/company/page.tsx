@@ -4,7 +4,14 @@ import SubPageLayout from '@/components/SubPageLayout'
 
 export const metadata: Metadata = {
   title: '회사소개 — 뉴스온',
-  description: '(주)뉴스온미디어 회사소개 — 회사 연혁, 운영 사이트, 주요 거래처, 제휴 언론사 현황 및 오시는 길 안내.',
+  description: '(주)뉴스온미디어는 2014년부터 언론홍보 대행 서비스를 제공해온 전문 기업입니다. 회사 연혁, 운영 중인 미디어 사이트, 3,500여 주요 거래처, 900여 개 제휴 언론사 현황과 오시는 길까지 한눈에 확인하세요.',
+  alternates: { canonical: '/company' },
+  openGraph: {
+    title: '회사소개 — 뉴스온',
+    description: '(주)뉴스온미디어는 2014년부터 언론홍보 대행 서비스를 제공해온 전문 기업입니다. 회사 연혁, 운영 중인 미디어 사이트, 3,500여 주요 거래처, 900여 개 제휴 언론사 현황과 오시는 길까지 한눈에 확인하세요.',
+    url: '/company',
+    type: 'website',
+  },
 }
 
 const COMPANY_HISTORY = [
@@ -36,10 +43,10 @@ const OPERATED_SITES = [
 ]
 
 const PRESS_ARTICLES = [
-  { label: '디지털타임스', url: 'http://www.dt.co.kr/contents.html?article_no=2019020102109923813012&ref=naver' },
+  { label: '디지털타임스', url: 'https://www.dt.co.kr/contents.html?article_no=2019020102109923813012&ref=naver' },
   { label: '연합뉴스', url: 'https://www.yna.co.kr/view/AKR20160817142500848?input=1195m' },
   { label: '서울경제', url: 'https://www.sedaily.com/NewsView/1L06E6VAKX' },
-  { label: '브릿지경제', url: 'http://www.viva100.com/main/view.php?key=20160817001144229' },
+  { label: '브릿지경제', url: 'https://www.viva100.com/main/view.php?key=20160817001144229' },
   { label: '인터뷰365', url: 'https://www.interview365.com/news/articleView.html?idxno=110253' },
   { label: 'IT비즈뉴스', url: 'https://www.itbiznews.com/news/articleView.html?idxno=177460' },
   { label: '글로벌경제', url: 'https://www.getnews.co.kr/news/articleView.html?idxno=835576' },
@@ -107,7 +114,11 @@ export default function CompanyPage() {
         </p>
         <details className="media-box">
           <summary>제휴 언론사 전체 목록 보기</summary>
-          <div className="media-names">{MEDIA_OUTLETS}</div>
+          <ul className="media-list">
+            {MEDIA_OUTLETS.split(/\s+/).map((name, i) => (
+              <li key={`${name}-${i}`}>{name}</li>
+            ))}
+          </ul>
         </details>
 
         <h3 className="content-h3">언론 보도</h3>

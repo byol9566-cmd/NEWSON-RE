@@ -4,7 +4,14 @@ import SubPageLayout from '@/components/SubPageLayout'
 
 export const metadata: Metadata = {
   title: '보도자료 사례 — 뉴스온',
-  description: '뉴스온이 배포한 주요 보도자료 사례 — 금융·의료·IT·유통 등 다양한 산업 분야의 성공 사례를 확인하세요.',
+  description: '뉴스온이 배포한 주요 보도자료 사례를 소개합니다. 금융·의료·IT·유통 등 다양한 산업 분야에서 실제로 진행한 언론홍보·뉴스마케팅 성공 사례를 통해 뉴스온의 실력을 직접 확인해보세요.',
+  alternates: { canonical: '/pressrelease' },
+  openGraph: {
+    title: '보도자료 사례 — 뉴스온',
+    description: '뉴스온이 배포한 주요 보도자료 사례를 소개합니다. 금융·의료·IT·유통 등 다양한 산업 분야에서 실제로 진행한 언론홍보·뉴스마케팅 성공 사례를 통해 뉴스온의 실력을 직접 확인해보세요.',
+    url: '/pressrelease',
+    type: 'website',
+  },
 }
 
 const PRESS_ITEMS = [
@@ -89,7 +96,7 @@ export default function PressReleasePage() {
             <div key={item.num} className="press-item">
               <span className="pi-num">{item.num}</span>
               <div className="pi-body">
-                <h3>{item.title}</h3>
+                <h4>{item.title}</h4>
                 <p>{item.desc}</p>
               </div>
               <span className="pi-date">{item.date}</span>
