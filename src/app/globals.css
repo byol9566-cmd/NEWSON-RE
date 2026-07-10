@@ -2630,3 +2630,366 @@ body {
   color: var(--color-ns-slate);
 }
 .tr-text strong { color: var(--color-ns-ink); font-weight: 700; display: block; margin-bottom: 2px; }
+
+/* == PRESS BOARD (pressrelease 게시판) == */
+
+/* 5열(번호|제목|글쓴이|조회수|등록일) 변형 */
+.board-table.bt-cases { margin-bottom: 24px; }
+.board-table.bt-cases thead th:nth-child(4) { width: 72px; }
+.board-table.bt-cases thead th:nth-child(5) { width: 132px; }
+.br-title a {
+  color: var(--color-ns-ink);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 150ms cubic-bezier(0.2,0.8,0.2,1);
+}
+.br-title a:hover { color: var(--color-ns-red); }
+.br-views { font-size: 13px; color: var(--color-ns-slate-2); }
+.br-empty {
+  text-align: center;
+  padding: 48px 16px !important;
+  color: var(--color-ns-slate-2);
+  font-size: 14px;
+}
+@media (max-width: 640px) {
+  .board-table.bt-cases td.br-views { display: none; }
+}
+
+/* 검색 + 글쓰기 툴바 */
+.board-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+.board-search {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+  min-width: 220px;
+  max-width: 380px;
+}
+.board-search input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 14px;
+  border: 1.5px solid var(--color-ns-line);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-family: var(--font-sans);
+  color: var(--color-ns-ink);
+  outline: none;
+  transition: border-color 150ms cubic-bezier(0.2,0.8,0.2,1), box-shadow 150ms cubic-bezier(0.2,0.8,0.2,1);
+}
+.board-search input:focus {
+  border-color: var(--color-ns-red);
+  box-shadow: 0 0 0 3px rgba(232, 35, 74, 0.14);
+}
+
+/* 페이지네이션 */
+.board-pager {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.bp-link {
+  min-width: 36px;
+  height: 36px;
+  padding: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-ns-line-2);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-ns-slate);
+  text-decoration: none;
+  transition: color 150ms cubic-bezier(0.2,0.8,0.2,1), border-color 150ms cubic-bezier(0.2,0.8,0.2,1);
+}
+a.bp-link:hover { border-color: var(--color-ns-red); color: var(--color-ns-red); }
+.bp-link.is-current {
+  background: var(--color-ns-red);
+  border-color: var(--color-ns-red);
+  color: #fff;
+}
+
+/* 게시물 상세 */
+.post-view { margin-bottom: 32px; }
+.pv-title {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.35;
+  color: var(--color-ns-ink);
+  margin: 0 0 16px;
+}
+.pv-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  padding: 14px 16px;
+  background: var(--color-ns-mist);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  color: var(--color-ns-slate-2);
+  margin-bottom: 28px;
+}
+.pv-meta strong { color: var(--color-ns-ink); font-weight: 700; }
+.pv-content {
+  font-size: 15px;
+  line-height: 1.85;
+  color: var(--color-ns-slate);
+  white-space: pre-line;
+  word-break: break-word;
+  min-height: 160px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--color-ns-line-2);
+}
+.pv-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.pv-admin-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 게시판 폼 (글쓰기·수정·로그인) */
+.board-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.board-login-form { max-width: 380px; }
+.bf-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.bf-field label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-ns-ink);
+}
+.bf-field input,
+.bf-field textarea {
+  padding: 12px 14px;
+  background: #fff;
+  border: 1.5px solid var(--color-ns-line);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-family: var(--font-sans);
+  color: var(--color-ns-ink);
+  outline: none;
+  transition: border-color 150ms cubic-bezier(0.2,0.8,0.2,1), box-shadow 150ms cubic-bezier(0.2,0.8,0.2,1);
+}
+.bf-field textarea {
+  resize: vertical;
+  min-height: 280px;
+  line-height: 1.7;
+}
+.bf-field input:focus,
+.bf-field textarea:focus {
+  border-color: var(--color-ns-red);
+  box-shadow: 0 0 0 3px rgba(232, 35, 74, 0.14);
+}
+.bf-error {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-ns-red-deep);
+  margin: 0;
+}
+.bf-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.bf-danger {
+  color: var(--color-ns-red-deep);
+  border-color: rgba(232, 35, 74, 0.4);
+}
+.bf-danger:hover {
+  background: var(--color-ns-red-soft);
+  border-color: var(--color-ns-red);
+}
+
+/* ── Pricing Notice (상단 안내문) ── */
+.pricing-notice {
+  list-style: none;
+  padding: 26px 28px;
+  margin: 0 0 40px;
+  background: var(--color-ns-red-soft);
+  border: 1px solid var(--color-ns-red);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.pricing-notice li {
+  position: relative;
+  padding-left: 26px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.65;
+  color: var(--color-ns-ink);
+  word-break: keep-all;
+}
+.pricing-notice li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  border-radius: 50%;
+  background: var(--color-ns-red);
+  color: #fff;
+  font-weight: 800;
+}
+
+/* ── Pricing Tier Cards (등급별 게재 매체) ── */
+.ptier-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+@media (max-width: 720px) { .ptier-group { grid-template-columns: 1fr; } }
+.ptier-block {
+  padding: 24px;
+  background: var(--color-ns-bg);
+  border: 1px solid var(--color-ns-line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  transition: box-shadow 200ms ease, border-color 200ms ease;
+}
+.ptier-block:hover { box-shadow: var(--shadow-hover); border-color: var(--color-ns-line-2); }
+.ptier-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px 16px;
+  padding-bottom: 14px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--color-ns-line-2);
+}
+.ptier-name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--color-ns-ink);
+  letter-spacing: -0.01em;
+  word-break: keep-all;
+}
+.ptier-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-ns-red-deep);
+  white-space: nowrap;
+}
+.ptier-price small {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-ns-slate-2);
+}
+.ptier-desc {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--color-ns-slate);
+  word-break: keep-all;
+}
+
+/* ── Media chip tags (shared: tier cards + 908 list) ── */
+.media-chips {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 0;
+  margin: 0;
+}
+.media-chips li {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  background: var(--color-ns-mist);
+  border: 1px solid var(--color-ns-line-2);
+  border-radius: var(--radius-pill);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--color-ns-slate);
+  word-break: keep-all;
+}
+
+/* ── Collapsible media panel (accordion-style, matches FAQ) ── */
+.media-box { margin: 0; }
+.ptier-block .media-box { margin-top: 4px; }
+.media-box > summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 13px 16px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--color-ns-ink);
+  background: var(--color-ns-mist);
+  border: 1px solid var(--color-ns-line-2);
+  border-radius: var(--radius-md);
+}
+.media-box > summary::-webkit-details-marker { display: none; }
+.media-box > summary::after {
+  content: '+';
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--color-ns-slate-2);
+  flex-shrink: 0;
+}
+.media-box[open] > summary {
+  color: var(--color-ns-red-deep);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+.media-box[open] > summary::after { content: '−'; color: var(--color-ns-red-deep); }
+.media-box .media-chips {
+  padding: 16px;
+  border: 1px solid var(--color-ns-line-2);
+  border-top: none;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+}
+
+/* ── 908 media list panel ── */
+.media-list-panel {
+  max-height: 400px;
+  overflow-y: auto;
+  margin: 0;
+  padding: 20px;
+  border: 1px solid var(--color-ns-line-2);
+  border-top: none;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  columns: 3;
+  column-gap: 24px;
+  font-size: 12.5px;
+  line-height: 1.9;
+  letter-spacing: 0.01em;
+  color: var(--color-ns-slate);
+  word-break: keep-all;
+}
+@media (max-width: 960px) { .media-list-panel { columns: 2; } }
+@media (max-width: 600px) { .media-list-panel { columns: 1; } }
