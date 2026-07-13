@@ -3,7 +3,11 @@
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 
-export default function LogoutButton() {
+interface LogoutButtonProps {
+  redirectTo?: string
+}
+
+export default function LogoutButton({ redirectTo = '/pressrelease' }: LogoutButtonProps) {
   const router = useRouter()
   const [errorMessage, setErrorMessage] = useState('')
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -22,7 +26,7 @@ export default function LogoutButton() {
         return
       }
 
-      router.push('/pressrelease')
+      router.push(redirectTo)
       router.refresh()
     } catch {
       setErrorMessage('로그아웃에 실패했습니다. 네트워크 상태를 확인해 주세요.')

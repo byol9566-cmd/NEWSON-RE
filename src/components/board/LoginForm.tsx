@@ -3,7 +3,11 @@
 import { useRouter } from 'next/navigation'
 import { FormEvent, useState } from 'react'
 
-export default function LoginForm() {
+interface LoginFormProps {
+  redirectTo?: string
+}
+
+export default function LoginForm({ redirectTo = '/pressrelease' }: LoginFormProps) {
   const router = useRouter()
   const [password, setPassword] = useState('')
   const [errorMessage, setErrorMessage] = useState('')
@@ -33,7 +37,7 @@ export default function LoginForm() {
         return
       }
 
-      router.push('/pressrelease')
+      router.push(redirectTo)
       router.refresh()
     } catch {
       setErrorMessage('로그인에 실패했습니다. 네트워크 상태를 확인해 주세요.')

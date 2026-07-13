@@ -1,13 +1,11 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import SubPageLayout from '@/components/SubPageLayout'
-import {
-  FULL_MEDIA_LIST,
-  FULL_MEDIA_LIST_INTRO,
-  PRICING_TIERS,
-  TIER_ONE_DESCRIPTION,
-  type PricingTier,
-} from './media-list'
+import { isAdmin } from '@/lib/board/auth'
+import { pricingRepository } from '@/lib/pricing/repository'
+import { TIER_ONE_DESCRIPTION } from '@/lib/pricing/seed'
+import type { PricingTierRecord } from '@/lib/pricing/types'
+import { FULL_MEDIA_LIST, FULL_MEDIA_LIST_INTRO } from './media-list'
 
 export const metadata: Metadata = {
   title: '언론홍보 비용 — 뉴스온',
@@ -31,7 +29,7 @@ const NOTICE_LINES = [
 /** 이 개수를 넘는 매체 리스트는 접힌(details) 상태로 노출 */
 const COLLAPSE_THRESHOLD = 12
 
-function TierMedia({ tier }: { tier: PricingTier }) {
+function TierMedia({ tier }: { tier: PricingTierRecord }) {
   if (tier.media.length === 0) {
     return <p className="ptier-desc">{TIER_ONE_DESCRIPTION}</p>
   }
@@ -56,7 +54,9 @@ function TierMedia({ tier }: { tier: PricingTier }) {
   )
 }
 
-export default function PricingPage() {
+export default async function PricingPage() {
+  const [tiers, admin] = await Promise.all([pricingRepository.list(), isAdmin()])
+
   return (
     <main id="main-content">
       <SubPageLayout
@@ -73,6 +73,12 @@ export default function PricingPage() {
         <h2 className="content-h2">보도자료 배포 비용</h2>
         <p className="content-lead">보도자료 1건 배포 기준의 매체 등급별 단가입니다. 등급이 높을수록 더 많은 주요·상위 매체에 송출되며, 매체 구성·건수에 따라 맞춤 견적도 가능합니다.</p>
 
+        {admin && (
+          <p className="content-lead">
+            <Link href="/pricing/admin" className="btn btn-line">가격 등급 관리 →</Link>
+          </p>
+        )}
+
         <ul className="pricing-notice" aria-label="비용 안내 사항">
           {NOTICE_LINES.map((line) => (
             <li key={line}>{line}</li>
@@ -85,8 +91,8 @@ export default function PricingPage() {
               <tr><th scope="col">등급</th><th scope="col">건당 비용 (VAT 포함)</th><th scope="col">배포 매체</th></tr>
             </thead>
             <tbody>
-              {PRICING_TIERS.map((tier) => (
-                <tr key={tier.name}>
+              {tiers.map((tier) => (
+                <tr key={tier.id}>
                   <td className="pt-name">{tier.name}</td>
                   <td className="pt-cost">{tier.price}</td>
                   <td>{tier.summary}</td>
@@ -104,8 +110,8 @@ export default function PricingPage() {
 
         <h3 className="content-h3">등급별 게재 매체 안내</h3>
         <div className="ptier-group">
-          {PRICING_TIERS.map((tier) => (
-            <section className="ptier-block" key={tier.name} aria-label={tier.name}>
+          {tiers.map((tier) => (
+            <section className="ptier-block" key={tier.id} aria-label={tier.name}>
               <div className="ptier-head">
                 <h4 className="ptier-name">{tier.name}</h4>
                 <span className="ptier-price">{tier.price} <small>(VAT 포함)</small></span>

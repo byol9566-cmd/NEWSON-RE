@@ -2807,12 +2807,35 @@ a.bp-link:hover { border-color: var(--color-ns-red); color: var(--color-ns-red);
   color: var(--color-ns-red-deep);
   margin: 0;
 }
+.bf-success {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-ns-success);
+  margin: 0;
+}
+.bf-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 560px) { .bf-row { grid-template-columns: 1fr; } }
 .bf-actions {
   display: flex;
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
 }
+
+/* ── 가격 등급 관리자 편집 ── */
+.ptier-admin-block {
+  padding: 24px;
+  background: var(--color-ns-mist);
+  border: 1px solid var(--color-ns-line-2);
+  border-radius: var(--radius-lg);
+  margin-bottom: 20px;
+}
+.ptier-admin-block .ptier-edit-form { gap: 14px; }
+.ptier-admin-block .bf-field textarea { min-height: 120px; }
 .bf-danger {
   color: var(--color-ns-red-deep);
   border-color: rgba(232, 35, 74, 0.4);
