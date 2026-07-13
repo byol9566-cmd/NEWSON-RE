@@ -61,7 +61,7 @@ export const PRICING_TIERS: readonly PricingTier[] = [
     media: [],
   },
   {
-    name: '마이너매체 + 보도자료 배포 + 블로그',
+    name: '마이너매체 + 블로그',
     price: '110,000원',
     summary: '시선뉴스 · 공감신문 등 마이너 매체 1곳 게재',
     media: MINOR_MEDIA,
