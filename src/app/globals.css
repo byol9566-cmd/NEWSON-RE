@@ -2749,6 +2749,15 @@ a.bp-link:hover { border-color: var(--color-ns-red); color: var(--color-ns-red);
   padding-bottom: 32px;
   border-bottom: 1px solid var(--color-ns-line-2);
 }
+.pv-content a {
+  color: var(--color-ns-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  word-break: break-all;
+}
+.pv-content a:hover {
+  opacity: 0.75;
+}
 .pv-actions {
   display: flex;
   align-items: center;

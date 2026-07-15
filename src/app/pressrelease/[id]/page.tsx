@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import DeletePostButton from '@/components/board/DeletePostButton'
+import LinkifiedText from '@/components/board/LinkifiedText'
 import SubPageLayout from '@/components/SubPageLayout'
 import { isAdmin } from '@/lib/board/auth'
 import { formatDateTime } from '@/lib/board/format'
@@ -55,7 +56,7 @@ export default async function PressDetailPage({ params }: DetailPageProps) {
             <span>등록일 {formatDateTime(post.createdAt)}</span>
             <span>조회수 {post.views}</span>
           </div>
-          <div className="pv-content">{post.content}</div>
+          <div className="pv-content"><LinkifiedText text={post.content} /></div>
         </article>
 
         <div className="pv-actions">
