@@ -1,6 +1,6 @@
 'use client'
 
-import { FormEvent, useState } from 'react'
+import { FormEvent, useRef, useState } from 'react'
 import Link from 'next/link'
 
 type SubmitState = 'idle' | 'submitting' | 'success' | 'error'
@@ -14,6 +14,7 @@ interface InquiryFormProps {
 export default function InquiryForm({ defaultName, defaultTel, defaultMessage }: InquiryFormProps) {
   const [state, setState] = useState<SubmitState>('idle')
   const [errorMessage, setErrorMessage] = useState('')
+  const mountedAtRef = useRef(Date.now())
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
@@ -34,6 +35,8 @@ export default function InquiryForm({ defaultName, defaultTel, defaultMessage }:
           email: formData.get('email'),
           service: formData.get('service'),
           message: formData.get('message'),
+          hpField: formData.get('hpField') || '',
+          elapsedMs: Date.now() - mountedAtRef.current,
         }),
       })
       const data = await res.json()
@@ -63,6 +66,14 @@ export default function InquiryForm({ defaultName, defaultTel, defaultMessage }:
 
   return (
     <form className="inquiry-form" id="inquiry-form" onSubmit={handleSubmit}>
+      {/* 허니팟: 사람에게는 보이지 않는 필드. 봇이 값을 채우면 서버에서 스팸으로 판별 */}
+      <div
+        aria-hidden="true"
+        style={{ position: 'absolute', left: '-9999px', width: 1, height: 1, overflow: 'hidden' }}
+      >
+        <label htmlFor="if-hp-field">이 칸은 비워 두세요</label>
+        <input type="text" id="if-hp-field" name="hpField" tabIndex={-1} autoComplete="off" />
+      </div>
       <div className="if-row">
         <div>
           <label htmlFor="if-name">담당자 성함 <span className="required">*</span></label>
