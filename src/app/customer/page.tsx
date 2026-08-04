@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
+import JsonLd from '@/components/JsonLd'
 import SubPageLayout from '@/components/SubPageLayout'
 
 export const metadata: Metadata = {
@@ -65,9 +66,20 @@ const FAQ_ITEMS = [
   },
 ]
 
+const FAQ_JSON_LD = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQ_ITEMS.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  })),
+}
+
 export default function CustomerPage() {
   return (
     <main id="main-content">
+      <JsonLd data={FAQ_JSON_LD} />
       <SubPageLayout
         eyebrow="SUPPORT"
         title="고객센터"

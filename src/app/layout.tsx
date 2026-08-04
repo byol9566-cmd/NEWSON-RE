@@ -32,7 +32,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ko">
       <head>
-        <GoogleAnalytics />
         <link
           rel="stylesheet"
           as="style"
@@ -72,6 +71,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
+        <GoogleAnalytics />
         <a className="skip-link" href="#main-content">본문 바로가기</a>
         <div className="masthead-line" aria-hidden="true" />
         <TopBar />

@@ -2,6 +2,7 @@
 
 import { FormEvent, useRef, useState } from 'react'
 import Link from 'next/link'
+import { trackEvent } from '@/lib/analytics'
 
 type SubmitState = 'idle' | 'submitting' | 'success' | 'error'
 
@@ -47,6 +48,7 @@ export default function InquiryForm({ defaultName, defaultTel, defaultMessage }:
         return
       }
 
+      trackEvent('generate_lead', { service: formData.get('service') })
       setState('success')
       form.reset()
     } catch {

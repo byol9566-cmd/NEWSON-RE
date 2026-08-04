@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
+import JsonLd from '@/components/JsonLd'
 import SubPageLayout from '@/components/SubPageLayout'
 import { isAdmin } from '@/lib/board/auth'
 import { pricingRepository } from '@/lib/pricing/repository'
@@ -28,6 +29,44 @@ const NOTICE_LINES = [
 
 /** 이 개수를 넘는 매체 리스트는 접힌(details) 상태로 노출 */
 const COLLAPSE_THRESHOLD = 12
+
+// "55,000원~" 같은 표기에서 숫자만 추출. 파싱 불가하면 null
+function parsePriceToNumber(price: string): number | null {
+  const digits = price.replace(/[^\d]/g, '')
+  if (!digits) return null
+  return Number(digits)
+}
+
+function buildPricingJsonLd(tiers: PricingTierRecord[]): Record<string, unknown> {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: '보도자료 배포 서비스',
+    serviceType: '언론홍보 대행',
+    description:
+      '908개 제휴 언론사에 보도자료를 배포하고 네이버·다음·구글 포털 노출과 블로그 게재까지 진행하는 언론홍보 대행 서비스입니다.',
+    provider: {
+      '@type': 'Organization',
+      name: '뉴스온 (NEWSON)',
+      url: 'https://www.newson.co.kr/',
+      telephone: '1544-4701',
+    },
+    areaServed: 'KR',
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: '보도자료 배포 매체 등급별 비용',
+      itemListElement: tiers.map((tier) => {
+        const price = parsePriceToNumber(tier.price)
+        return {
+          '@type': 'Offer',
+          name: tier.name,
+          description: tier.summary,
+          ...(price !== null && { price, priceCurrency: 'KRW' }),
+        }
+      }),
+    },
+  }
+}
 
 function TierMedia({ tier }: { tier: PricingTierRecord }) {
   if (tier.media.length === 0) {
@@ -59,6 +98,7 @@ export default async function PricingPage() {
 
   return (
     <main id="main-content">
+      <JsonLd data={buildPricingJsonLd(tiers)} />
       <SubPageLayout
         eyebrow="PRICING"
         title="언론홍보 비용"
