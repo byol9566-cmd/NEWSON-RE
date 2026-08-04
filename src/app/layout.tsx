@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  verification: {
+    google: 'Dg5I1rd5LBUjp7D872B-Gj5A1ztyipG4XuKS4TMaoII',
+  },
   openGraph: {
     title: '뉴스온 — 언론홍보·보도자료배포·네이버블로그 원스톱 대행',
     description: '908개 제휴 언론사, 3,000여 명의 기자 네트워크로 언론홍보·보도자료 배포·네이버 블로그 게재를 한 번에 처리하는 뉴스마케팅 전문 대행사, 뉴스온입니다.',
