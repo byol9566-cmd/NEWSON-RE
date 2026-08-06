@@ -19,7 +19,7 @@ const MIN_FILL_TIME_MS = 3000
 
 const inquirySchema = z.object({
   name: z.string().trim().min(1, '성함을 입력해 주세요.').max(50),
-  company: z.string().trim().min(1, '회사명을 입력해 주세요.').max(100),
+  company: z.string().trim().max(100).optional(),
   tel: z
     .string()
     .trim()
@@ -27,8 +27,8 @@ const inquirySchema = z.object({
     .max(20)
     .refine(isValidKoreanPhone, '연락 가능한 전화번호를 입력해 주세요. (예: 010-0000-0000)'),
   email: z.union([z.string().trim().email(), z.literal('')]).optional(),
-  service: z.string().trim().min(1, '문의 서비스를 선택해 주세요.').max(50),
-  message: z.string().trim().min(1, '상세 내용을 입력해 주세요.').max(2000),
+  service: z.string().trim().max(50).optional(),
+  message: z.string().trim().max(2000).optional(),
   // 스팸 봇 감지용: hpField는 사람 눈에 보이지 않는 허니팟, elapsedMs는 폼 작성 소요 시간
   hpField: z.string().max(200).optional(),
   elapsedMs: z.number().optional(),
@@ -81,22 +81,23 @@ export async function POST(request: Request) {
 
   const { name, company, tel, email, service, message } = parsed.data
   const resend = new Resend(apiKey)
+  const serviceLabel = service ? (SERVICE_LABELS[service] ?? service) : '(미선택)'
 
   try {
     const { error } = await resend.emails.send({
       from: process.env.INQUIRY_FROM_EMAIL || '뉴스온 홈페이지 <noreply@newson.co.kr>',
       to: process.env.INQUIRY_TO_EMAIL || 'newsmarketing@daum.net',
       replyTo: email || undefined,
-      subject: `[뉴스온 온라인 문의] ${company} - ${name}`,
+      subject: `[뉴스온 온라인 문의] ${company || name}`,
       text: [
         `담당자: ${name}`,
-        `회사명: ${company}`,
+        `회사명: ${company || '(미입력)'}`,
         `연락처: ${tel}`,
         `이메일: ${email || '(미입력)'}`,
-        `문의 서비스: ${SERVICE_LABELS[service] ?? service}`,
+        `문의 서비스: ${serviceLabel}`,
         '',
         '상세 내용:',
-        message,
+        message || '(미입력 — 전화로 상담 희망)',
       ].join('\n'),
     })
 

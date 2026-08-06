@@ -1504,6 +1504,61 @@ body {
   box-shadow: 0 12px 28px rgba(232, 35, 74, 0.3);
   transform: translateY(-1px);
 }
+.cta-form button[type="submit"]:disabled {
+  opacity: 0.6;
+  cursor: default;
+  transform: none;
+}
+
+.cf-server-error {
+  font-size: 13px;
+  color: #ff7d99;
+  margin: 0 0 12px;
+}
+
+.cta-form-success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  min-height: 280px;
+}
+.cta-form-success strong { font-size: 20px; color: #fff; }
+.cta-form-success p { font-size: 14px; color: rgba(255,255,255,0.7); line-height: 1.7; margin: 0; }
+
+/* ── Floating quote button (home) ── */
+.floating-quote-btn {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 22px;
+  background: var(--color-ns-red);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 999px;
+  box-shadow: 0 12px 28px rgba(232, 35, 74, 0.35);
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition: opacity 200ms cubic-bezier(0.2,0.8,0.2,1), transform 200ms cubic-bezier(0.2,0.8,0.2,1), background 150ms cubic-bezier(0.2,0.8,0.2,1);
+}
+.floating-quote-btn svg { width: 16px; height: 16px; }
+.floating-quote-btn.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.floating-quote-btn:hover { background: var(--color-ns-red-deep); }
+@media (max-width: 640px) {
+  .floating-quote-btn { right: 16px; bottom: 16px; padding: 12px 18px; font-size: 13px; }
+}
 
 /* ── Footer ── */
 #footer {

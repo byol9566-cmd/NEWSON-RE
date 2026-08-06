@@ -48,7 +48,7 @@ export default function InquiryForm({ defaultName, defaultTel, defaultMessage }:
         return
       }
 
-      trackEvent('generate_lead', { service: formData.get('service') })
+      trackEvent('generate_lead', { service: formData.get('service'), form_location: 'inquiry_page' })
       setState('success')
       form.reset()
     } catch {
@@ -82,8 +82,8 @@ export default function InquiryForm({ defaultName, defaultTel, defaultMessage }:
           <input type="text" id="if-name" name="name" required placeholder="홍길동" defaultValue={defaultName} />
         </div>
         <div>
-          <label htmlFor="if-company">회사명 <span className="required">*</span></label>
-          <input type="text" id="if-company" name="company" required placeholder="(주)브랜드" />
+          <label htmlFor="if-company">회사명</label>
+          <input type="text" id="if-company" name="company" placeholder="(주)브랜드 — 개인이시면 비워두세요" />
         </div>
       </div>
       <div className="if-row">
@@ -112,8 +112,8 @@ export default function InquiryForm({ defaultName, defaultTel, defaultMessage }:
         </select>
       </div>
       <div>
-        <label htmlFor="if-message">상세 내용 <span className="required">*</span></label>
-        <textarea id="if-message" name="message" required placeholder="브랜드 소개, 홍보 목적, 원하는 일정 등을 간단히 작성해 주세요" defaultValue={defaultMessage} />
+        <label htmlFor="if-message">상세 내용</label>
+        <textarea id="if-message" name="message" placeholder="브랜드 소개, 홍보 목적, 원하는 일정 등을 간단히 남겨주세요. 비워두셔도 전담 AE가 전화로 상담해 드립니다." defaultValue={defaultMessage} />
       </div>
       <div className="if-agree">
         <input type="checkbox" id="if-privacy" required />

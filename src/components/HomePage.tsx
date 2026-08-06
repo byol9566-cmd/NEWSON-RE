@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback, Fragment } from 'react'
 import Link from 'next/link'
+import { trackEvent } from '@/lib/analytics'
 
 /* ── Hero Slider ── */
 const HERO_SLIDES = [
@@ -9,7 +10,7 @@ const HERO_SLIDES = [
     eyebrow: 'VOL.01 · PRESS NETWORK',
     headline: <>귀사의 이야기를,<br /><span className="hl-accent">908개 언론사</span>에<br />배포해드립니다.</>,
     sub: '보도자료 기획부터 언론사 송출, 네이버 블로그 게재까지 — 모든 언론홍보를 원스톱으로 처리합니다.',
-    cta1: { label: '무료 견적 받기', href: '/inquiry', icon: true },
+    cta1: { label: '무료 견적 받기', href: '#cta-banner', icon: true },
     cta2: { label: '비용 안내 보기', href: '/pricing' },
     bg: '/images/hero-01.png',
     caption: 'PRESS CONFERENCE · DAILY BRIEFING',
@@ -249,24 +250,68 @@ function useSectionAnimate() {
 /* ── CTA Quick Form ── */
 function CtaForm() {
   const [errors, setErrors] = useState({ name: false, tel: false })
+  const [state, setState] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle')
+  const [serverError, setServerError] = useState('')
+  const mountedAtRef = useRef(Date.now())
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     const form = e.currentTarget
     const name = (form.elements.namedItem('name') as HTMLInputElement).value.trim()
     const tel = (form.elements.namedItem('tel') as HTMLInputElement).value.trim()
     const service = (form.elements.namedItem('service') as HTMLSelectElement).value
+    const hpField = (form.elements.namedItem('hpField') as HTMLInputElement).value
 
     const newErrors = { name: !name, tel: !tel }
     setErrors(newErrors)
     if (newErrors.name || newErrors.tel) return
 
-    const params = new URLSearchParams({ name, tel, service })
-    window.location.href = '/inquiry?' + params.toString()
+    setState('submitting')
+    setServerError('')
+
+    try {
+      const res = await fetch('/api/inquiry', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name,
+          tel,
+          service,
+          hpField,
+          elapsedMs: Date.now() - mountedAtRef.current,
+        }),
+      })
+      const data = await res.json()
+
+      if (!res.ok || !data.ok) {
+        setState('error')
+        setServerError(data.error || '접수에 실패했습니다. 전화(1544-4701)로 문의해 주세요.')
+        return
+      }
+
+      trackEvent('generate_lead', { service: service || '(미선택)', form_location: 'home_quick' })
+      setState('success')
+    } catch {
+      setState('error')
+      setServerError('네트워크 오류로 접수에 실패했습니다. 전화(1544-4701)로 문의해 주세요.')
+    }
+  }
+
+  if (state === 'success') {
+    return (
+      <div className="cta-form cta-form-success" role="status">
+        <strong>견적 신청이 접수되었습니다!</strong>
+        <p>전담 AE가 영업시간 기준 2시간 이내에<br />남겨주신 연락처로 전화드리겠습니다.</p>
+      </div>
+    )
   }
 
   return (
     <form className="cta-form" id="cta-quick-form" onSubmit={handleSubmit} noValidate>
+      <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', width: 1, height: 1, overflow: 'hidden' }}>
+        <label htmlFor="cta-hp-field">이 칸은 비워 두세요</label>
+        <input type="text" id="cta-hp-field" name="hpField" tabIndex={-1} autoComplete="off" />
+      </div>
       <div className="cf-row">
         <div className={`cf-field${errors.name ? ' has-error' : ''}`}>
           <label htmlFor="cf-name">성명 <span aria-hidden="true">*</span></label>
@@ -297,11 +342,14 @@ function CtaForm() {
           <option value="인터뷰·기획기사">인터뷰·기획기사</option>
         </select>
       </div>
-      <button type="submit">
+      {state === 'error' && (
+        <p className="cf-server-error" role="alert">{serverError}</p>
+      )}
+      <button type="submit" disabled={state === 'submitting'}>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           <line x1="22" y1="2" x2="11" y2="13" /><polygon points="22 2 15 22 11 13 2 9 22 2" />
         </svg>
-        견적 요청하기
+        {state === 'submitting' ? '접수 중...' : '견적 요청하기'}
       </button>
     </form>
   )
@@ -562,12 +610,55 @@ function ServicesGrid() {
 }
 
 /* ── Main export ── */
+/* ── Floating quote button: 히어로를 지나면 표시, 견적 폼 도달 시 숨김 ── */
+function FloatingQuoteButton() {
+  const [visible, setVisible] = useState(false)
+
+  useEffect(() => {
+    const hero = document.getElementById('hero')
+    const ctaBanner = document.getElementById('cta-banner')
+    if (!hero || !ctaBanner) return
+
+    let heroVisible = true
+    let ctaVisible = false
+    const update = () => setVisible(!heroVisible && !ctaVisible)
+
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.target === hero) heroVisible = entry.isIntersecting
+        if (entry.target === ctaBanner) ctaVisible = entry.isIntersecting
+      })
+      update()
+    }, { threshold: 0.1 })
+
+    obs.observe(hero)
+    obs.observe(ctaBanner)
+    return () => obs.disconnect()
+  }, [])
+
+  return (
+    <a
+      href="#cta-banner"
+      className={`floating-quote-btn${visible ? ' is-visible' : ''}`}
+      aria-hidden={!visible}
+      tabIndex={visible ? 0 : -1}
+    >
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" />
+        <rect x="9" y="3" width="6" height="4" rx="1" />
+      </svg>
+      무료 견적
+    </a>
+  )
+}
+
 export default function HomePage() {
   useSectionAnimate()
 
   return (
     <>
       <HeroSection />
+      <FloatingQuoteButton />
 
       {/* Trust Strip */}
       <TrustStrip />

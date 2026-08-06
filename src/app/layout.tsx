@@ -4,6 +4,7 @@ import TopBar from '@/components/TopBar'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
+import PhoneClickTracker from '@/components/PhoneClickTracker'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.newson.co.kr'),
@@ -75,6 +76,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <GoogleAnalytics />
+        <PhoneClickTracker />
         <a className="skip-link" href="#main-content">본문 바로가기</a>
         <div className="masthead-line" aria-hidden="true" />
         <TopBar />
