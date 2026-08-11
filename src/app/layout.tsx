@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   },
   verification: {
     google: 'Dg5I1rd5LBUjp7D872B-Gj5A1ztyipG4XuKS4TMaoII',
+    other: {
+      'naver-site-verification': 'b3ae9e15c16190b53ff1f5746ea157961f5ffdb0',
+    },
   },
   openGraph: {
     title: '뉴스온 — 언론홍보·보도자료배포·네이버블로그 원스톱 대행',
