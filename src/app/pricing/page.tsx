@@ -27,6 +27,39 @@ const NOTICE_LINES = [
   '부가가치세(VAT) 포함 금액입니다.',
 ]
 
+const PRICING_FAQ_ITEMS = [
+  {
+    q: '보도자료 배포 비용은 얼마부터인가요?',
+    a: '기본 등급 기준 건당 55,000원(VAT 포함)부터 시작하며, 게재 매체 등급에 따라 최대 660,000원까지 6단계로 나뉩니다. 언론사 1곳 게재 기준 비용이며 모든 단가는 이 페이지에 투명하게 공개되어 있습니다.',
+  },
+  {
+    q: '표시된 가격에 부가세가 포함되어 있나요?',
+    a: '네, 모든 표시 가격은 부가가치세(VAT)가 포함된 최종 금액입니다. 별도 추가 비용 없이 표시된 금액 그대로 결제하시면 되고, 정식 법인사업자로 세금계산서 발행도 가능합니다.',
+  },
+  {
+    q: '보도자료 원고가 없어도 되나요?',
+    a: '가능합니다. 전문 카피라이터가 기사 대필을 진행해 드리며 비용은 33,000원(VAT 포함)입니다. 신청 후 익일 오전까지 초안을 전달드립니다.',
+  },
+  {
+    q: '기사는 얼마나 빨리 게재되나요?',
+    a: '언론사에 송출 요청 후 평균 2시간 내외로 기사가 게재됩니다. 당일 송출도 가능하며, 이전 날짜에 미리 예약하시면 시간 지정 송출도 가능합니다.',
+  },
+  {
+    q: '어떤 등급을 선택해야 할지 모르겠어요.',
+    a: '브랜드 인지도 확보가 목적이면 중급 이상(보도자료 배포 + 블로그 게재 동시 진행)을, 검색 노출용 기사 확보가 목적이면 기본·마이너 등급을 권장합니다. 온라인 문의를 남겨주시면 전담 AE가 상황에 맞는 등급을 무료로 제안해 드립니다.',
+  },
+]
+
+const PRICING_FAQ_JSON_LD = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: PRICING_FAQ_ITEMS.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  })),
+}
+
 /** 이 개수를 넘는 매체 리스트는 접힌(details) 상태로 노출 */
 const COLLAPSE_THRESHOLD = 12
 
@@ -99,6 +132,7 @@ export default async function PricingPage() {
   return (
     <main id="main-content">
       <JsonLd data={buildPricingJsonLd(tiers)} />
+      <JsonLd data={PRICING_FAQ_JSON_LD} />
       <SubPageLayout
         eyebrow="PRICING"
         title="언론홍보 비용"
@@ -176,6 +210,16 @@ export default async function PricingPage() {
           <li><span className="tl-year">04</span><span className="tl-text"><strong>포털 + 블로그 노출</strong> — 네이버·다음·구글 노출 + 블로그 동시 게재</span></li>
           <li><span className="tl-year">05</span><span className="tl-text"><strong>결과 보고</strong> — 노출 URL과 대량메일발송대행업체 결과화면 메일로 전달</span></li>
         </ol>
+
+        <h3 className="content-h3" id="pricing-faq">비용 관련 자주 묻는 질문</h3>
+        <div className="faq-simple">
+          {PRICING_FAQ_ITEMS.map((item, i) => (
+            <details key={item.q} open={i === 0}>
+              <summary>{item.q}</summary>
+              <div className="faq-a">{item.a}</div>
+            </details>
+          ))}
+        </div>
 
         <div className="cta-box">
           <div>
