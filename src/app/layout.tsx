@@ -9,7 +9,8 @@ import PhoneClickTracker from '@/components/PhoneClickTracker'
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.newson.co.kr'),
   title: '뉴스온 — 언론홍보·보도자료배포·네이버블로그 원스톱 대행',
-  description: '뉴스온은 언론홍보·보도자료 배포·네이버 블로그 게재를 한 번에 처리하는 언론홍보 전문 대행사입니다. 908개 제휴 언론사, 3,000여 명의 기자 네트워크를 기반으로 효과적인 뉴스마케팅 전략을 제공하며, 15년간 축적된 노하우로 브랜드 신뢰도를 높여드립니다.',
+  // 첫 문장은 80자 내 완결(네이버 노출 기준), 둘째 문장은 구글의 긴 스니펫용
+  description: '908개 제휴 언론사, 15년 노하우의 언론홍보 전문 대행사 뉴스온. 보도자료 배포부터 네이버 블로그 게재까지 원스톱. 건당 55,000원부터 투명한 가격, 보도자료 대필과 기사형 광고까지 제공합니다.',
   keywords: '언론홍보,보도자료배포,네이버블로그,기사광고,언론홍보대행사,뉴스온,보도자료,포털노출,뉴스마케팅',
   alternates: {
     canonical: '/',
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: '뉴스온 — 언론홍보·보도자료배포·네이버블로그 원스톱 대행',
-    description: '908개 제휴 언론사, 3,000여 명의 기자 네트워크로 언론홍보·보도자료 배포·네이버 블로그 게재를 한 번에 처리하는 뉴스마케팅 전문 대행사, 뉴스온입니다.',
+    description: '908개 제휴 언론사, 15년 노하우의 언론홍보 전문 대행사 뉴스온. 보도자료 배포부터 네이버 블로그 게재까지 원스톱',
     type: 'website',
     url: 'https://www.newson.co.kr/',
     siteName: '뉴스온 (NEWSON)',
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: '뉴스온 — 언론홍보·보도자료배포·네이버블로그 원스톱 대행',
-    description: '908개 제휴 언론사, 3,000여 명의 기자 네트워크로 언론홍보·보도자료 배포·네이버 블로그 게재를 한 번에 처리하는 뉴스마케팅 전문 대행사, 뉴스온입니다.',
+    description: '908개 제휴 언론사, 15년 노하우의 언론홍보 전문 대행사 뉴스온. 보도자료 배포부터 네이버 블로그 게재까지 원스톱',
   },
 }
 
