@@ -2946,6 +2946,12 @@ a.bp-link:hover { border-color: var(--color-ns-red); color: var(--color-ns-red);
   color: #fff;
   font-weight: 800;
 }
+.pricing-notice li a {
+  color: var(--color-ns-red-deep);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.pricing-notice li a:hover { color: var(--color-ns-red); }
 
 /* ── Pricing Tier Cards (등급별 게재 매체) ── */
 .ptier-group {

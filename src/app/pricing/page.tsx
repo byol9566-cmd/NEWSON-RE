@@ -157,6 +157,11 @@ export default async function PricingPage() {
           {NOTICE_LINES.map((line) => (
             <li key={line}>{line}</li>
           ))}
+          <li key="card-payment">
+            신용카드 결제를 원하시면 뉴스온와이어 사이트(
+            <a href="https://www.newsonwire.co.kr" target="_blank" rel="noopener noreferrer">www.newsonwire.co.kr</a>
+            )에서 가능합니다.
+          </li>
         </ul>
 
         <div className="price-table-wrap">
