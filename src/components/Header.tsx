@@ -11,6 +11,7 @@ const NAV_LINKS = [
   { label: '브랜드대상', href: '/brand-award' },
   { label: '언론홍보 비용', href: '/pricing' },
   { label: '사업분야', href: '/business' },
+  { label: '보도자료 사례', href: '/pressrelease' },
   { label: 'Clients', href: '/clients' },
   { label: '온라인문의', href: '/inquiry' },
   { label: '고객센터', href: '/customer' },
